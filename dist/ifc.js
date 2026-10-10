@@ -1,4 +1,4 @@
-import {modelData,footprint,area} from './geometry.js';
+import {modelData,footprint,area,regionArea} from './geometry.js';
 import {floorPlans} from './plans.js';
 const chars='0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_$';
 function guid(){let n=0n;for(const b of crypto.getRandomValues(new Uint8Array(16)))n=(n<<8n)|BigInt(b);let s='';for(let i=0;i<22;i++){s=chars[Number(n&63n)]+s;n>>=6n;}return "'"+s+"'";}
@@ -17,25 +17,27 @@ export function exportIFC(state){
  aggregate(project,[site]);aggregate(site,[building]);
  const prop=(name,type,value)=>add(`IFCPROPERTYSINGLEVALUE(${str(name)},$,${type}(${typeof value==='number'?num(value):str(value)}),$)`);
  const properties=(object,name,props)=>{const set=add(`IFCPROPERTYSET(${guid()},${owner},${str(name)},$,${list(props)})`);add(`IFCRELDEFINESBYPROPERTIES(${guid()},${owner},$,$,(${object}),${set})`);};
- properties(building,'FORM_Design',[prop('Copyright','IFCTEXT','© 2026 Mostafa A. Gabr. All rights reserved.'),prop('ModelStatus','IFCLABEL','Concept massing; no structural or regulatory validation'),prop('EditableParametersJSON','IFCTEXT',JSON.stringify(state)),prop('ModelledFloorArea','IFCAREAMEASURE',modelData(state).totalArea)]);
+ properties(building,'FORM_Design',[prop('Copyright','IFCTEXT','© 2026 Mostafa A. Gabr. All rights reserved.'),prop('ModelStatus','IFCLABEL','Concept massing; no structural or regulatory validation'),prop('EditableParametersJSON','IFCTEXT',JSON.stringify(state)),prop('ModelledFloorArea','IFCAREAMEASURE',modelData(state).totalArea),prop('BalconyArea','IFCAREAMEASURE',modelData(state).balconyArea)]);
  const plans=floorPlans(state),storeys=[];let lastStorey,lastPlacement;
- const slab=(p,storey,pos,roof=false)=>{
+ const slabPart=(p,storey,pos,roof=false)=>{
   const thickness=p.id.startsWith('podium')?.3:.23;
   const points=p.points.map(([x,y])=>add(`IFCCARTESIANPOINT((${num(x)},${num(y)}))`));
-  const poly=add(`IFCPOLYLINE(${list([...points,points[0]])})`),profile=add(`IFCARBITRARYCLOSEDPROFILEDEF(.AREA.,$,${poly})`),solid=add(`IFCEXTRUDEDAREASOLID(${profile},${axis},${down},${num(thickness)})`),rep=add(`IFCSHAPEREPRESENTATION(${context},'Body','SweptSolid',(${solid}))`),shape=add(`IFCPRODUCTDEFINITIONSHAPE($,$,(${rep}))`);
+  const poly=add(`IFCPOLYLINE(${list([...points,points[0]])})`),holes=(p.holes||[]).map(h=>{const refs=h.map(([x,y])=>add(`IFCCARTESIANPOINT((${num(x)},${num(y)}))`));return add(`IFCPOLYLINE(${list([...refs,refs[0]])})`);}),profile=add(holes.length?`IFCARBITRARYPROFILEDEFWITHVOIDS(.AREA.,$,${poly},${list(holes)})`:`IFCARBITRARYCLOSEDPROFILEDEF(.AREA.,$,${poly})`),solid=add(`IFCEXTRUDEDAREASOLID(${profile},${axis},${down},${num(thickness)})`),rep=add(`IFCSHAPEREPRESENTATION(${context},'Body','SweptSolid',(${solid}))`),shape=add(`IFCPRODUCTDEFINITIONSHAPE($,$,(${rep}))`);
   const el=add(`IFCSLAB(${guid()},${owner},${str(p.name+' slab')},'Concept slab; nominal thickness, not structural design',$,${pos},${shape},$,.${roof?'ROOF':'FLOOR'}.)`);
   add(`IFCRELCONTAINEDINSPATIALSTRUCTURE(${guid()},${owner},$,$,(${el}),${storey})`);
   properties(el,'FORM_Slab',[prop('NominalThickness','IFCLENGTHMEASURE',thickness),prop('ModelledArea','IFCAREAMEASURE',p.area),prop('BaseLevel','IFCLENGTHMEASURE',p.elevation)]);
  };
+ const slab=(p,storey,pos,roof=false)=>{for(const [i,r]of (p.regions||[[p.points]]).entries())slabPart({...p,points:r[0],holes:r.slice(1),area:regionArea([r]),name:p.name+(i?' part '+(i+1):'')},storey,pos,roof);for(const [i,r]of (p.balconies||[]).entries())slabPart({...p,points:r[0],holes:r.slice(1),area:regionArea([r]),name:p.name+' balcony '+(i+1)},storey,pos,roof);};
  for(const p of plans){const pos=placement(buildingPos,p.elevation),storey=add(`IFCBUILDINGSTOREY(${guid()},${owner},${str(p.name)},$,$,${pos},$,$,.ELEMENT.,${num(p.elevation)})`);storeys.push(storey);lastStorey=storey;lastPlacement=pos;slab(p,storey,placement(pos));if(state.podium&&p.id==='podium-'+state.podiumFloors)slab({...p,name:'Podium roof',elevation:p.elevation+state.storey},storey,placement(pos,state.storey),true);}
  aggregate(building,storeys);
- const d=modelData(state);slab({id:'roof',name:'Tower roof',points:d.rings.at(-1).points,elevation:d.height,area:area(d.rings.at(-1).points)},lastStorey,placement(lastPlacement,state.storey),true);
+ const d=modelData(state);slab({id:'roof',name:'Tower roof',points:d.rings.at(-1).points,regions:d.rings.at(-1).regions,elevation:d.height,area:d.rings.at(-1).area},lastStorey,placement(lastPlacement,state.storey),true);
  // Open concept envelope as an explicitly identified proxy, not fabricated walls.
  const coords=[],faces=[];
  const band=(a,b,y0,y1)=>{const offset=coords.length;for(const [x,y]of a)coords.push([x,y,y0]);for(const [x,y]of b)coords.push([x,y,y1]);const n=a.length;for(let i=0;i<n;i++){const j=(i+1)%n;faces.push([offset+i+1,offset+j+1,offset+n+j+1],[offset+i+1,offset+n+j+1,offset+n+i+1]);}};
- for(let i=0;i<d.layers.length-1;i++){const a=d.layers[i],b=d.layers[i+1];band(a.points,b.points,a.y,b.y);}
+ if(d.hasCuts){for(let i=0;i<state.floors;i++)for(const region of d.rings[i].regions)for(const p of region)band(p,p,d.rings[i].y,d.rings[i].y+state.storey);}
+ else for(let i=0;i<d.layers.length-1;i++){const a=d.layers[i],b=d.layers[i+1];band(a.points,b.points,a.y,b.y);}
  if(state.podium){const p=footprint('rectangle',state.podiumWidth,state.podiumDepth);band(p,p,0,d.base);}
- const vertices=add(`IFCCARTESIANPOINTLIST3D(${list(coords.map(p=>list(p.map(num))))})`),mesh=add(`IFCTRIANGULATEDFACESET(${vertices},$,.F.,${list(faces.map(list))},$)`),rep=add(`IFCSHAPEREPRESENTATION(${context},'Body','Tessellation',(${mesh}))`),shape=add(`IFCPRODUCTDEFINITIONSHAPE($,$,(${rep}))`),proxy=add(`IFCBUILDINGELEMENTPROXY(${guid()},${owner},'Concept envelope','Open massing surface, not a detailed wall system','Concept envelope',${placement(buildingPos)},${shape},$,.USERDEFINED.)`);
- add(`IFCRELCONTAINEDINSPATIALSTRUCTURE(${guid()},${owner},$,$,(${proxy}),${building})`);
+ if(coords.length){const vertices=add(`IFCCARTESIANPOINTLIST3D(${list(coords.map(p=>list(p.map(num))))})`),mesh=add(`IFCTRIANGULATEDFACESET(${vertices},$,.F.,${list(faces.map(list))},$)`),rep=add(`IFCSHAPEREPRESENTATION(${context},'Body','Tessellation',(${mesh}))`),shape=add(`IFCPRODUCTDEFINITIONSHAPE($,$,(${rep}))`),proxy=add(`IFCBUILDINGELEMENTPROXY(${guid()},${owner},'Concept envelope','Open massing surface, not a detailed wall system','Concept envelope',${placement(buildingPos)},${shape},$,.USERDEFINED.)`);
+ add(`IFCRELCONTAINEDINSPATIALSTRUCTURE(${guid()},${owner},$,$,(${proxy}),${building})`);}
  return `ISO-10303-21;\nHEADER;\nFILE_DESCRIPTION(('FORM conceptual BIM export'),'2;1');\nFILE_NAME(${str(state.name+'.ifc')},${str(new Date().toISOString())},('Mostafa A. Gabr'),('FORM'),'FORM IFC exporter','FORM','Copyright 2026 Mostafa A. Gabr. All rights reserved.');\nFILE_SCHEMA(('IFC4'));\nENDSEC;\nDATA;\n${lines.join('\n')}\nENDSEC;\nEND-ISO-10303-21;\n`;
 }

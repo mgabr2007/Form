@@ -47,3 +47,14 @@ Copyright © 2026 Mostafa A. Gabr. All rights reserved for the FORM application.
 
 ## Additional form modifiers
 Shape transition blends to a target footprint. Corner treatment rounds toward a chosen radius (percentage of half the shorter dimension). These footprint operations run in list order before global scale, rotation and translation. Wave shifts floor centres along X or Y with cycle and phase controls and smooth zero displacement at range boundaries. Stepped terraces inset all or one side every N floors and retain at least 20% width/depth; the final inset persists above the range. Floor offsets alternate unshifted/shifted groups every N floors and return to the original centre above the range. Discontinuous changes have horizontal envelope transitions. All new settings survive project JSON, browser storage and IFC parameters; CSV includes options JSON.
+
+## Openings, balconies and local form controls
+- Atrium/courtyard: rectangular or elliptical subtraction, with X/Y offsets and a floor range. Overlapping openings are merged by polygon operations; openings reaching the façade become recesses and can split a floor into separate regions.
+- Façade cut-out: depth, opening width, selected plan-axis side and along-side position. Coordinates are plan X/Y axes, relative to each floor's bounding box, and do not rotate independently with its façade.
+- Local rotation: rotates only the chosen group of floors; upper floors return to their original orientation.
+- Balconies: separate conceptual slab extensions, selected side and every-N-floor repetition. Projection uses an expanded floor outline (axis-based extension, not a constant normal offset on curves). Balcony area is shown separately and excluded from modelled tower floor area. No railings or structural detailing.
+- Slenderness: multiplies width/depth ratio progressively while preserving area before other modifiers and openings.
+
+3D caps are triangulated with holes and concave boundaries. IFC slabs use profiles with voids and separate slab parts for disconnected regions; balconies are separate slabs. SVG/PNG plans use even-odd fill and DXF exports include interior rings. For models containing openings, the envelope uses vertical faces per storey, producing stepped faces when combined with twist/taper; it is not a smooth boolean-cut façade. The podium is unchanged. A cut can remove an entire floor; its area then reads zero and no slab is exported for that floor. Roof openings persist when the range ends at the top storey.
+
+Polygon boolean operations use polygon-clipping 0.15.7 (MIT); its license is bundled in `dist/vendor/polygon-clipping-LICENSE.txt`. Browser visual QA remains unavailable in the authoring environment.
