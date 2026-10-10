@@ -6,12 +6,12 @@ A static, browser-based architectural massing tool. All geometry and project sto
 
 Serve the `dist/` folder with a static web server. The entry point is `dist/index.html`. ES modules require HTTP(S), so opening the file directly with `file://` is not supported.
 
-For Cloudflare Pages Direct Upload, upload the contents of `dist/`, or a ZIP whose root contains `index.html`, `app.js`, `geometry.js`, `style.css`, and `vendor/`. Use the free plan for static hosting. A Cloudflare account is required for that deployment. Hosting-specific deployment identity is excluded from this portable source repository.
+For Cloudflare Pages Direct Upload, upload the contents of `dist/`, or a ZIP whose root contains `index.html`, `app.js`, `geometry.js`, `style.css`, and `vendor/`. Use the free plan for static hosting. A Cloudflare account is required for that deployment. This source also includes the manifest for its ChatGPT Site deployment.
 
 ## Features
 
 - Rectangular, rounded, elliptical and hexagonal footprints; dimensions, orientation, tower storeys, floor height and independent podium.
-- Up to 12 enabled/disabled twist, taper, lean, bend, bulge and setback modifiers with floor ranges.
+- Up to 12 enabled/disabled twist, taper, lean, bend, bulge, setback, shape transition, corner treatment, wave, stepped terraces and floor offset modifiers with floor ranges.
 - Perspective orbit and orthographic front/side/top views, auto-rotate, façade/mass/floor views.
 - Six presets, 30 browser-local saved alternatives, comparison and undo/redo (Ctrl/Cmd-Z, Shift-Ctrl/Cmd-Z).
 - Project JSON, binary glTF/GLB, PNG viewport, CSV calculations, and DXF floor-outline exports.
@@ -37,10 +37,13 @@ Three.js 0.180.0 is bundled under its MIT licence (`dist/vendor/LICENSE.txt`). I
 
 ## 2D Plans
 
-The 2D Plans tab shows individual podium and tower floor outlines, their base elevations, area and optional axis-aligned overall dimensions. Optional dashed overlays show the immediately preceding floor. It is independent of WebGL. Export the selected floor as an annotated SVG or PNG, or a closed DXF outline in metres. These are conceptual floor outlines, not room layouts.
+The 2D Plans tab shows individual podium and tower floor outlines, their base elevations, area and optional axis-aligned overall dimensions. Solid grey overlays can show one or all lower floors, masked inside the selected floor outline. It is independent of WebGL. Export the selected floor as an annotated SVG or PNG, or a closed DXF outline in metres. These are conceptual floor outlines, not room layouts.
 
 ## BIM export and copyright
 
 Export → IFC creates an IFC4 file containing the Project/Site/Building/Storey hierarchy, IfcSlab floor and roof elements, and an explicitly labelled conceptual envelope as IfcBuildingElementProxy with triangulated surface geometry. Uses metre units, Z-up, the same X/Y plan coordinates as DXF, and nominal slab thicknesses of 0.23 m (tower) and 0.30 m (podium). Parameters and modelled floor areas are exported as FORM properties. The envelope is an open surface, not a detailed wall assembly. This is a conceptual BIM exchange, not a native RVT file or a construction-ready model.
 
 Copyright © 2026 Mostafa A. Gabr. All rights reserved for the FORM application. Third-party Three.js components retain their MIT licence.
+
+## Additional form modifiers
+Shape transition blends to a target footprint. Corner treatment rounds toward a chosen radius (percentage of half the shorter dimension). These footprint operations run in list order before global scale, rotation and translation. Wave shifts floor centres along X or Y with cycle and phase controls and smooth zero displacement at range boundaries. Stepped terraces inset all or one side every N floors and retain at least 20% width/depth; the final inset persists above the range. Floor offsets alternate unshifted/shifted groups every N floors and return to the original centre above the range. Discontinuous changes have horizontal envelope transitions. All new settings survive project JSON, browser storage and IFC parameters; CSV includes options JSON.
