@@ -61,3 +61,8 @@ Polygon boolean operations use polygon-clipping 0.15.7 (MIT); its license is bun
 
 ## Geometry review
 The 3D viewer and IFC proxy share one envelope triangulation. Floor-area calculations and slab profiles remain based on floor sections. Removed or disconnected floors are identified in the controls; empty models use safe camera bounds. Roof/opening and abrupt modifier boundaries include horizontal transition surfaces. Numerical regression tests cover mixed openings/twist/taper, unequal polygon vertex counts and topology changes; interactive browser and target-application verification are still required.
+
+## Modifier editing
+Progressive modifiers offer linear, ease-in (t²), ease-out (1−(1−t)²), and smooth S-curve (3t²−2t³) transitions across their floor range. Existing projects default to linear and preserve their geometry. For waves, bend and bulge, the curve remaps progress through the existing profile. Discrete floor-group modifiers retain exact floor boundaries and do not show a transition selector.
+
+Copy inserts an independent modifier immediately after the original; Up/Down works on mobile and keyboard, while the handle supports desktop drag-and-drop. Edits participate in undo/redo and JSON/browser saves. The established evaluation stages are preserved: outline operations (shape transition, corners, slenderness, terraces) execute in list order, then combined scale, rotation, translation, openings and balconies. Moving cards between stages does not change that stage order; each card and the panel explain this. CSV now records transition curves explicitly.

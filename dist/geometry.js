@@ -15,6 +15,12 @@ Object.assign(specs,{
  balcony:{name:'Balconies',unit:'m',min:.5,max:6,step:.5,value:2,description:'Add separate external slab extensions on selected floors. Areas are reported separately.',options:{side:{label:'Plan-axis side',choices:['all','x+','x-','y+','y-'],value:'all'},every:{label:'Every N floors',min:1,max:20,step:1,value:1}}},
  slender:{name:'Slenderness',unit:'×',min:.5,max:2,step:.05,value:1.3,description:'Multiply width/depth ratio progressively while preserving footprint area.'}
 });
+export const curves={linear:'Linear',easeIn:'Ease in',easeOut:'Ease out',smooth:'Smooth S-curve'};
+export const progressiveTypes=['twist','taper','leanX','leanZ','bend','bulge','morph','corners','wave','slender'];
+export function transition(t,curve='linear'){t=Math.max(0,Math.min(1,t));return curve==='easeIn'?t*t:curve==='easeOut'?1-(1-t)**2:curve==='smooth'?t*t*(3-2*t):t;}
+export function modifierStage(type){return ['morph','corners','slender','terraces'].includes(type)?'1 · Outline — list order': ['taper','bulge','setback'].includes(type)?'2 · Scale': ['twist','localRotate'].includes(type)?'3 · Rotate': ['leanX','leanZ','bend','wave','offsets'].includes(type)?'4 · Shift': ['atrium','notch'].includes(type)?'5 · Openings':'6 · Balconies';}
+export function moveModifier(modifiers,from,to){if(!Number.isInteger(from)||!Number.isInteger(to)||from<0||to<0||from>=modifiers.length||to>=modifiers.length||from===to)return false;const [m]=modifiers.splice(from,1);modifiers.splice(to,0,m);return true;}
+export function duplicateModifier(modifiers,index,id){if(modifiers.length>=12||!modifiers[index])return false;modifiers.splice(index+1,0,{...structuredClone(modifiers[index]),id});return true;}
 export function modifierOptions(m){const out={};for(const [key,p]of Object.entries(specs[m.type]?.options||{})){const v=m[key]??p.value;out[key]=p.choices?(p.choices.includes(v)?v:p.value):Math.min(p.max,Math.max(p.min,Number.isFinite(+v)?Math.round(+v/p.step)*p.step:p.value));}return out;}
 const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
 export function normalize(raw){
@@ -23,7 +29,7 @@ export function normalize(raw){
  const n=(key,a,b,integer=false)=>{if(raw[key]!==undefined){const v=Number(raw[key]);if(!Number.isFinite(v))throw Error('Invalid '+key);s[key]=integer?Math.round(clamp(v,a,b)):clamp(v,a,b);}};
  s.name=String(raw.name||s.name).slice(0,70);s.shape=['rectangle','rounded','ellipse','hexagon'].includes(raw.shape)?raw.shape:s.shape;
  n('width',12,80);n('depth',12,80);n('floors',5,100,true);n('storey',2.8,5.5);n('orientation',-180,180);n('podiumFloors',1,8,true);n('podiumWidth',25,110);n('podiumDepth',25,110);s.podium=raw.podium===undefined?s.podium:!!raw.podium;
- s.modifiers=(Array.isArray(raw.modifiers)?raw.modifiers:[]).slice(0,12).map((m,i)=>{const p=specs[m.type];if(!p)throw Error('Unknown modifier');const v=Number(m.value);if(!Number.isFinite(v))throw Error('Invalid modifier value');const start=clamp(Math.round(Number(m.start)||1),1,s.floors);return{id:'mod-'+i,type:m.type,value:clamp(v,p.min,p.max),start,end:clamp(Math.round(Number(m.end)||s.floors),start,s.floors),enabled:m.enabled!==false,...modifierOptions(m)};});
+ s.modifiers=(Array.isArray(raw.modifiers)?raw.modifiers:[]).slice(0,12).map((m,i)=>{const p=specs[m.type];if(!p)throw Error('Unknown modifier');const v=Number(m.value);if(!Number.isFinite(v))throw Error('Invalid modifier value');const start=clamp(Math.round(Number(m.start)||1),1,s.floors);return{id:'mod-'+i,type:m.type,value:clamp(v,p.min,p.max),start,end:clamp(Math.round(Number(m.end)||s.floors),start,s.floors),enabled:m.enabled!==false,...(progressiveTypes.includes(m.type)?{curve:Object.hasOwn(curves,m.curve)?m.curve:'linear'}:{}),...modifierOptions(m)};});
  return s;
 }
 export function footprint(shape,w,d,radius=Math.min(w,d)*.18){
@@ -48,7 +54,7 @@ export function ringAt(s,level,before=false){
  let points=footprint(s.shape,s.width,s.depth);
  let scale=1,angle=s.orientation*Math.PI/180,x=0,z=0;
  for(const m of s.modifiers){if(!m.enabled)continue;
-  const begin=m.start-1,end=Math.max(begin+1,m.end),t=clamp((level-begin)/(end-begin),0,1);
+  const begin=m.start-1,end=Math.max(begin+1,m.end),t=transition((level-begin)/(end-begin),m.curve);
   const o=modifierOptions(m);
   if(m.type==='morph'||m.type==='corners'){
    const target=footprint(m.type==='corners'?'rounded':o.target,s.width,s.depth,m.value/100*Math.min(s.width,s.depth)/2);
