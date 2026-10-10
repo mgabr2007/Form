@@ -1,0 +1,2 @@
+import {buildBVH,sunSteps,sunlightHours} from './solar.js';
+self.onmessage=({data})=>{try{const {triangles,samples,settings}=data,bvh=buildBVH(triangles),steps=sunSteps(settings),values=[];for(let i=0;i<samples.length;i++){values.push(sunlightHours(samples[i],steps,triangles,bvh));if(i%50===0)self.postMessage({progress:i/samples.length});}self.postMessage({values,daylight:steps.reduce((a,s)=>a+s.hours,0)});}catch(e){self.postMessage({error:e.message});}};

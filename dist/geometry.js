@@ -1,3 +1,4 @@
+import {solarSettings} from './solar.js';
 import clipping from './vendor/polygon-clipping.js';
 export const defaults = () => ({version:1,name:'Untitled tower',shape:'rounded',width:36,depth:30,floors:48,storey:3.6,orientation:0,podium:true,podiumFloors:3,podiumWidth:64,podiumDepth:52,modifiers:[{id:'twist-1',type:'twist',value:65,start:1,end:48,enabled:true},{id:'taper-1',type:'taper',value:22,start:1,end:48,enabled:true}]});
 export const specs={twist:{name:'Twist',unit:'°',min:-180,max:180,step:1,value:45,description:'Rotate progressively around the tower centre.'},taper:{name:'Taper',unit:'%',min:-40,max:65,step:1,value:25,description:'Narrow the tower toward the top. Negative values widen it.'},leanX:{name:'Lean · X',unit:'m',min:-50,max:50,step:1,value:15,description:'Shift the centreline horizontally along X.'},leanZ:{name:'Lean · Y',unit:'m',min:-50,max:50,step:1,value:15,description:'Shift the centreline horizontally along Y.'},bend:{name:'Bend',unit:'m',min:-40,max:40,step:1,value:15,description:'Create a smooth bow along X, returning at the end.'},bulge:{name:'Bulge / pinch',unit:'%',min:-45,max:60,step:1,value:25,description:'Expand the middle of a range. Negative values pinch it.'},setback:{name:'Setback',unit:'%',min:5,max:45,step:1,value:20,description:'Reduce the footprint from the selected starting floor upward.'}};
@@ -30,6 +31,7 @@ export function normalize(raw){
  s.name=String(raw.name||s.name).slice(0,70);s.shape=['rectangle','rounded','ellipse','hexagon'].includes(raw.shape)?raw.shape:s.shape;
  n('width',12,80);n('depth',12,80);n('floors',5,100,true);n('storey',2.8,5.5);n('orientation',-180,180);n('podiumFloors',1,8,true);n('podiumWidth',25,110);n('podiumDepth',25,110);s.podium=raw.podium===undefined?s.podium:!!raw.podium;
  s.modifiers=(Array.isArray(raw.modifiers)?raw.modifiers:[]).slice(0,12).map((m,i)=>{const p=specs[m.type];if(!p)throw Error('Unknown modifier');const v=Number(m.value);if(!Number.isFinite(v))throw Error('Invalid modifier value');const start=clamp(Math.round(Number(m.start)||1),1,s.floors);return{id:'mod-'+i,type:m.type,value:clamp(v,p.min,p.max),start,end:clamp(Math.round(Number(m.end)||s.floors),start,s.floors),enabled:m.enabled!==false,...(progressiveTypes.includes(m.type)?{curve:Object.hasOwn(curves,m.curve)?m.curve:'linear'}:{}),...modifierOptions(m)};});
+ if(raw.solar)s.solar=solarSettings(raw.solar);
  return s;
 }
 export function footprint(shape,w,d,radius=Math.min(w,d)*.18){

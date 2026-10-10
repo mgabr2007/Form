@@ -1,3 +1,4 @@
+import {createSolarUI} from './solar-ui.js';
 import {envelopeMesh} from './envelope.js';
 import {exportIFC} from './ifc.js';
 import {floorPlans,planSVG,planDXF} from './plans.js';
@@ -7,6 +8,7 @@ import {GLTFExporter} from './vendor/GLTFExporter.js';
 import {defaults,specs,normalize,modelData,footprint,modifierOptions,curves,progressiveTypes,modifierStage,moveModifier,duplicateModifier} from './geometry.js';
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 let state=defaults(),mode='facade',data,group,reference=null,referenceState=null,renderer,scene,camera,controls,perspective,ortho,view='perspective';
+let solarUI=null;
 let history=[],future=[],pending=false,toastTimer,storageAvailable=true;
 const KEY='form-studio-v1',SAVED='form-studio-saved-v1';
 const copy=x=>structuredClone(x),fmt=n=>Math.round(n).toLocaleString('en-US'),safeName=()=>state.name.replace(/[^a-z0-9_-]+/gi,'-').toLowerCase()||'form-tower';
@@ -31,7 +33,7 @@ function onRead(key){if(key.startsWith('mod-'))return state.modifiers[+key.slice
 function renderControls(){
  $('#project-name').value=state.name;
  for(const [name,definition]of Object.entries(defs)){const container=$('#'+name+'-controls');container.innerHTML=definition.map(d=>controlHTML(...d,state[d[0]])).join('');bindControl(container,(key,v)=>{state[key]=['floors','podiumFloors'].includes(key)?Math.round(v):v;if(key==='floors')for(const m of state.modifiers){m.start=Math.min(m.start,state.floors);m.end=Math.max(m.start,Math.min(m.end,state.floors));}});}
- $$('#shapes button').forEach(b=>b.classList.toggle('selected',b.dataset.shape===state.shape));$('#podium-toggle').checked=state.podium;$('#podium-controls').hidden=!state.podium;renderModifiers();renderSaved();
+ $$('#shapes button').forEach(b=>b.classList.toggle('selected',b.dataset.shape===state.shape));$('#podium-toggle').checked=state.podium;$('#podium-controls').hidden=!state.podium;renderModifiers();renderSaved();solarUI?.load(state.solar);
 }
 const symbols={twist:'⤨',taper:'⋀',leanX:'↗',leanZ:'↖',bend:'⌒',bulge:'◈',setback:'⌑',morph:'◇',corners:'▢',wave:'∿',terraces:'▱',offsets:'⇆',atrium:'▣',notch:'⊏',localRotate:'↻',balcony:'⊞',slender:'↔'};
 function modifierFields(m,i){const values=modifierOptions(m);const curve=progressiveTypes.includes(m.type)?`<label class="modifier-option">Transition<select data-curve="${i}">${Object.entries(curves).map(([v,label])=>`<option value="${v}" ${(m.curve||'linear')===v?'selected':''}>${label}</option>`).join('')}</select></label>`:'';return curve+Object.entries(specs[m.type].options||{}).map(([key,p])=>`<label class="modifier-option">${p.label}${p.choices?`<select data-option="${key}" data-index="${i}">${p.choices.map(v=>`<option value="${v}" ${values[key]===v?'selected':''}>${v}</option>`).join('')}</select>`:`<input type="number" data-option="${key}" data-index="${i}" min="${p.min}" max="${p.max}" step="${p.step}" value="${values[key]}">`}</label>`).join('');}
@@ -58,23 +60,23 @@ function geometry(pos){const g=new THREE.BufferGeometry();g.setAttribute('positi
 function addBand(out,p,q,y0,y1){for(let j=0;j<p.length;j++){const k=(j+1)%p.length,a=[p[j][0],y0,p[j][1]],b=[p[k][0],y0,p[k][1]],c=[q[k][0],y1,q[k][1]],d=[q[j][0],y1,q[j][1]];out.push(...a,...c,...b,...a,...d,...c);}}
 function addCap(out,points,y,holes=[]){const rings=[points,...holes],flat=rings.flat(),triangles=THREE.ShapeUtils.triangulateShape(points.map(([x,z])=>new THREE.Vector2(x,z)),holes.map(h=>h.map(([x,z])=>new THREE.Vector2(x,z))));for(const t of triangles)for(const i of [t[0],t[2],t[1]])out.push(flat[i][0],y,flat[i][1]);}
 function addPlate(out,region,y,thickness=.23){addCap(out,region[0],y,region.slice(1));const bottom=[];addCap(bottom,region[0],y-thickness,region.slice(1));for(let i=0;i<bottom.length;i+=9)out.push(...bottom.slice(i,i+3),...bottom.slice(i+6,i+9),...bottom.slice(i+3,i+6));for(const ring of region)addBand(out,ring,ring,y-thickness,y);}
-function building(s,isReference=false){
+function building(s,isReference=false,renderMode=mode){
  const d=modelData(s),root=new THREE.Group();root.name=s.name;root.userData={units:'metres',towerStoreys:s.floors,podiumStoreys:s.podium?s.podiumFloors:0,parameters:JSON.stringify(s)};
  const glass=new THREE.MeshStandardMaterial({color:isReference?0xc9d2b7:0x9db2a6,roughness:.44,metalness:.22,side:THREE.DoubleSide,transparent:isReference,opacity:isReference?.45:1});
  const stone=new THREE.MeshStandardMaterial({color:isReference?0xb7c6a1:0xe0e5d3,roughness:.78,side:THREE.DoubleSide,transparent:isReference,opacity:isReference?.55:1});
  const mass=new THREE.MeshStandardMaterial({color:isReference?0xb7c6a1:0xbdcbb1,roughness:.85,side:THREE.DoubleSide,transparent:isReference,opacity:isReference?.5:1});
  const skin=[],slabs=[],lines=[],ribs=[];
- const envelope=envelopeMesh(s,d);for(const value of envelope.positions)skin.push(value);if(mode==='facade')for(const value of envelope.edges)ribs.push(value);root.userData.envelopeFallbackFloors=envelope.fallbackFloors;
+ const envelope=envelopeMesh(s,d);for(const value of envelope.positions)skin.push(value);if(renderMode==='facade')for(const value of envelope.edges)ribs.push(value);root.userData.envelopeFallbackFloors=envelope.fallbackFloors;
  for(const r of d.rings)for(const region of [...r.regions,...r.balconies]){addPlate(slabs,region,r.y);for(const p of region)for(let i=0;i<p.length;i++){const a=p[i],b=p[(i+1)%p.length];lines.push(a[0],r.y+.012,a[1],b[0],r.y+.012,b[1]);}}
- if(s.podium){const p=footprint('rectangle',s.podiumWidth,s.podiumDepth);addBand(skin,p,p,0,d.base);for(let i=0;i<=s.podiumFloors;i++){addCap(slabs,p,i*s.storey);addBand(slabs,p,p,Math.max(0,i*s.storey-.3),i*s.storey);for(let j=0;j<p.length;j++){const q=p[(j+1)%p.length];lines.push(p[j][0],i*s.storey+.01,p[j][1],q[0],i*s.storey+.01,q[1]);if(mode==='facade')ribs.push(p[j][0],0,p[j][1],p[j][0],d.base,p[j][1]);}}}
- if(mode!=='floors'){const mesh=new THREE.Mesh(geometry(skin),mode==='mass'?mass:glass);mesh.name='Envelope';root.add(mesh);}
- const deck=new THREE.Mesh(geometry(slabs),mode==='mass'?mass:stone);deck.name='Floor plates';root.add(deck);
- if(mode!=='mass'){const edges=new THREE.LineSegments(geometry(lines),new THREE.LineBasicMaterial({color:isReference?0x9aaf81:0x7b9279,transparent:true,opacity:.48}));edges.name='Floor edges';root.add(edges);}
- if(mode==='facade'){const fins=new THREE.LineSegments(geometry(ribs),new THREE.LineBasicMaterial({color:isReference?0xabb994:0xdde4d3,transparent:true,opacity:.6}));fins.name='Facade divisions';root.add(fins);}
- return root;
+ if(s.podium){const p=footprint('rectangle',s.podiumWidth,s.podiumDepth);addBand(skin,p,p,0,d.base);for(let i=0;i<=s.podiumFloors;i++){addCap(slabs,p,i*s.storey);addBand(slabs,p,p,Math.max(0,i*s.storey-.3),i*s.storey);for(let j=0;j<p.length;j++){const q=p[(j+1)%p.length];lines.push(p[j][0],i*s.storey+.01,p[j][1],q[0],i*s.storey+.01,q[1]);if(renderMode==='facade')ribs.push(p[j][0],0,p[j][1],p[j][0],d.base,p[j][1]);}}}
+ if(renderMode!=='floors'){const mesh=new THREE.Mesh(geometry(skin),renderMode==='mass'?mass:glass);mesh.name='Envelope';root.add(mesh);}
+ const deck=new THREE.Mesh(geometry(slabs),renderMode==='mass'?mass:stone);deck.name='Floor plates';root.add(deck);
+ if(renderMode!=='mass'){const edges=new THREE.LineSegments(geometry(lines),new THREE.LineBasicMaterial({color:isReference?0x9aaf81:0x7b9279,transparent:true,opacity:.48}));edges.name='Floor edges';root.add(edges);}
+ if(renderMode==='facade'){const fins=new THREE.LineSegments(geometry(ribs),new THREE.LineBasicMaterial({color:isReference?0xabb994:0xdde4d3,transparent:true,opacity:.6}));fins.name='Facade divisions';root.add(fins);}
+ root.traverse(o=>{if(o.isMesh){o.castShadow=!isReference;o.receiveShadow=true;}});return root;
 }
 function dispose(root){root.traverse(o=>{o.geometry?.dispose();if(o.material){for(const m of(Array.isArray(o.material)?o.material:[o.material]))m.dispose();}});scene.remove(root);}
-function rebuild(){renderMetrics();showGeometryWarnings();if(!scene)return;if(group)dispose(group);group=building(state);scene.add(group);if(reference){dispose(reference);reference=null;}if(referenceState){reference=building(referenceState,true);const a=new THREE.Box3().setFromObject(group),b=new THREE.Box3().setFromObject(reference);reference.position.x=a.max.x-b.min.x+30;scene.add(reference);}showGeometryWarnings(group.userData.envelopeFallbackFloors);$('#build-status').textContent=data.emptyFloors.length?'Review removed floors':reference?'Comparing two designs':'Geometry up to date';$('#compare-label').hidden=!reference;}
+function rebuild(){renderMetrics();showGeometryWarnings();if(!scene)return;if(group)dispose(group);group=building(state);scene.add(group);if(reference){dispose(reference);reference=null;}if(referenceState){reference=building(referenceState,true);const a=new THREE.Box3().setFromObject(group),b=new THREE.Box3().setFromObject(reference);reference.position.x=a.max.x-b.min.x+30;scene.add(reference);}showGeometryWarnings(group.userData.envelopeFallbackFloors);$('#build-status').textContent=data.emptyFloors.length?'Review removed floors':reference?'Comparing two designs':'Geometry up to date';$('#compare-label').hidden=!reference;solarUI?.refresh();}
 function fit(nextView=view){
  if(!renderer||!group)return;view=nextView;const box=new THREE.Box3().setFromObject(group);if(reference)box.union(new THREE.Box3().setFromObject(reference));if(box.isEmpty()){box.min.set(-state.width/2,0,-state.depth/2);box.max.set(state.width/2,state.floors*state.storey,state.depth/2);}const size=box.getSize(new THREE.Vector3()),center=box.getCenter(new THREE.Vector3()),w=$('#viewport').clientWidth,h=$('#viewport').clientHeight,aspect=w/h;
  const radius=Math.max(size.y,size.x/aspect,size.z/aspect,30),distance=radius*1.95;
@@ -89,9 +91,9 @@ function init3D(){
  perspective=new THREE.PerspectiveCamera(34,$('#viewport').clientWidth/$('#viewport').clientHeight,.1,6000);ortho=new THREE.OrthographicCamera(-100,100,100,-100,.1,6000);
  scene.add(new THREE.HemisphereLight(0xffffff,0xabbf98,2.4));const sun=new THREE.DirectionalLight(0xfff6df,3.2);sun.position.set(-170,350,180);scene.add(sun);const fill=new THREE.DirectionalLight(0xd9e8f1,1.1);fill.position.set(200,100,-140);scene.add(fill);
  const grid=new THREE.GridHelper(1600,80,0xcbd4c0,0xd8dfce);grid.position.y=-.35;grid.material.transparent=true;grid.material.opacity=.42;scene.add(grid);
- const ground=new THREE.Mesh(new THREE.PlaneGeometry(4000,4000),new THREE.MeshBasicMaterial({color:0xeff1e9}));ground.rotation.x=-Math.PI/2;ground.position.y=-.5;scene.add(ground);
+ const ground=new THREE.Mesh(new THREE.PlaneGeometry(4000,4000),new THREE.MeshStandardMaterial({color:0xeff1e9,roughness:1}));ground.rotation.x=-Math.PI/2;ground.position.y=-.5;ground.receiveShadow=true;scene.add(ground);
  const canvas=document.createElement('canvas');canvas.width=128;canvas.height=128;const ctx=canvas.getContext('2d'),gradient=ctx.createRadialGradient(64,64,5,64,64,64);gradient.addColorStop(0,'rgba(73,91,55,0.26)');gradient.addColorStop(1,'rgba(73,91,55,0)');ctx.fillStyle=gradient;ctx.fillRect(0,0,128,128);const shadow=new THREE.Mesh(new THREE.PlaneGeometry(190,190),new THREE.MeshBasicMaterial({map:new THREE.CanvasTexture(canvas),transparent:true,depthWrite:false}));shadow.rotation.x=-Math.PI/2;shadow.position.y=-.15;scene.add(shadow);
- rebuild();fit();$('#loading').hidden=true;
+ rebuild();fit();solarUI=createSolarUI({scene,renderer,mainLight:sun,decorativeShadow:shadow,getModel:()=>building(state,false,'mass'),getState:()=>state,saveSettings:settings=>{remember();state.solar=settings;persist();}});$('#loading').hidden=true;
  new ResizeObserver(()=>{const w=$('#viewport').clientWidth,h=$('#viewport').clientHeight;renderer.setSize(w,h);perspective.aspect=w/h;perspective.updateProjectionMatrix();if(camera===ortho){const half=(ortho.top-ortho.bottom)/2;ortho.left=-half*w/h;ortho.right=half*w/h;ortho.updateProjectionMatrix();}}).observe($('#viewport'));
  renderer.setAnimationLoop(()=>{controls.update();renderer.render(scene,camera);});
 }
