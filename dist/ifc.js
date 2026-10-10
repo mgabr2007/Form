@@ -1,3 +1,4 @@
+import {envelopeMesh} from './envelope.js';
 import {modelData,footprint,area,regionArea} from './geometry.js';
 import {floorPlans} from './plans.js';
 const chars='0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_$';
@@ -34,8 +35,7 @@ export function exportIFC(state){
  // Open concept envelope as an explicitly identified proxy, not fabricated walls.
  const coords=[],faces=[];
  const band=(a,b,y0,y1)=>{const offset=coords.length;for(const [x,y]of a)coords.push([x,y,y0]);for(const [x,y]of b)coords.push([x,y,y1]);const n=a.length;for(let i=0;i<n;i++){const j=(i+1)%n;faces.push([offset+i+1,offset+j+1,offset+n+j+1],[offset+i+1,offset+n+j+1,offset+n+i+1]);}};
- if(d.hasCuts){for(let i=0;i<state.floors;i++)for(const region of d.rings[i].regions)for(const p of region)band(p,p,d.rings[i].y,d.rings[i].y+state.storey);}
- else for(let i=0;i<d.layers.length-1;i++){const a=d.layers[i],b=d.layers[i+1];band(a.points,b.points,a.y,b.y);}
+ const envelope=envelopeMesh(state,d);for(let i=0;i<envelope.positions.length;i+=9){const offset=coords.length;for(let j=0;j<9;j+=3)coords.push([envelope.positions[i+j],envelope.positions[i+j+2],envelope.positions[i+j+1]]);faces.push([offset+1,offset+2,offset+3]);}
  if(state.podium){const p=footprint('rectangle',state.podiumWidth,state.podiumDepth);band(p,p,0,d.base);}
  if(coords.length){const vertices=add(`IFCCARTESIANPOINTLIST3D(${list(coords.map(p=>list(p.map(num))))})`),mesh=add(`IFCTRIANGULATEDFACESET(${vertices},$,.F.,${list(faces.map(list))},$)`),rep=add(`IFCSHAPEREPRESENTATION(${context},'Body','Tessellation',(${mesh}))`),shape=add(`IFCPRODUCTDEFINITIONSHAPE($,$,(${rep}))`),proxy=add(`IFCBUILDINGELEMENTPROXY(${guid()},${owner},'Concept envelope','Open massing surface, not a detailed wall system','Concept envelope',${placement(buildingPos)},${shape},$,.USERDEFINED.)`);
  add(`IFCRELCONTAINEDINSPATIALSTRUCTURE(${guid()},${owner},$,$,(${proxy}),${building})`);}

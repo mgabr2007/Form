@@ -28,3 +28,6 @@ test('view switches dispose existing controls and create usable replacements',()
  const {context,instances}=fixture();vm.runInContext("fit(); fit('front'); fit('top'); fit('perspective');",context);
  assert.equal(instances.length,4);assert.ok(instances.slice(0,-1).every(c=>c.disposed));assert.equal(instances.at(-1).disposed,false);assert.equal(context.camera,context.perspective);assert.ok(context.camera.projectionMatrix.elements.every(Number.isFinite));
 });
+test('a fully removed tower retains finite camera bounds',()=>{
+ const {context}=fixture();context.group.clear();context.state={width:36,depth:30,floors:12,storey:3.6};vm.runInContext('fit()',context);assert.ok(context.camera.position.toArray().every(Number.isFinite));assert.ok(context.controls.target.toArray().every(Number.isFinite));
+});

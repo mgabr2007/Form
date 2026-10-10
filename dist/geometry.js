@@ -83,9 +83,9 @@ export function ringAt(s,level,before=false){
 }
 export const regionArea=regions=>regions.reduce((sum,r)=>sum+area(r[0])-r.slice(1).reduce((a,h)=>a+area(h),0),0);
 const clean=regions=>regions.map(r=>r.map(p=>p.length>1&&p[0][0]===p.at(-1)[0]&&p[0][1]===p.at(-1)[1]?p.slice(0,-1):p)).filter(r=>area(r[0])>1e-8);
-export function sectionAt(s,level){
- const points=ringAt(s,level),xs=points.map(p=>p[0]),ys=points.map(p=>p[1]),minX=Math.min(...xs),maxX=Math.max(...xs),minY=Math.min(...ys),maxY=Math.max(...ys),cx=(minX+maxX)/2,cy=(minY+maxY)/2;
- let regions=[[points]],balconies=[];const active=m=>m.enabled&&level>=m.start-1&&(level<m.end||level===s.floors&&m.end===s.floors);
+export function sectionAt(s,level,before=false){
+ const points=ringAt(s,level,before),xs=points.map(p=>p[0]),ys=points.map(p=>p[1]),minX=Math.min(...xs),maxX=Math.max(...xs),minY=Math.min(...ys),maxY=Math.max(...ys),cx=(minX+maxX)/2,cy=(minY+maxY)/2;
+ let regions=[[points]],balconies=[];const activeLevel=level-(before?1e-7:0),active=m=>m.enabled&&activeLevel>=m.start-1&&(activeLevel<m.end||level===s.floors&&m.end===s.floors);
  for(const m of s.modifiers.filter(active)){
   const o=modifierOptions(m);let cut;
   if(m.type==='atrium')cut=footprint(o.shape,m.value,o.depth).map(([x,y])=>[x+cx+o.x,y+cy+o.y]);
@@ -107,5 +107,6 @@ export function modelData(s){
  const rings=Array.from({length:s.floors+1},(_,i)=>({y:base+i*s.storey,...sectionAt(s,i)}));
  const layers=[];for(let i=0;i<rings.length;i++){if(i>0&&s.modifiers.some(m=>{if(!m.enabled)return false;const begin=m.start-1,o=modifierOptions(m);return m.type==='localRotate'&&(i===begin||i===m.end)||m.type==='setback'&&begin===i||m.type==='terraces'&&i>begin&&i<=m.end&&(i-begin)%o.every===0||m.type==='offsets'&&i>begin&&i<=m.end&&((i-begin)%o.every===0||i===m.end);}))layers.push({y:rings[i].y,points:ringAt(s,i,true)});layers.push(rings[i]);}
  const areas=rings.slice(0,-1).map(r=>r.area),podiumArea=s.podium?s.podiumWidth*s.podiumDepth:0;
- return{rings,layers,areas,balconyArea:rings.reduce((a,r)=>a+r.balconyArea,0),hasCuts:s.modifiers.some(m=>m.enabled&&['atrium','notch'].includes(m.type)),base,height:base+s.floors*s.storey,towerArea:areas.reduce((a,b)=>a+b,0),totalArea:areas.reduce((a,b)=>a+b,0)+podiumArea*(s.podium?s.podiumFloors:0),podiumArea};
+ const emptyFloors=areas.flatMap((a,i)=>a<1e-6?[i+1]:[]),splitFloors=rings.slice(0,-1).flatMap((r,i)=>r.regions.length>1?[i+1]:[]);
+ return{rings,layers,areas,emptyFloors,splitFloors,balconyArea:rings.reduce((a,r)=>a+r.balconyArea,0),hasCuts:s.modifiers.some(m=>m.enabled&&['atrium','notch'].includes(m.type)),base,height:base+s.floors*s.storey,towerArea:areas.reduce((a,b)=>a+b,0),totalArea:areas.reduce((a,b)=>a+b,0)+podiumArea*(s.podium?s.podiumFloors:0),podiumArea};
 }

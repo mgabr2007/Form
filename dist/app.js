@@ -1,3 +1,4 @@
+import {envelopeMesh} from './envelope.js';
 import {exportIFC} from './ifc.js';
 import {floorPlans,planSVG,planDXF} from './plans.js';
 import * as THREE from 'three';
@@ -44,6 +45,7 @@ function renderModifiers(){
  $$('[data-option]').forEach(b=>b.onchange=()=>{remember();const m=state.modifiers[+b.dataset.index];m[b.dataset.option]=b.value;Object.assign(m,modifierOptions(m));renderModifiers();schedule();});
  $('#add-modifier').disabled=state.modifiers.length>=12;
 }
+function showGeometryWarnings(fallback=[]){const messages=[];if(data.emptyFloors.length)messages.push('No floor slab remains on tower floors '+data.emptyFloors.join(', ')+'. Reduce the opening size or floor range.');if(data.splitFloors.length)messages.push('Separate floor pieces on tower floors '+data.splitFloors.join(', ')+'.');if(fallback.length)messages.push('Opening topology changes on floors '+fallback.join(', ')+': small stepped transitions approximate these junctions.');const box=$('#geometry-warnings');box.hidden=!messages.length;box.textContent=messages.join(' ');}
 function renderMetrics(){data=modelData(state);renderPlans();$('#metric-height').innerHTML=data.height.toFixed(1)+'<em>m</em>';$('#metric-floors').textContent=state.floors+(state.podium?state.podiumFloors:0);$('#floor-breakdown').textContent=state.floors+' tower'+(state.podium?' + '+state.podiumFloors+' podium':'');$('#metric-area').innerHTML=fmt(data.totalArea)+'<em>m²</em>';$('#metric-footprint').innerHTML=fmt(data.areas[0])+'<em>m²</em>';}
 function geometry(pos){const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));g.computeVertexNormals();return g;}
 function addBand(out,p,q,y0,y1){for(let j=0;j<p.length;j++){const k=(j+1)%p.length,a=[p[j][0],y0,p[j][1]],b=[p[k][0],y0,p[k][1]],c=[q[k][0],y1,q[k][1]],d=[q[j][0],y1,q[j][1]];out.push(...a,...c,...b,...a,...d,...c);}}
@@ -55,8 +57,7 @@ function building(s,isReference=false){
  const stone=new THREE.MeshStandardMaterial({color:isReference?0xb7c6a1:0xe0e5d3,roughness:.78,side:THREE.DoubleSide,transparent:isReference,opacity:isReference?.55:1});
  const mass=new THREE.MeshStandardMaterial({color:isReference?0xb7c6a1:0xbdcbb1,roughness:.85,side:THREE.DoubleSide,transparent:isReference,opacity:isReference?.5:1});
  const skin=[],slabs=[],lines=[],ribs=[];
- if(d.hasCuts){for(let i=0;i<s.floors;i++){const r=d.rings[i];for(const region of r.regions)for(const p of region){addBand(skin,p,p,r.y,r.y+s.storey);if(mode==='facade')for(const [x,z]of p)ribs.push(x,r.y,z,x,r.y+s.storey,z);}}}
- else for(let i=0;i<d.layers.length-1;i++){const a=d.layers[i],b=d.layers[i+1];addBand(skin,a.points,b.points,a.y,b.y);if(mode==='facade')for(let j=0;j<a.points.length;j++)ribs.push(a.points[j][0],a.y,a.points[j][1],b.points[j][0],b.y,b.points[j][1]);}
+ const envelope=envelopeMesh(s,d);for(const value of envelope.positions)skin.push(value);if(mode==='facade')for(const value of envelope.edges)ribs.push(value);root.userData.envelopeFallbackFloors=envelope.fallbackFloors;
  for(const r of d.rings)for(const region of [...r.regions,...r.balconies]){addPlate(slabs,region,r.y);for(const p of region)for(let i=0;i<p.length;i++){const a=p[i],b=p[(i+1)%p.length];lines.push(a[0],r.y+.012,a[1],b[0],r.y+.012,b[1]);}}
  if(s.podium){const p=footprint('rectangle',s.podiumWidth,s.podiumDepth);addBand(skin,p,p,0,d.base);for(let i=0;i<=s.podiumFloors;i++){addCap(slabs,p,i*s.storey);addBand(slabs,p,p,Math.max(0,i*s.storey-.3),i*s.storey);for(let j=0;j<p.length;j++){const q=p[(j+1)%p.length];lines.push(p[j][0],i*s.storey+.01,p[j][1],q[0],i*s.storey+.01,q[1]);if(mode==='facade')ribs.push(p[j][0],0,p[j][1],p[j][0],d.base,p[j][1]);}}}
  if(mode!=='floors'){const mesh=new THREE.Mesh(geometry(skin),mode==='mass'?mass:glass);mesh.name='Envelope';root.add(mesh);}
@@ -66,9 +67,9 @@ function building(s,isReference=false){
  return root;
 }
 function dispose(root){root.traverse(o=>{o.geometry?.dispose();if(o.material){for(const m of(Array.isArray(o.material)?o.material:[o.material]))m.dispose();}});scene.remove(root);}
-function rebuild(){renderMetrics();if(!scene)return;if(group)dispose(group);group=building(state);scene.add(group);if(reference){dispose(reference);reference=null;}if(referenceState){reference=building(referenceState,true);const a=new THREE.Box3().setFromObject(group),b=new THREE.Box3().setFromObject(reference);reference.position.x=a.max.x-b.min.x+30;scene.add(reference);}$('#build-status').textContent=reference?'Comparing two designs':'Geometry up to date';$('#compare-label').hidden=!reference;}
+function rebuild(){renderMetrics();showGeometryWarnings();if(!scene)return;if(group)dispose(group);group=building(state);scene.add(group);if(reference){dispose(reference);reference=null;}if(referenceState){reference=building(referenceState,true);const a=new THREE.Box3().setFromObject(group),b=new THREE.Box3().setFromObject(reference);reference.position.x=a.max.x-b.min.x+30;scene.add(reference);}showGeometryWarnings(group.userData.envelopeFallbackFloors);$('#build-status').textContent=data.emptyFloors.length?'Review removed floors':reference?'Comparing two designs':'Geometry up to date';$('#compare-label').hidden=!reference;}
 function fit(nextView=view){
- if(!renderer||!group)return;view=nextView;const box=new THREE.Box3().setFromObject(group);if(reference)box.union(new THREE.Box3().setFromObject(reference));const size=box.getSize(new THREE.Vector3()),center=box.getCenter(new THREE.Vector3()),w=$('#viewport').clientWidth,h=$('#viewport').clientHeight,aspect=w/h;
+ if(!renderer||!group)return;view=nextView;const box=new THREE.Box3().setFromObject(group);if(reference)box.union(new THREE.Box3().setFromObject(reference));if(box.isEmpty()){box.min.set(-state.width/2,0,-state.depth/2);box.max.set(state.width/2,state.floors*state.storey,state.depth/2);}const size=box.getSize(new THREE.Vector3()),center=box.getCenter(new THREE.Vector3()),w=$('#viewport').clientWidth,h=$('#viewport').clientHeight,aspect=w/h;
  const radius=Math.max(size.y,size.x/aspect,size.z/aspect,30),distance=radius*1.95;
  controls?.dispose();camera=view==='perspective'?perspective:ortho;camera.up.set(0,1,0);
  if(view==='perspective')camera.position.copy(center).add(new THREE.Vector3(distance*.77,distance*.32,distance));
@@ -131,7 +132,7 @@ function renderPlans(){
  selector.value=plans.some(p=>p.id===previous)?previous:plans.find(p=>p.id.startsWith('tower-')).id;
  const index=selector.selectedIndex,plan=plans[index];
  $('#plan-drawing').innerHTML=planSVG(plan,{project:state.name,dimensions:$('#plan-dimensions').checked,below:$('#plan-below').dataset.mode==='all'?plans.slice(0,index):$('#plan-below').dataset.mode==='one'&&index>0?[plans[index-1]]:[]});
- $('#plan-info').textContent=plan.name+' · +'+plan.elevation.toFixed(2)+' m · '+plan.area.toFixed(2)+' m²'+(plan.balconyArea?' + '+plan.balconyArea.toFixed(2)+' m² balconies':'');
+ $('#plan-info').textContent=(plan.area<1e-6?'NO SLAB REMAINS · ':'')+plan.name+' · +'+plan.elevation.toFixed(2)+' m · '+plan.area.toFixed(2)+' m²'+(plan.balconyArea?' + '+plan.balconyArea.toFixed(2)+' m² balconies':'');
  $('#plan-prev').disabled=index===0;$('#plan-next').disabled=index===plans.length-1;
  $$('[data-below]').forEach(b=>{b.disabled=index===0&&b.dataset.below!=='none';b.setAttribute('aria-pressed',String(b.dataset.below===(index===0?'none':$('#plan-below').dataset.mode)));});
 }
