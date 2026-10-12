@@ -1,0 +1,11 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {skyExposure} from '../dist/daylight.js';import {buildBVH,solarSettings} from '../dist/solar.js';
+const empty=new Float64Array(),tree=buildBVH(empty),sample=(normal=[1,0,0])=>({position:[0,0,0],normal});
+const expected=100*(Math.PI/2+4/3)/(7*Math.PI/3);
+test('unobstructed CIE vertical component agrees with analytic hemispheric integral',()=>{for(const res of [16,32,64]){const c=skyExposure(sample(),empty,tree,res);assert.ok(Math.abs(c.vsc-expected)<({16:.2,32:.07,64:.025}[res]));assert.equal(c.skyView,100);assert.equal(c.visibleSky,100);assert.equal(c.rays,2*res*res);}});
+test('horizontal probes report sky view without mislabelling VSC',()=>{const c=skyExposure(sample([0,1,0]),empty,tree);assert.equal(c.vsc,null);assert.equal(c.skyView,100);});
+test('inclined facade uses explicit virtual vertical plane',()=>{assert.equal(skyExposure(sample([.8,.6,0]),empty,tree).vsc,skyExposure(sample(),empty,tree).vsc);});
+test('sky is azimuth symmetric and normal magnitude independent',()=>{for(const a of [0,.25,.7,1.9]){const c=skyExposure(sample([Math.cos(a)*2,0,Math.sin(a)*2]),empty,tree);assert.ok(Math.abs(c.vsc-expected)<.1);}});
+test('large overhead plate removes sky exposure',()=>{const t=new Float64Array([-1e5,1,-1e5,1e5,1,-1e5,1e5,1,1e5,-1e5,1,-1e5,1e5,1,1e5,-1e5,1,1e5]),c=skyExposure(sample(),t,buildBVH(t));assert.equal(c.vsc,0);assert.equal(c.skyView,0);assert.equal(c.visibleSky,0);});
+test('tall broad wall screens front half of sky and vertical receiving plane',()=>{const t=new Float64Array([1,-1,-1e5,1,1e5,-1e5,1,1e5,1e5,1,-1,-1e5,1,1e5,1e5,1,-1,1e5]),c=skyExposure(sample(),t,buildBVH(t));assert.ok(c.vsc<.01);assert.ok(Math.abs(c.skyView-50)<.01);assert.equal(c.visibleSky,50);});
+test('daylight mode and quality persist with controlled defaults',()=>{for(const analysis of ['daylight','sky']){const s=solarSettings({analysis,skyResolution:64});assert.equal(s.analysis,analysis);assert.equal(s.skyResolution,64);}assert.equal(solarSettings({skyResolution:999}).skyResolution,32);assert.throws(()=>skyExposure(sample(),empty,tree,999));assert.throws(()=>skyExposure(sample([0,0,0]),empty,tree));});
