@@ -1,1 +1,1 @@
-{"name":"form-tower-studio","private":true,"type":"module","scripts":{"test":"node --test tests/*.test.js"}}
+{"name":"form-tower-studio","private":true,"type":"module","scripts":{"test":"node --test tests/*.test.js","validate:radiation":"node validation/compare.mjs"}}
