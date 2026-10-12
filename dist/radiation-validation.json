@@ -1,0 +1,3918 @@
+{
+  "legacyCoarseCase": {
+    "city": "Berlin",
+    "date": "2026-03-20",
+    "surface": "east",
+    "step": 30,
+    "reference": 2.900173403328253,
+    "actual": 2.5830821623174374,
+    "percent": -10.93352696245405
+  },
+  "reference": "pvlib 0.13.1",
+  "scope": "Synthetic hourly weather, geometric NREL SPA, isotropic sky, zero ground reflection. Not measured weather or field validation.",
+  "acceptance": "Engineering regression gate selected for these synthetic cases: max(0.02 kWh/m², 2% reference total). Not an accuracy certification.",
+  "rows": [
+    {
+      "city": "Cairo",
+      "date": "2026-03-20",
+      "step": 1,
+      "surface": "roof",
+      "expected": 4.843067708119397,
+      "actual": 4.820014070739234,
+      "difference": -0.02305363738016375,
+      "percent": -0.4760131133726327,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-03-20",
+      "step": 1,
+      "surface": "north",
+      "expected": 0.72,
+      "actual": 0.7200000000000005,
+      "difference": 5.551115123125783e-16,
+      "percent": 7.709882115452476e-14,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-03-20",
+      "step": 1,
+      "surface": "east",
+      "expected": 2.7797112214446207,
+      "actual": 2.763947640986471,
+      "difference": -0.01576358045814974,
+      "percent": -0.5670941764215846,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-03-20",
+      "step": 1,
+      "surface": "south",
+      "expected": 2.6985958644013177,
+      "actual": 2.7365608819362914,
+      "difference": 0.03796501753497372,
+      "percent": 1.4068433897713781,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-03-20",
+      "step": 1,
+      "surface": "west",
+      "expected": 2.525315197666517,
+      "actual": 2.5185721275472317,
+      "difference": -0.0067430701192852105,
+      "percent": -0.2670189497737175,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-03-20",
+      "step": 1,
+      "surface": "tilted south",
+      "expected": 5.27997930895534,
+      "actual": 5.278996782101945,
+      "difference": -0.0009825268533951714,
+      "percent": -0.01860853605484237,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-03-20",
+      "step": 5,
+      "surface": "roof",
+      "expected": 4.843052208181562,
+      "actual": 4.820078957971047,
+      "difference": -0.022973250210514884,
+      "percent": -0.47435479162717376,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-03-20",
+      "step": 5,
+      "surface": "north",
+      "expected": 0.72,
+      "actual": 0.7200000000000005,
+      "difference": 5.551115123125783e-16,
+      "percent": 7.709882115452476e-14,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-03-20",
+      "step": 5,
+      "surface": "east",
+      "expected": 2.758120726379274,
+      "actual": 2.7639174998527576,
+      "difference": 0.0057967734734836185,
+      "percent": 0.21017112913303615,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-03-20",
+      "step": 5,
+      "surface": "south",
+      "expected": 2.698510030155724,
+      "actual": 2.736598411663751,
+      "difference": 0.03808838150802707,
+      "percent": 1.41145969747717,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-03-20",
+      "step": 5,
+      "surface": "west",
+      "expected": 2.525213782039092,
+      "actual": 2.5185373113786693,
+      "difference": -0.006676470660422762,
+      "percent": -0.264392294541952,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-03-20",
+      "step": 5,
+      "surface": "tilted south",
+      "expected": 5.27992296849262,
+      "actual": 5.279071740956831,
+      "difference": -0.0008512275357892563,
+      "percent": -0.016121968840622603,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-06-21",
+      "step": 1,
+      "surface": "roof",
+      "expected": 6.158849206802074,
+      "actual": 6.159810113255814,
+      "difference": 0.0009609064537396961,
+      "percent": 0.015602045471066792,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-06-21",
+      "step": 1,
+      "surface": "north",
+      "expected": 1.8390152821086176,
+      "actual": 1.8395237231841892,
+      "difference": 0.0005084410755715751,
+      "percent": 0.027647463320076157,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-06-21",
+      "step": 1,
+      "surface": "east",
+      "expected": 3.223400298092976,
+      "actual": 3.2196660447644514,
+      "difference": -0.003734253328524506,
+      "percent": -0.11584826528476033,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-06-21",
+      "step": 1,
+      "surface": "south",
+      "expected": 1.0681306171513096,
+      "actual": 1.0672873979090676,
+      "difference": -0.0008432192422420659,
+      "percent": -0.07894345772906694,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-06-21",
+      "step": 1,
+      "surface": "west",
+      "expected": 3.0475210250760787,
+      "actual": 3.051204682454845,
+      "difference": 0.003683657378766192,
+      "percent": 0.12087389548606092,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-06-21",
+      "step": 1,
+      "surface": "tilted south",
+      "expected": 5.187926969959316,
+      "actual": 5.18813515525692,
+      "difference": 0.0002081852976045795,
+      "percent": 0.004012880266242686,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-06-21",
+      "step": 5,
+      "surface": "roof",
+      "expected": 6.158906727874495,
+      "actual": 6.159867634642799,
+      "difference": 0.0009609067683040706,
+      "percent": 0.015601904863327748,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-06-21",
+      "step": 5,
+      "surface": "north",
+      "expected": 1.8389692922956753,
+      "actual": 1.839488032686724,
+      "difference": 0.000518740391048711,
+      "percent": 0.02820821387404147,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-06-21",
+      "step": 5,
+      "surface": "east",
+      "expected": 3.223386217350109,
+      "actual": 3.2196812427515193,
+      "difference": -0.003704974598589761,
+      "percent": -0.11494044922843771,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-06-21",
+      "step": 5,
+      "surface": "south",
+      "expected": 1.0681178950445558,
+      "actual": 1.0672849764084595,
+      "difference": -0.0008329186360962471,
+      "percent": -0.07798002823101306,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-06-21",
+      "step": 5,
+      "surface": "west",
+      "expected": 3.047503596753604,
+      "actual": 3.0512166753248753,
+      "difference": 0.0037130785712711223,
+      "percent": 0.12184000620135547,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-06-21",
+      "step": 5,
+      "surface": "tilted south",
+      "expected": 5.187878154231093,
+      "actual": 5.188144485124756,
+      "difference": 0.0002663308936625697,
+      "percent": 0.005133715282911134,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-12-21",
+      "step": 1,
+      "surface": "roof",
+      "expected": 3.2035453228126016,
+      "actual": 3.204799799184804,
+      "difference": 0.00125447637220244,
+      "percent": 0.03915900184927158,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-12-21",
+      "step": 1,
+      "surface": "north",
+      "expected": 0.6,
+      "actual": 0.6000000000000004,
+      "difference": 4.440892098500626e-16,
+      "percent": 7.401486830834378e-14,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-12-21",
+      "step": 1,
+      "surface": "east",
+      "expected": 1.8671821036939291,
+      "actual": 1.865750898096723,
+      "difference": -0.0014312055972061088,
+      "percent": -0.07665056313332756,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-12-21",
+      "step": 1,
+      "surface": "south",
+      "expected": 4.075339357595803,
+      "actual": 4.0742506785421355,
+      "difference": -0.0010886790536677182,
+      "percent": -0.026713825724441538,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-12-21",
+      "step": 1,
+      "surface": "west",
+      "expected": 1.8653057952891934,
+      "actual": 1.867377360287871,
+      "difference": 0.0020715649986775553,
+      "percent": 0.11105766163967683,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-12-21",
+      "step": 1,
+      "surface": "tilted south",
+      "expected": 4.592406068257771,
+      "actual": 4.592948137137709,
+      "difference": 0.0005420688799375739,
+      "percent": 0.011803592101410567,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-12-21",
+      "step": 5,
+      "surface": "roof",
+      "expected": 3.2036025453410346,
+      "actual": 3.204857030795649,
+      "difference": 0.0012544854546145956,
+      "percent": 0.039158585900082414,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-12-21",
+      "step": 5,
+      "surface": "north",
+      "expected": 0.6,
+      "actual": 0.6000000000000004,
+      "difference": 4.440892098500626e-16,
+      "percent": 7.401486830834378e-14,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-12-21",
+      "step": 5,
+      "surface": "east",
+      "expected": 1.8671421841687441,
+      "actual": 1.865694801379926,
+      "difference": -0.0014473827888181745,
+      "percent": -0.07751861647657822,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-12-21",
+      "step": 5,
+      "surface": "south",
+      "expected": 4.075372455681345,
+      "actual": 4.0742837807396075,
+      "difference": -0.0010886749417373665,
+      "percent": -0.026713507871401542,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-12-21",
+      "step": 5,
+      "surface": "west",
+      "expected": 1.8652658407523321,
+      "actual": 1.8673212962224128,
+      "difference": 0.0020554554700806804,
+      "percent": 0.11019638194047651,
+      "pass": true
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-12-21",
+      "step": 5,
+      "surface": "tilted south",
+      "expected": 4.592472173463835,
+      "actual": 4.593014252265338,
+      "difference": 0.0005420788015024769,
+      "percent": 0.01180363823725944,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-03-20",
+      "step": 1,
+      "surface": "roof",
+      "expected": 3.820962772464272,
+      "actual": 3.7857627124826907,
+      "difference": -0.035200059981581155,
+      "percent": -0.9212353555300256,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-03-20",
+      "step": 1,
+      "surface": "north",
+      "expected": 0.72,
+      "actual": 0.7200000000000005,
+      "difference": 5.551115123125783e-16,
+      "percent": 7.709882115452476e-14,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-03-20",
+      "step": 1,
+      "surface": "east",
+      "expected": 2.7418807085444517,
+      "actual": 2.7154332041698828,
+      "difference": -0.026447504374568886,
+      "percent": -0.9645753111049367,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-03-20",
+      "step": 1,
+      "surface": "south",
+      "expected": 3.8364680143496974,
+      "actual": 3.861720854034673,
+      "difference": 0.02525283968497538,
+      "percent": 0.6582314668210749,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-03-20",
+      "step": 1,
+      "surface": "west",
+      "expected": 2.422515932009975,
+      "actual": 2.4158898464911025,
+      "difference": -0.006626085518872671,
+      "percent": -0.2735208231788581,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-03-20",
+      "step": 1,
+      "surface": "tilted south",
+      "expected": 4.963746544318733,
+      "actual": 4.945888818002417,
+      "difference": -0.01785772631631577,
+      "percent": -0.35976305713584167,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-03-20",
+      "step": 5,
+      "surface": "roof",
+      "expected": 3.821008226627501,
+      "actual": 3.785728728308941,
+      "difference": -0.035279498318560254,
+      "percent": -0.9233033855490714,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-03-20",
+      "step": 5,
+      "surface": "north",
+      "expected": 0.72,
+      "actual": 0.7200000000000005,
+      "difference": 5.551115123125783e-16,
+      "percent": 7.709882115452476e-14,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-03-20",
+      "step": 5,
+      "surface": "east",
+      "expected": 2.741888339528945,
+      "actual": 2.6939817593899043,
+      "difference": -0.04790658013904059,
+      "percent": -1.7472111992449304,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-03-20",
+      "step": 5,
+      "surface": "south",
+      "expected": 3.8365272941881328,
+      "actual": 3.8613244501733512,
+      "difference": 0.024797155985218478,
+      "percent": 0.6463437917614484,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-03-20",
+      "step": 5,
+      "surface": "west",
+      "expected": 2.4225174800334415,
+      "actual": 2.4159221473100763,
+      "difference": -0.00659533272336521,
+      "percent": -0.27225119231231165,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-03-20",
+      "step": 5,
+      "surface": "tilted south",
+      "expected": 4.963815548698015,
+      "actual": 4.945661184913975,
+      "difference": -0.01815436378404023,
+      "percent": -0.365734052886031,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-06-21",
+      "step": 1,
+      "surface": "roof",
+      "expected": 6.4707219543320065,
+      "actual": 6.472376611927864,
+      "difference": 0.0016546575958571452,
+      "percent": 0.025571452575695795,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-06-21",
+      "step": 1,
+      "surface": "north",
+      "expected": 2.0893945093666604,
+      "actual": 2.0897150021073125,
+      "difference": 0.00032049274065215627,
+      "percent": 0.015339024737329496,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-06-21",
+      "step": 1,
+      "surface": "east",
+      "expected": 3.7853624854766847,
+      "actual": 3.7819658798052034,
+      "difference": -0.0033966056714813675,
+      "percent": -0.08972999770862468,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-06-21",
+      "step": 1,
+      "surface": "south",
+      "expected": 2.5012778713548336,
+      "actual": 2.500341026444005,
+      "difference": -0.0009368449108286825,
+      "percent": -0.03745465154262266,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-06-21",
+      "step": 1,
+      "surface": "west",
+      "expected": 3.676313904867307,
+      "actual": 3.679466634966086,
+      "difference": 0.003152730098779255,
+      "percent": 0.08575791350692753,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-06-21",
+      "step": 1,
+      "surface": "tilted south",
+      "expected": 6.131246332179882,
+      "actual": 6.13197095750794,
+      "difference": 0.0007246253280586146,
+      "percent": 0.011818564918121367,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-06-21",
+      "step": 5,
+      "surface": "roof",
+      "expected": 6.470757810760617,
+      "actual": 6.472412467184873,
+      "difference": 0.001654656424256551,
+      "percent": 0.025571292770452978,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-06-21",
+      "step": 5,
+      "surface": "north",
+      "expected": 2.089388035025914,
+      "actual": 2.0897194562018377,
+      "difference": 0.0003314211759235519,
+      "percent": 0.01586211705856932,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-06-21",
+      "step": 5,
+      "surface": "east",
+      "expected": 3.7853481568254255,
+      "actual": 3.781910401245471,
+      "difference": -0.0034377555799545156,
+      "percent": -0.09081742121278435,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-06-21",
+      "step": 5,
+      "surface": "south",
+      "expected": 2.501318158085936,
+      "actual": 2.5003922410660473,
+      "difference": -0.0009259170198885336,
+      "percent": -0.0370171630064472,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-06-21",
+      "step": 5,
+      "surface": "west",
+      "expected": 3.676297500585774,
+      "actual": 3.6794092065618034,
+      "difference": 0.0031117059760292776,
+      "percent": 0.08464238749811365,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-06-21",
+      "step": 5,
+      "surface": "tilted south",
+      "expected": 6.131260084678843,
+      "actual": 6.131999173885973,
+      "difference": 0.0007390892071299504,
+      "percent": 0.012054442266718231,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-12-21",
+      "step": 1,
+      "surface": "roof",
+      "expected": 1.5864726805296878,
+      "actual": 1.5876107678591498,
+      "difference": 0.0011380873294619676,
+      "percent": 0.0717369636067093,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-12-21",
+      "step": 1,
+      "surface": "north",
+      "expected": 0.48,
+      "actual": 0.48000000000000037,
+      "difference": 3.885780586188048e-16,
+      "percent": 8.0953762212251e-14,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-12-21",
+      "step": 1,
+      "surface": "east",
+      "expected": 1.1568288803231337,
+      "actual": 1.1555775941240132,
+      "difference": -0.001251286199120516,
+      "percent": -0.10816519369493938,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-12-21",
+      "step": 1,
+      "surface": "south",
+      "expected": 3.771866031926399,
+      "actual": 3.7713984342644076,
+      "difference": -0.0004675976619914479,
+      "percent": -0.012396984888475281,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-12-21",
+      "step": 1,
+      "surface": "west",
+      "expected": 1.2798814260400175,
+      "actual": 1.2816941001200743,
+      "difference": 0.0018126740800568086,
+      "percent": 0.1416282823687241,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-12-21",
+      "step": 1,
+      "surface": "tilted south",
+      "expected": 3.084166465895373,
+      "actual": 3.084918279603417,
+      "difference": 0.0007518137080437803,
+      "percent": 0.02437656061556065,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-12-21",
+      "step": 5,
+      "surface": "roof",
+      "expected": 1.5864495862292132,
+      "actual": 1.5876034233742495,
+      "difference": 0.0011538371450363627,
+      "percent": 0.07273077915944907,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-12-21",
+      "step": 5,
+      "surface": "north",
+      "expected": 0.48,
+      "actual": 0.4800000000000003,
+      "difference": 3.3306690738754696e-16,
+      "percent": 6.938893903907228e-14,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-12-21",
+      "step": 5,
+      "surface": "east",
+      "expected": 1.1695193442298284,
+      "actual": 1.1682513644373258,
+      "difference": -0.0012679797925025937,
+      "percent": -0.10841888154809488,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-12-21",
+      "step": 5,
+      "surface": "south",
+      "expected": 3.773575342128913,
+      "actual": 3.7731260246474725,
+      "difference": -0.0004493174814403922,
+      "percent": -0.01190694343436386,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-12-21",
+      "step": 5,
+      "surface": "west",
+      "expected": 1.2692921970213835,
+      "actual": 1.271086170205358,
+      "difference": 0.001793973183974451,
+      "percent": 0.14133650141270257,
+      "pass": true
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-12-21",
+      "step": 5,
+      "surface": "tilted south",
+      "expected": 3.0850011207457357,
+      "actual": 3.085775714284448,
+      "difference": 0.0007745935387122316,
+      "percent": 0.025108371387722202,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-03-20",
+      "step": 1,
+      "surface": "roof",
+      "expected": 5.013157008601918,
+      "actual": 4.993703151603025,
+      "difference": -0.019453856998892682,
+      "percent": -0.3880560087288793,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-03-20",
+      "step": 1,
+      "surface": "north",
+      "expected": 0.72,
+      "actual": 0.7200000000000005,
+      "difference": 5.551115123125783e-16,
+      "percent": 7.709882115452476e-14,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-03-20",
+      "step": 1,
+      "surface": "east",
+      "expected": 2.7872152269088497,
+      "actual": 2.771431750401894,
+      "difference": -0.01578347650695555,
+      "percent": -0.5662812241615139,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-03-20",
+      "step": 1,
+      "surface": "south",
+      "expected": 2.376336592577843,
+      "actual": 2.4164535217689678,
+      "difference": 0.04011692919112475,
+      "percent": 1.6881837916574782,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-03-20",
+      "step": 1,
+      "surface": "west",
+      "expected": 2.541326695899805,
+      "actual": 2.534550713341687,
+      "difference": -0.0067759825581181765,
+      "percent": -0.266631699460388,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-03-20",
+      "step": 1,
+      "surface": "tilted south",
+      "expected": 5.2661513281733905,
+      "actual": 5.269362258406307,
+      "difference": 0.003210930232916631,
+      "percent": 0.060972995890537195,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-03-20",
+      "step": 5,
+      "surface": "roof",
+      "expected": 5.013194802043909,
+      "actual": 4.9936601520510715,
+      "difference": -0.019534649992837494,
+      "percent": -0.38966469016669975,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-03-20",
+      "step": 5,
+      "surface": "north",
+      "expected": 0.72,
+      "actual": 0.7200000000000005,
+      "difference": 5.551115123125783e-16,
+      "percent": 7.709882115452476e-14,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-03-20",
+      "step": 5,
+      "surface": "east",
+      "expected": 2.7979893184718394,
+      "actual": 2.7499329517549156,
+      "difference": -0.048056366716923815,
+      "percent": -1.7175321721088794,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-03-20",
+      "step": 5,
+      "surface": "south",
+      "expected": 2.376394170955999,
+      "actual": 2.416182592969543,
+      "difference": 0.03978842201354382,
+      "percent": 1.6743191217952427,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-03-20",
+      "step": 5,
+      "surface": "west",
+      "expected": 2.541348938415169,
+      "actual": 2.5345394178689156,
+      "difference": -0.006809520546253278,
+      "percent": -0.2679490582076391,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-03-20",
+      "step": 5,
+      "surface": "tilted south",
+      "expected": 5.266212847443329,
+      "actual": 5.269189555302265,
+      "difference": 0.002976707858936223,
+      "percent": 0.05652464010035925,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-06-21",
+      "step": 1,
+      "surface": "roof",
+      "expected": 6.073753740153056,
+      "actual": 6.074592226368451,
+      "difference": 0.0008384862153949513,
+      "percent": 0.013805074279712594,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-06-21",
+      "step": 1,
+      "surface": "north",
+      "expected": 1.9443493094685005,
+      "actual": 1.949355611520116,
+      "difference": 0.005006302051615563,
+      "percent": 0.2574795602434249,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-06-21",
+      "step": 1,
+      "surface": "east",
+      "expected": 3.1360695886458303,
+      "actual": 3.1406484877316285,
+      "difference": 0.004578899085798227,
+      "percent": 0.14600757273933507,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-06-21",
+      "step": 1,
+      "surface": "south",
+      "expected": 0.8618399045410321,
+      "actual": 0.8614770642572287,
+      "difference": -0.0003628402838034006,
+      "percent": -0.04210065951826971,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-06-21",
+      "step": 1,
+      "surface": "west",
+      "expected": 2.9356517452581925,
+      "actual": 2.9394124504403627,
+      "difference": 0.0037607051821701987,
+      "percent": 0.12810460873789517,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-06-21",
+      "step": 1,
+      "surface": "tilted south",
+      "expected": 4.947729499304877,
+      "actual": 4.9477981354025795,
+      "difference": 0.00006863609770224599,
+      "percent": 0.0013872241340576298,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-06-21",
+      "step": 5,
+      "surface": "roof",
+      "expected": 6.073774277046608,
+      "actual": 6.074610550996451,
+      "difference": 0.0008362739498428695,
+      "percent": 0.013768604358631358,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-06-21",
+      "step": 5,
+      "surface": "north",
+      "expected": 1.9358554497636398,
+      "actual": 1.9367825319529732,
+      "difference": 0.0009270821893334613,
+      "percent": 0.0478900524027584,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-06-21",
+      "step": 5,
+      "surface": "east",
+      "expected": 3.1277650965811437,
+      "actual": 3.123997453564006,
+      "difference": -0.003767643017137612,
+      "percent": -0.12045799159457012,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-06-21",
+      "step": 5,
+      "surface": "south",
+      "expected": 0.8618401500894829,
+      "actual": 0.8614675976802187,
+      "difference": -0.00037255240926414857,
+      "percent": -0.043227553186686335,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-06-21",
+      "step": 5,
+      "surface": "west",
+      "expected": 2.926607988714167,
+      "actual": 2.930373729019646,
+      "difference": 0.0037657403054787153,
+      "percent": 0.12867252190933945,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-06-21",
+      "step": 5,
+      "surface": "tilted south",
+      "expected": 4.947772868863178,
+      "actual": 4.947834413137272,
+      "difference": 0.00006154427409388319,
+      "percent": 0.001243878321116706,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-12-21",
+      "step": 1,
+      "surface": "roof",
+      "expected": 3.5186110309208285,
+      "actual": 3.519724126835218,
+      "difference": 0.0011130959143894614,
+      "percent": 0.03163452580031734,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-12-21",
+      "step": 1,
+      "surface": "north",
+      "expected": 0.6,
+      "actual": 0.6000000000000004,
+      "difference": 4.440892098500626e-16,
+      "percent": 7.401486830834378e-14,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-12-21",
+      "step": 1,
+      "surface": "east",
+      "expected": 1.8548547034967542,
+      "actual": 1.8534366631535777,
+      "difference": -0.0014180403431764965,
+      "percent": -0.07645021146417671,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-12-21",
+      "step": 1,
+      "surface": "south",
+      "expected": 3.8889630116655423,
+      "actual": 3.8877234886332395,
+      "difference": -0.0012395230323027917,
+      "percent": -0.0318728419011611,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-12-21",
+      "step": 1,
+      "surface": "west",
+      "expected": 1.9093545550047266,
+      "actual": 1.9114340652492068,
+      "difference": 0.002079510244480165,
+      "percent": 0.10891168636173061,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-12-21",
+      "step": 1,
+      "surface": "tilted south",
+      "expected": 4.772072802375698,
+      "actual": 4.772417010198245,
+      "difference": 0.00034420782254684923,
+      "percent": 0.007212962517577079,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-12-21",
+      "step": 5,
+      "surface": "roof",
+      "expected": 3.518671201330527,
+      "actual": 3.519784305743653,
+      "difference": 0.0011131044131262868,
+      "percent": 0.03163422637231308,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-12-21",
+      "step": 5,
+      "surface": "north",
+      "expected": 0.6,
+      "actual": 0.6000000000000004,
+      "difference": 4.440892098500626e-16,
+      "percent": 7.401486830834378e-14,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-12-21",
+      "step": 5,
+      "surface": "east",
+      "expected": 1.8548508571932687,
+      "actual": 1.8534408104813727,
+      "difference": -0.0014100467118960403,
+      "percent": -0.07601941182644198,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-12-21",
+      "step": 5,
+      "surface": "south",
+      "expected": 3.8889907057477195,
+      "actual": 3.887751185483691,
+      "difference": -0.0012395202640287373,
+      "percent": -0.03187254374757936,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-12-21",
+      "step": 5,
+      "surface": "west",
+      "expected": 1.9093517463799432,
+      "actual": 1.9114393178271585,
+      "difference": 0.002087571447215275,
+      "percent": 0.10933404236140509,
+      "pass": true
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-12-21",
+      "step": 5,
+      "surface": "tilted south",
+      "expected": 4.772138758520142,
+      "actual": 4.77248297508696,
+      "difference": 0.0003442165668179342,
+      "percent": 0.0072130460624887,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-03-20",
+      "step": 1,
+      "surface": "roof",
+      "expected": 4.721049258331139,
+      "actual": 4.745280608796708,
+      "difference": 0.0242313504655689,
+      "percent": 0.5132619707961812,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-03-20",
+      "step": 1,
+      "surface": "north",
+      "expected": 2.894679751861063,
+      "actual": 2.857133990042117,
+      "difference": -0.03754576181894631,
+      "percent": -1.2970609890371183,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-03-20",
+      "step": 1,
+      "surface": "east",
+      "expected": 2.792075068147258,
+      "actual": 2.797789701196996,
+      "difference": 0.0057146330497377384,
+      "percent": 0.2046733311339586,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-03-20",
+      "step": 1,
+      "surface": "south",
+      "expected": 0.7200886394795574,
+      "actual": 0.7204449582099859,
+      "difference": 0.0003563187304285176,
+      "percent": 0.04948262073486484,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-03-20",
+      "step": 1,
+      "surface": "west",
+      "expected": 2.523447419315999,
+      "actual": 2.51664076806989,
+      "difference": -0.006806651246108686,
+      "percent": -0.26973620270454,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-03-20",
+      "step": 1,
+      "surface": "tilted south",
+      "expected": 3.097714743316901,
+      "actual": 3.1376507486627565,
+      "difference": 0.039936005345855285,
+      "percent": 1.2892086152223787,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-03-20",
+      "step": 5,
+      "surface": "roof",
+      "expected": 4.721035397215783,
+      "actual": 4.74529734863465,
+      "difference": 0.024261951418867334,
+      "percent": 0.5139116608440545,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-03-20",
+      "step": 5,
+      "surface": "north",
+      "expected": 2.8947215328517677,
+      "actual": 2.857114662046607,
+      "difference": -0.037606870805160675,
+      "percent": -1.2991533167652172,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-03-20",
+      "step": 5,
+      "surface": "east",
+      "expected": 2.8134908308754065,
+      "actual": 2.819270546295943,
+      "difference": 0.005779715420536569,
+      "percent": 0.20542862116732874,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-03-20",
+      "step": 5,
+      "surface": "south",
+      "expected": 0.7202786354279913,
+      "actual": 0.7207416091736275,
+      "difference": 0.0004629737456361971,
+      "percent": 0.06427703431201967,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-03-20",
+      "step": 5,
+      "surface": "west",
+      "expected": 2.5233646101192986,
+      "actual": 2.5166248525094006,
+      "difference": -0.006739757609897978,
+      "percent": -0.2670940847339275,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-03-20",
+      "step": 5,
+      "surface": "tilted south",
+      "expected": 3.097776846717743,
+      "actual": 3.13782323526726,
+      "difference": 0.04004638854951681,
+      "percent": 1.2927460734283702,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-06-21",
+      "step": 1,
+      "surface": "roof",
+      "expected": 2.967129203376696,
+      "actual": 2.9666903141086634,
+      "difference": -0.00043888926803248296,
+      "percent": -0.014791714076118147,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-06-21",
+      "step": 1,
+      "surface": "north",
+      "expected": 4.1576218136614544,
+      "actual": 4.16311679078208,
+      "difference": 0.005494977120625855,
+      "percent": 0.13216635295134369,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-06-21",
+      "step": 1,
+      "surface": "east",
+      "expected": 1.848526443656048,
+      "actual": 1.854068936491767,
+      "difference": 0.0055424928357190595,
+      "percent": 0.29983302942407575,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-06-21",
+      "step": 1,
+      "surface": "south",
+      "expected": 0.6,
+      "actual": 0.6000000000000004,
+      "difference": 4.440892098500626e-16,
+      "percent": 7.401486830834378e-14,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-06-21",
+      "step": 1,
+      "surface": "west",
+      "expected": 1.7993998288157478,
+      "actual": 1.8032555608754715,
+      "difference": 0.003855732059723671,
+      "percent": 0.2142787832908305,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-06-21",
+      "step": 1,
+      "surface": "tilted south",
+      "expected": 1.1842683254164192,
+      "actual": 1.1838842390889632,
+      "difference": -0.00038408632745601246,
+      "percent": -0.03243237357724296,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-06-21",
+      "step": 5,
+      "surface": "roof",
+      "expected": 2.9671786089356824,
+      "actual": 2.966714063214714,
+      "difference": -0.0004645457209684345,
+      "percent": -0.01565614282771692,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-06-21",
+      "step": 5,
+      "surface": "north",
+      "expected": 4.160812875124023,
+      "actual": 4.161356169485538,
+      "difference": 0.0005432943615151231,
+      "percent": 0.013057409160678223,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-06-21",
+      "step": 5,
+      "surface": "east",
+      "expected": 1.848488488486797,
+      "actual": 1.845026396300527,
+      "difference": -0.003462092186270027,
+      "percent": -0.1872931429020774,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-06-21",
+      "step": 5,
+      "surface": "south",
+      "expected": 0.6,
+      "actual": 0.6000000000000004,
+      "difference": 4.440892098500626e-16,
+      "percent": 7.401486830834378e-14,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-06-21",
+      "step": 5,
+      "surface": "west",
+      "expected": 1.805149006036693,
+      "actual": 1.8090384917491593,
+      "difference": 0.0038894857124662785,
+      "percent": 0.21546618586383984,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-06-21",
+      "step": 5,
+      "surface": "tilted south",
+      "expected": 1.1842745268500043,
+      "actual": 1.1838784243946845,
+      "difference": -0.00039610245531984667,
+      "percent": -0.03344684415136588,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-12-21",
+      "step": 1,
+      "surface": "roof",
+      "expected": 6.203578835538637,
+      "actual": 6.202829476226523,
+      "difference": -0.0007493593121141728,
+      "percent": -0.01207946786814886,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-12-21",
+      "step": 1,
+      "surface": "north",
+      "expected": 1.261258195770009,
+      "actual": 1.2622969742872747,
+      "difference": 0.0010387785172656372,
+      "percent": 0.08236049690297187,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-12-21",
+      "step": 1,
+      "surface": "east",
+      "expected": 3.1960180430302287,
+      "actual": 3.194783052981906,
+      "difference": -0.001234990048322615,
+      "percent": -0.038641523035698774,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-12-21",
+      "step": 1,
+      "surface": "south",
+      "expected": 1.753227031981997,
+      "actual": 1.7520364327534304,
+      "difference": -0.001190599228566569,
+      "percent": -0.06790901616549994,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-12-21",
+      "step": 1,
+      "surface": "west",
+      "expected": 3.123078501880666,
+      "actual": 3.1251616088858643,
+      "difference": 0.0020831070051983147,
+      "percent": 0.06670043689084032,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-12-21",
+      "step": 1,
+      "surface": "tilted south",
+      "expected": 5.7309799448830105,
+      "actual": 5.729216291809212,
+      "difference": -0.0017636530737981104,
+      "percent": -0.030774022780743003,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-12-21",
+      "step": 5,
+      "surface": "roof",
+      "expected": 6.203633842011796,
+      "actual": 6.202884492616866,
+      "difference": -0.000749349394930654,
+      "percent": -0.012079200900864985,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-12-21",
+      "step": 5,
+      "surface": "north",
+      "expected": 1.2612505560729679,
+      "actual": 1.2622837378009482,
+      "difference": 0.0010331817279802813,
+      "percent": 0.08191724657765051,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-12-21",
+      "step": 5,
+      "surface": "east",
+      "expected": 3.1959947083052853,
+      "actual": 3.194744247627669,
+      "difference": -0.0012504606776162497,
+      "percent": -0.03912586821144399,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-12-21",
+      "step": 5,
+      "surface": "south",
+      "expected": 1.7531824746110418,
+      "actual": 1.7519862707927865,
+      "difference": -0.0011962038182553592,
+      "percent": -0.0682304229923783,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-12-21",
+      "step": 5,
+      "surface": "west",
+      "expected": 3.1230537803769343,
+      "actual": 3.1251214809919476,
+      "difference": 0.002067700615013379,
+      "percent": 0.06620765316323883,
+      "pass": true
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-12-21",
+      "step": 5,
+      "surface": "tilted south",
+      "expected": 5.7310091230491835,
+      "actual": 5.72924547466374,
+      "difference": -0.001763648385443517,
+      "percent": -0.03077378429481836,
+      "pass": true
+    }
+  ],
+  "sky": [
+    {
+      "position": [
+        0,
+        1,
+        0
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "sky": 0.1498813036302891,
+      "results": [
+        {
+          "rays": 512,
+          "value": 0.15341327908860908,
+          "error": 0.003531975458319986
+        },
+        {
+          "rays": 2048,
+          "value": 0.14983381066961313,
+          "error": -0.000047492960675965534
+        },
+        {
+          "rays": 8192,
+          "value": 0.14984280551129342,
+          "error": -0.00003849811899567235
+        }
+      ]
+    },
+    {
+      "position": [
+        0,
+        1,
+        0
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "sky": 0.7702739834785461,
+      "results": [
+        {
+          "rays": 512,
+          "value": 0.7802734375,
+          "error": 0.009999454021453857
+        },
+        {
+          "rays": 2048,
+          "value": 0.76910400390625,
+          "error": -0.0011699795722961426
+        },
+        {
+          "rays": 8192,
+          "value": 0.7700576782226562,
+          "error": -0.00021630525588989258
+        }
+      ]
+    },
+    {
+      "position": [
+        0,
+        15,
+        0
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "sky": 0.22256894274039818,
+      "results": [
+        {
+          "rays": 512,
+          "value": 0.22196425009685078,
+          "error": -0.0006046926435473998
+        },
+        {
+          "rays": 2048,
+          "value": 0.22133609506468996,
+          "error": -0.0012328476757082207
+        },
+        {
+          "rays": 8192,
+          "value": 0.22228083463063156,
+          "error": -0.0002881081097666216
+        }
+      ]
+    },
+    {
+      "position": [
+        0,
+        25,
+        0
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "sky": 1,
+      "results": [
+        {
+          "rays": 512,
+          "value": 1,
+          "error": 0
+        },
+        {
+          "rays": 2048,
+          "value": 1,
+          "error": 0
+        },
+        {
+          "rays": 8192,
+          "value": 1,
+          "error": 0
+        }
+      ]
+    }
+  ],
+  "convergence": [
+    {
+      "city": "Cairo",
+      "date": "2026-03-20",
+      "surface": "roof",
+      "reference": 4.820014070739234,
+      "steps": [
+        {
+          "step": 5,
+          "value": 4.820078957971047,
+          "difference": 0.00006488723181341527
+        },
+        {
+          "step": 15,
+          "value": 4.82017488073621,
+          "difference": 0.00016080999697631881
+        },
+        {
+          "step": 30,
+          "value": 4.822000858838207,
+          "difference": 0.0019867880989732356
+        },
+        {
+          "step": 60,
+          "value": 4.829318489368369,
+          "difference": 0.009304418629135114
+        }
+      ]
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-03-20",
+      "surface": "north",
+      "reference": 0.7200000000000005,
+      "steps": [
+        {
+          "step": 5,
+          "value": 0.7200000000000005,
+          "difference": 0
+        },
+        {
+          "step": 15,
+          "value": 0.7200000000000005,
+          "difference": 0
+        },
+        {
+          "step": 30,
+          "value": 0.7200000000000004,
+          "difference": -1.1102230246251565e-16
+        },
+        {
+          "step": 60,
+          "value": 0.7200000000000002,
+          "difference": -3.3306690738754696e-16
+        }
+      ]
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-03-20",
+      "surface": "east",
+      "reference": 2.763947640986471,
+      "steps": [
+        {
+          "step": 5,
+          "value": 2.7639174998527576,
+          "difference": -0.00003014113371335725
+        },
+        {
+          "step": 15,
+          "value": 2.8178115958348657,
+          "difference": 0.05386395484839479
+        },
+        {
+          "step": 30,
+          "value": 2.818935887501543,
+          "difference": 0.05498824651507217
+        },
+        {
+          "step": 60,
+          "value": 2.823441500883438,
+          "difference": 0.059493859896967205
+        }
+      ]
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-03-20",
+      "surface": "south",
+      "reference": 2.7365608819362914,
+      "steps": [
+        {
+          "step": 5,
+          "value": 2.736598411663751,
+          "difference": 0.00003752972745951766
+        },
+        {
+          "step": 15,
+          "value": 2.7372953653185825,
+          "difference": 0.0007344833822910957
+        },
+        {
+          "step": 30,
+          "value": 2.7383514815761067,
+          "difference": 0.0017905996398153157
+        },
+        {
+          "step": 60,
+          "value": 2.7425838809481227,
+          "difference": 0.0060229990118312315
+        }
+      ]
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-03-20",
+      "surface": "west",
+      "reference": 2.5185721275472317,
+      "steps": [
+        {
+          "step": 5,
+          "value": 2.5185373113786693,
+          "difference": -0.000034816168562379346
+        },
+        {
+          "step": 15,
+          "value": 2.5186519511050562,
+          "difference": 0.0000798235578245432
+        },
+        {
+          "step": 30,
+          "value": 2.5196158761682845,
+          "difference": 0.0010437486210528313
+        },
+        {
+          "step": 60,
+          "value": 2.5234788180186927,
+          "difference": 0.004906690471460973
+        }
+      ]
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-03-20",
+      "surface": "tilted south",
+      "reference": 5.278996782101945,
+      "steps": [
+        {
+          "step": 5,
+          "value": 5.279071740956831,
+          "difference": 0.00007495885488584264
+        },
+        {
+          "step": 15,
+          "value": 5.279503289335677,
+          "difference": 0.0005065072337320231
+        },
+        {
+          "step": 30,
+          "value": 5.281612690887523,
+          "difference": 0.002615908785577936
+        },
+        {
+          "step": 60,
+          "value": 5.290066144508161,
+          "difference": 0.011069362406216143
+        }
+      ]
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-06-21",
+      "surface": "roof",
+      "reference": 6.159810113255814,
+      "steps": [
+        {
+          "step": 5,
+          "value": 6.159867634642799,
+          "difference": 0.00005752138698511544
+        },
+        {
+          "step": 15,
+          "value": 6.1598484487253335,
+          "difference": 0.00003833546951970135
+        },
+        {
+          "step": 30,
+          "value": 6.161461570221183,
+          "difference": 0.0016514569653693911
+        },
+        {
+          "step": 60,
+          "value": 6.167926166279839,
+          "difference": 0.008116053024025405
+        }
+      ]
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-06-21",
+      "surface": "north",
+      "reference": 1.8395237231841892,
+      "steps": [
+        {
+          "step": 5,
+          "value": 1.839488032686724,
+          "difference": -0.0000356904974652128
+        },
+        {
+          "step": 15,
+          "value": 1.8627980618581668,
+          "difference": 0.023274338673977546
+        },
+        {
+          "step": 30,
+          "value": 1.8612916701454987,
+          "difference": 0.02176794696130946
+        },
+        {
+          "step": 60,
+          "value": 1.8592827225165351,
+          "difference": 0.019758999332345928
+        }
+      ]
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-06-21",
+      "surface": "east",
+      "reference": 3.2196660447644514,
+      "steps": [
+        {
+          "step": 5,
+          "value": 3.2196812427515193,
+          "difference": 0.000015197987067949725
+        },
+        {
+          "step": 15,
+          "value": 3.2198619012730725,
+          "difference": 0.00019585650862108395
+        },
+        {
+          "step": 30,
+          "value": 3.22113638429317,
+          "difference": 0.0014703395287187782
+        },
+        {
+          "step": 60,
+          "value": 3.2262438840667333,
+          "difference": 0.0065778393022819515
+        }
+      ]
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-06-21",
+      "surface": "south",
+      "reference": 1.0672873979090676,
+      "steps": [
+        {
+          "step": 5,
+          "value": 1.0672849764084595,
+          "difference": -0.000002421500608029703
+        },
+        {
+          "step": 15,
+          "value": 1.067371145747297,
+          "difference": 0.00008374783822939769
+        },
+        {
+          "step": 30,
+          "value": 1.0667977448689183,
+          "difference": -0.0004896530401492516
+        },
+        {
+          "step": 60,
+          "value": 1.0685277648504699,
+          "difference": 0.0012403669414022822
+        }
+      ]
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-06-21",
+      "surface": "west",
+      "reference": 3.051204682454845,
+      "steps": [
+        {
+          "step": 5,
+          "value": 3.0512166753248753,
+          "difference": 0.000011992870030397285
+        },
+        {
+          "step": 15,
+          "value": 3.09605889703102,
+          "difference": 0.044854214576175
+        },
+        {
+          "step": 30,
+          "value": 3.0972671132037544,
+          "difference": 0.04606243074890948
+        },
+        {
+          "step": 60,
+          "value": 3.1021090483646163,
+          "difference": 0.05090436590977143
+        }
+      ]
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-06-21",
+      "surface": "tilted south",
+      "reference": 5.18813515525692,
+      "steps": [
+        {
+          "step": 5,
+          "value": 5.188144485124756,
+          "difference": 0.00000932986783563905
+        },
+        {
+          "step": 15,
+          "value": 5.188321711379497,
+          "difference": 0.00018655612257667542
+        },
+        {
+          "step": 30,
+          "value": 5.190259792791946,
+          "difference": 0.0021246375350258973
+        },
+        {
+          "step": 60,
+          "value": 5.198026668096952,
+          "difference": 0.009891512840031425
+        }
+      ]
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-12-21",
+      "surface": "roof",
+      "reference": 3.204799799184804,
+      "steps": [
+        {
+          "step": 5,
+          "value": 3.204857030795649,
+          "difference": 0.000057231610845143166
+        },
+        {
+          "step": 15,
+          "value": 3.2050477082305937,
+          "difference": 0.00024790904578964046
+        },
+        {
+          "step": 30,
+          "value": 3.2066616872368883,
+          "difference": 0.001861888052084204
+        },
+        {
+          "step": 60,
+          "value": 3.213129715657211,
+          "difference": 0.008329916472407106
+        }
+      ]
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-12-21",
+      "surface": "north",
+      "reference": 0.6000000000000004,
+      "steps": [
+        {
+          "step": 5,
+          "value": 0.6000000000000004,
+          "difference": 0
+        },
+        {
+          "step": 15,
+          "value": 0.6000000000000004,
+          "difference": 0
+        },
+        {
+          "step": 30,
+          "value": 0.6000000000000003,
+          "difference": -1.1102230246251565e-16
+        },
+        {
+          "step": 60,
+          "value": 0.6000000000000001,
+          "difference": -3.3306690738754696e-16
+        }
+      ]
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-12-21",
+      "surface": "east",
+      "reference": 1.865750898096723,
+      "steps": [
+        {
+          "step": 5,
+          "value": 1.865694801379926,
+          "difference": -0.00005609671679707162
+        },
+        {
+          "step": 15,
+          "value": 1.8650872484371628,
+          "difference": -0.0006636496595602281
+        },
+        {
+          "step": 30,
+          "value": 1.8657644918986174,
+          "difference": 0.000013593801894362656
+        },
+        {
+          "step": 60,
+          "value": 1.868478548032834,
+          "difference": 0.002727649936111076
+        }
+      ]
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-12-21",
+      "surface": "south",
+      "reference": 4.0742506785421355,
+      "steps": [
+        {
+          "step": 5,
+          "value": 4.0742837807396075,
+          "difference": 0.00003310219747199028
+        },
+        {
+          "step": 15,
+          "value": 4.089528109990555,
+          "difference": 0.01527743144841942
+        },
+        {
+          "step": 30,
+          "value": 4.090461619517402,
+          "difference": 0.016210940975266652
+        },
+        {
+          "step": 60,
+          "value": 4.094202663239947,
+          "difference": 0.01995198469781112
+        }
+      ]
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-12-21",
+      "surface": "west",
+      "reference": 1.867377360287871,
+      "steps": [
+        {
+          "step": 5,
+          "value": 1.8673212962224128,
+          "difference": -0.000056064065458105716
+        },
+        {
+          "step": 15,
+          "value": 1.89608115700988,
+          "difference": 0.028703796722008956
+        },
+        {
+          "step": 30,
+          "value": 1.8967750412348403,
+          "difference": 0.029397680946969373
+        },
+        {
+          "step": 60,
+          "value": 1.8995557856737013,
+          "difference": 0.03217842538583038
+        }
+      ]
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-12-21",
+      "surface": "tilted south",
+      "reference": 4.592948137137709,
+      "steps": [
+        {
+          "step": 5,
+          "value": 4.593014252265338,
+          "difference": 0.00006611512762866312
+        },
+        {
+          "step": 15,
+          "value": 4.600801548393402,
+          "difference": 0.007853411255693388
+        },
+        {
+          "step": 30,
+          "value": 4.6026660499774525,
+          "difference": 0.009717912839743548
+        },
+        {
+          "step": 60,
+          "value": 4.610138048763124,
+          "difference": 0.017189911625415277
+        }
+      ]
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-03-20",
+      "surface": "roof",
+      "reference": 3.7857627124826907,
+      "steps": [
+        {
+          "step": 5,
+          "value": 3.785728728308941,
+          "difference": -0.000033984173749779245
+        },
+        {
+          "step": 15,
+          "value": 3.786091677571706,
+          "difference": 0.00032896508901547605
+        },
+        {
+          "step": 30,
+          "value": 3.7852731945651086,
+          "difference": -0.0004895179175821163
+        },
+        {
+          "step": 60,
+          "value": 3.788153467345327,
+          "difference": 0.0023907548626365127
+        }
+      ]
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-03-20",
+      "surface": "north",
+      "reference": 0.7200000000000005,
+      "steps": [
+        {
+          "step": 5,
+          "value": 0.7200000000000005,
+          "difference": 0
+        },
+        {
+          "step": 15,
+          "value": 0.7200000000000005,
+          "difference": 0
+        },
+        {
+          "step": 30,
+          "value": 0.7200000000000004,
+          "difference": -1.1102230246251565e-16
+        },
+        {
+          "step": 60,
+          "value": 0.7200000000000002,
+          "difference": -3.3306690738754696e-16
+        }
+      ]
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-03-20",
+      "surface": "east",
+      "reference": 2.7154332041698828,
+      "steps": [
+        {
+          "step": 5,
+          "value": 2.6939817593899043,
+          "difference": -0.021451444779978512
+        },
+        {
+          "step": 15,
+          "value": 2.7480319348959084,
+          "difference": 0.03259873072602559
+        },
+        {
+          "step": 30,
+          "value": 2.5830821623174374,
+          "difference": -0.1323510418524454
+        },
+        {
+          "step": 60,
+          "value": 2.910168106550679,
+          "difference": 0.19473490238079627
+        }
+      ]
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-03-20",
+      "surface": "south",
+      "reference": 3.861720854034673,
+      "steps": [
+        {
+          "step": 5,
+          "value": 3.8613244501733512,
+          "difference": -0.00039640386132155925
+        },
+        {
+          "step": 15,
+          "value": 3.862678638303873,
+          "difference": 0.0009577842692003458
+        },
+        {
+          "step": 30,
+          "value": 3.8589750197150128,
+          "difference": -0.0027458343196600232
+        },
+        {
+          "step": 60,
+          "value": 3.8680227716666065,
+          "difference": 0.006301917631933662
+        }
+      ]
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-03-20",
+      "surface": "west",
+      "reference": 2.4158898464911025,
+      "steps": [
+        {
+          "step": 5,
+          "value": 2.4159221473100763,
+          "difference": 0.0000323008189737628
+        },
+        {
+          "step": 15,
+          "value": 2.4161913543001416,
+          "difference": 0.00030150780903914765
+        },
+        {
+          "step": 30,
+          "value": 2.4122525137825344,
+          "difference": -0.0036373327085681417
+        },
+        {
+          "step": 60,
+          "value": 2.4158849919455845,
+          "difference": -0.000004854545518018227
+        }
+      ]
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-03-20",
+      "surface": "tilted south",
+      "reference": 4.945888818002417,
+      "steps": [
+        {
+          "step": 5,
+          "value": 4.945661184913975,
+          "difference": -0.0002276330884418698
+        },
+        {
+          "step": 15,
+          "value": 4.946652602261079,
+          "difference": 0.0007637842586616372
+        },
+        {
+          "step": 30,
+          "value": 4.94409196589037,
+          "difference": -0.0017968521120472758
+        },
+        {
+          "step": 60,
+          "value": 4.951110231263665,
+          "difference": 0.005221413261248031
+        }
+      ]
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-06-21",
+      "surface": "roof",
+      "reference": 6.472376611927864,
+      "steps": [
+        {
+          "step": 5,
+          "value": 6.472412467184873,
+          "difference": 0.000035855257009664854
+        },
+        {
+          "step": 15,
+          "value": 6.472711298151382,
+          "difference": 0.00033468622351850996
+        },
+        {
+          "step": 30,
+          "value": 6.47372034276122,
+          "difference": 0.0013437308333568154
+        },
+        {
+          "step": 60,
+          "value": 6.477764096296865,
+          "difference": 0.005387484369001605
+        }
+      ]
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-06-21",
+      "surface": "north",
+      "reference": 2.0897150021073125,
+      "steps": [
+        {
+          "step": 5,
+          "value": 2.0897194562018377,
+          "difference": 0.000004454094525208063
+        },
+        {
+          "step": 15,
+          "value": 2.0891761029810603,
+          "difference": -0.000538899126252268
+        },
+        {
+          "step": 30,
+          "value": 2.088567679152093,
+          "difference": -0.0011473229552194653
+        },
+        {
+          "step": 60,
+          "value": 2.079546678743342,
+          "difference": -0.010168323363970444
+        }
+      ]
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-06-21",
+      "surface": "east",
+      "reference": 3.7819658798052034,
+      "steps": [
+        {
+          "step": 5,
+          "value": 3.781910401245471,
+          "difference": -0.00005547855973242477
+        },
+        {
+          "step": 15,
+          "value": 3.781349898232727,
+          "difference": -0.0006159815724764428
+        },
+        {
+          "step": 30,
+          "value": 3.7827345648835564,
+          "difference": 0.0007686850783530375
+        },
+        {
+          "step": 60,
+          "value": 3.7887893145761806,
+          "difference": 0.006823434770977244
+        }
+      ]
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-06-21",
+      "surface": "south",
+      "reference": 2.500341026444005,
+      "steps": [
+        {
+          "step": 5,
+          "value": 2.5003922410660473,
+          "difference": 0.000051214622042383695
+        },
+        {
+          "step": 15,
+          "value": 2.5002386073682463,
+          "difference": -0.00010241907575858633
+        },
+        {
+          "step": 30,
+          "value": 2.5009461260991643,
+          "difference": 0.0006050996551594245
+        },
+        {
+          "step": 60,
+          "value": 2.4971987751259976,
+          "difference": -0.003142251318007272
+        }
+      ]
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-06-21",
+      "surface": "west",
+      "reference": 3.679466634966086,
+      "steps": [
+        {
+          "step": 5,
+          "value": 3.6794092065618034,
+          "difference": -0.000057428404282688916
+        },
+        {
+          "step": 15,
+          "value": 3.6788324528248286,
+          "difference": -0.0006341821412574333
+        },
+        {
+          "step": 30,
+          "value": 3.6801622466433512,
+          "difference": 0.0006956116772651733
+        },
+        {
+          "step": 60,
+          "value": 3.685997093281941,
+          "difference": 0.006530458315854748
+        }
+      ]
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-06-21",
+      "surface": "tilted south",
+      "reference": 6.13197095750794,
+      "steps": [
+        {
+          "step": 5,
+          "value": 6.131999173885973,
+          "difference": 0.000028216378032297484
+        },
+        {
+          "step": 15,
+          "value": 6.1319848343448315,
+          "difference": 0.000013876836891135724
+        },
+        {
+          "step": 30,
+          "value": 6.1319219012102035,
+          "difference": -0.00004905629773688247
+        },
+        {
+          "step": 60,
+          "value": 6.127517917885445,
+          "difference": -0.004453039622495325
+        }
+      ]
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-12-21",
+      "surface": "roof",
+      "reference": 1.5876107678591498,
+      "steps": [
+        {
+          "step": 5,
+          "value": 1.5876034233742495,
+          "difference": -0.000007344484900251302
+        },
+        {
+          "step": 15,
+          "value": 1.5875410225828879,
+          "difference": -0.00006974527626191218
+        },
+        {
+          "step": 30,
+          "value": 1.587071040311073,
+          "difference": -0.0005397275480767405
+        },
+        {
+          "step": 60,
+          "value": 1.5877553571332235,
+          "difference": 0.00014458927407368094
+        }
+      ]
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-12-21",
+      "surface": "north",
+      "reference": 0.48000000000000037,
+      "steps": [
+        {
+          "step": 5,
+          "value": 0.4800000000000003,
+          "difference": -5.551115123125783e-17
+        },
+        {
+          "step": 15,
+          "value": 0.4800000000000003,
+          "difference": -5.551115123125783e-17
+        },
+        {
+          "step": 30,
+          "value": 0.4800000000000002,
+          "difference": -1.6653345369377348e-16
+        },
+        {
+          "step": 60,
+          "value": 0.48,
+          "difference": -3.885780586188048e-16
+        }
+      ]
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-12-21",
+      "surface": "east",
+      "reference": 1.1555775941240132,
+      "steps": [
+        {
+          "step": 5,
+          "value": 1.1682513644373258,
+          "difference": 0.012673770313312627
+        },
+        {
+          "step": 15,
+          "value": 1.2000197031429147,
+          "difference": 0.044442109018901554
+        },
+        {
+          "step": 30,
+          "value": 1.105726998424343,
+          "difference": -0.04985059569967021
+        },
+        {
+          "step": 60,
+          "value": 1.3009067927588063,
+          "difference": 0.1453291986347931
+        }
+      ]
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-12-21",
+      "surface": "south",
+      "reference": 3.7713984342644076,
+      "steps": [
+        {
+          "step": 5,
+          "value": 3.7731260246474725,
+          "difference": 0.0017275903830649142
+        },
+        {
+          "step": 15,
+          "value": 3.8003183432967558,
+          "difference": 0.0289199090323482
+        },
+        {
+          "step": 30,
+          "value": 3.786676729457822,
+          "difference": 0.015278295193414504
+        },
+        {
+          "step": 60,
+          "value": 3.951211285418138,
+          "difference": 0.17981285115373025
+        }
+      ]
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-12-21",
+      "surface": "west",
+      "reference": 1.2816941001200743,
+      "steps": [
+        {
+          "step": 5,
+          "value": 1.271086170205358,
+          "difference": -0.010607929914716374
+        },
+        {
+          "step": 15,
+          "value": 1.2708563015533243,
+          "difference": -0.010837798566750045
+        },
+        {
+          "step": 30,
+          "value": 1.352420685580209,
+          "difference": 0.07072658546013466
+        },
+        {
+          "step": 60,
+          "value": 1.3542914888559312,
+          "difference": 0.07259738873585686
+        }
+      ]
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-12-21",
+      "surface": "tilted south",
+      "reference": 3.084918279603417,
+      "steps": [
+        {
+          "step": 5,
+          "value": 3.085775714284448,
+          "difference": 0.0008574346810310551
+        },
+        {
+          "step": 15,
+          "value": 3.099317832938553,
+          "difference": 0.014399553335135984
+        },
+        {
+          "step": 30,
+          "value": 3.092090009432366,
+          "difference": 0.00717172982894887
+        },
+        {
+          "step": 60,
+          "value": 3.1749499231647436,
+          "difference": 0.09003164356132665
+        }
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-03-20",
+      "surface": "roof",
+      "reference": 4.993703151603025,
+      "steps": [
+        {
+          "step": 5,
+          "value": 4.9936601520510715,
+          "difference": -0.000042999551953748494
+        },
+        {
+          "step": 15,
+          "value": 4.99418607324804,
+          "difference": 0.00048292164501440027
+        },
+        {
+          "step": 30,
+          "value": 4.9961033221327185,
+          "difference": 0.002400170529693213
+        },
+        {
+          "step": 60,
+          "value": 5.003786721487316,
+          "difference": 0.01008356988429071
+        }
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-03-20",
+      "surface": "north",
+      "reference": 0.7200000000000005,
+      "steps": [
+        {
+          "step": 5,
+          "value": 0.7200000000000005,
+          "difference": 0
+        },
+        {
+          "step": 15,
+          "value": 0.7200000000000005,
+          "difference": 0
+        },
+        {
+          "step": 30,
+          "value": 0.7200000000000004,
+          "difference": -1.1102230246251565e-16
+        },
+        {
+          "step": 60,
+          "value": 0.7200000000000002,
+          "difference": -3.3306690738754696e-16
+        }
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-03-20",
+      "surface": "east",
+      "reference": 2.771431750401894,
+      "steps": [
+        {
+          "step": 5,
+          "value": 2.7499329517549156,
+          "difference": -0.021498798646978567
+        },
+        {
+          "step": 15,
+          "value": 2.803995431295771,
+          "difference": 0.032563680893876956
+        },
+        {
+          "step": 30,
+          "value": 2.805112319096021,
+          "difference": 0.03368056869412683
+        },
+        {
+          "step": 60,
+          "value": 2.809588261393075,
+          "difference": 0.03815651099118078
+        }
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-03-20",
+      "surface": "south",
+      "reference": 2.4164535217689678,
+      "steps": [
+        {
+          "step": 5,
+          "value": 2.416182592969543,
+          "difference": -0.00027092879942491876
+        },
+        {
+          "step": 15,
+          "value": 2.417052913045649,
+          "difference": 0.0005993912766810716
+        },
+        {
+          "step": 30,
+          "value": 2.417935300245542,
+          "difference": 0.0014817784765743802
+        },
+        {
+          "step": 60,
+          "value": 2.42147147820292,
+          "difference": 0.005017956433952087
+        }
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-03-20",
+      "surface": "west",
+      "reference": 2.534550713341687,
+      "steps": [
+        {
+          "step": 5,
+          "value": 2.5345394178689156,
+          "difference": -0.00001129547277134435
+        },
+        {
+          "step": 15,
+          "value": 2.5348274535509514,
+          "difference": 0.00027674020926449217
+        },
+        {
+          "step": 30,
+          "value": 2.535800046711089,
+          "difference": 0.001249333369401917
+        },
+        {
+          "step": 60,
+          "value": 2.5396977260648166,
+          "difference": 0.005147012723129674
+        }
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-03-20",
+      "surface": "tilted south",
+      "reference": 5.269362258406307,
+      "steps": [
+        {
+          "step": 5,
+          "value": 5.269189555302265,
+          "difference": -0.00017270310404171596
+        },
+        {
+          "step": 15,
+          "value": 5.270080176457283,
+          "difference": 0.0007179180509755412
+        },
+        {
+          "step": 30,
+          "value": 5.272181756296737,
+          "difference": 0.0028194978904299006
+        },
+        {
+          "step": 60,
+          "value": 5.28060386430393,
+          "difference": 0.011241605897622797
+        }
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-06-21",
+      "surface": "roof",
+      "reference": 6.074592226368451,
+      "steps": [
+        {
+          "step": 5,
+          "value": 6.074610550996451,
+          "difference": 0.00001832462799988832
+        },
+        {
+          "step": 15,
+          "value": 6.0741364883188425,
+          "difference": -0.00045573804960863384
+        },
+        {
+          "step": 30,
+          "value": 6.073629248088729,
+          "difference": -0.0009629782797224706
+        },
+        {
+          "step": 60,
+          "value": 6.075816920081159,
+          "difference": 0.0012246937127082802
+        }
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-06-21",
+      "surface": "north",
+      "reference": 1.949355611520116,
+      "steps": [
+        {
+          "step": 5,
+          "value": 1.9367825319529732,
+          "difference": -0.01257307956714282
+        },
+        {
+          "step": 15,
+          "value": 1.9388036332361547,
+          "difference": -0.010551978283961372
+        },
+        {
+          "step": 30,
+          "value": 1.9334915835800015,
+          "difference": -0.015864027940114545
+        },
+        {
+          "step": 60,
+          "value": 2.065214366887889,
+          "difference": 0.11585875536777301
+        }
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-06-21",
+      "surface": "east",
+      "reference": 3.1406484877316285,
+      "steps": [
+        {
+          "step": 5,
+          "value": 3.123997453564006,
+          "difference": -0.01665103416762248
+        },
+        {
+          "step": 15,
+          "value": 3.081989523701042,
+          "difference": -0.05865896403058635
+        },
+        {
+          "step": 30,
+          "value": 3.208298563667009,
+          "difference": 0.06765007593538064
+        },
+        {
+          "step": 60,
+          "value": 3.2133785228464804,
+          "difference": 0.07273003511485188
+        }
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-06-21",
+      "surface": "south",
+      "reference": 0.8614770642572287,
+      "steps": [
+        {
+          "step": 5,
+          "value": 0.8614675976802187,
+          "difference": -0.000009466577009953347
+        },
+        {
+          "step": 15,
+          "value": 0.8614791617975475,
+          "difference": 0.0000020975403187684094
+        },
+        {
+          "step": 30,
+          "value": 0.8613077374927073,
+          "difference": -0.00016932676452141582
+        },
+        {
+          "step": 60,
+          "value": 0.8613199616192097,
+          "difference": -0.00015710263801904656
+        }
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-06-21",
+      "surface": "west",
+      "reference": 2.9394124504403627,
+      "steps": [
+        {
+          "step": 5,
+          "value": 2.930373729019646,
+          "difference": -0.009038721420716822
+        },
+        {
+          "step": 15,
+          "value": 2.9755192387045986,
+          "difference": 0.036106788264235856
+        },
+        {
+          "step": 30,
+          "value": 2.8400625261319092,
+          "difference": -0.09934992430845346
+        },
+        {
+          "step": 60,
+          "value": 3.116153364841665,
+          "difference": 0.17674091440130235
+        }
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-06-21",
+      "surface": "tilted south",
+      "reference": 4.9477981354025795,
+      "steps": [
+        {
+          "step": 5,
+          "value": 4.947834413137272,
+          "difference": 0.00003627773469272455
+        },
+        {
+          "step": 15,
+          "value": 4.948139319540833,
+          "difference": 0.00034118413825368066
+        },
+        {
+          "step": 30,
+          "value": 4.946669737582567,
+          "difference": -0.0011283978200129496
+        },
+        {
+          "step": 60,
+          "value": 4.954406100031386,
+          "difference": 0.006607964628806862
+        }
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-12-21",
+      "surface": "roof",
+      "reference": 3.519724126835218,
+      "steps": [
+        {
+          "step": 5,
+          "value": 3.519784305743653,
+          "difference": 0.00006017890843512674
+        },
+        {
+          "step": 15,
+          "value": 3.520285858991927,
+          "difference": 0.0005617321567088496
+        },
+        {
+          "step": 30,
+          "value": 3.5219794235015103,
+          "difference": 0.002255296666292317
+        },
+        {
+          "step": 60,
+          "value": 3.5287663911897345,
+          "difference": 0.009042264354516494
+        }
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-12-21",
+      "surface": "north",
+      "reference": 0.6000000000000004,
+      "steps": [
+        {
+          "step": 5,
+          "value": 0.6000000000000004,
+          "difference": 0
+        },
+        {
+          "step": 15,
+          "value": 0.6000000000000004,
+          "difference": 0
+        },
+        {
+          "step": 30,
+          "value": 0.6000000000000003,
+          "difference": -1.1102230246251565e-16
+        },
+        {
+          "step": 60,
+          "value": 0.6000000000000001,
+          "difference": -3.3306690738754696e-16
+        }
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-12-21",
+      "surface": "east",
+      "reference": 1.8534366631535777,
+      "steps": [
+        {
+          "step": 5,
+          "value": 1.8534408104813727,
+          "difference": 0.000004147327794967737
+        },
+        {
+          "step": 15,
+          "value": 1.8530200749335846,
+          "difference": -0.00041658821999313034
+        },
+        {
+          "step": 30,
+          "value": 1.8529441336347678,
+          "difference": -0.0004925295188098477
+        },
+        {
+          "step": 60,
+          "value": 1.855630696100503,
+          "difference": 0.0021940329469252173
+        }
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-12-21",
+      "surface": "south",
+      "reference": 3.8877234886332395,
+      "steps": [
+        {
+          "step": 5,
+          "value": 3.887751185483691,
+          "difference": 0.00002769685045134196
+        },
+        {
+          "step": 15,
+          "value": 3.8879820212640563,
+          "difference": 0.0002585326308168767
+        },
+        {
+          "step": 30,
+          "value": 3.888761470473491,
+          "difference": 0.0010379818402515006
+        },
+        {
+          "step": 60,
+          "value": 3.89188511675248,
+          "difference": 0.004161628119240479
+        }
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-12-21",
+      "surface": "west",
+      "reference": 1.9114340652492068,
+      "steps": [
+        {
+          "step": 5,
+          "value": 1.9114393178271585,
+          "difference": 0.000005252577951697646
+        },
+        {
+          "step": 15,
+          "value": 1.9110277938442208,
+          "difference": -0.00040627140498594727
+        },
+        {
+          "step": 30,
+          "value": 1.9109829567035566,
+          "difference": -0.00045110854565022507
+        },
+        {
+          "step": 60,
+          "value": 1.9137941696064542,
+          "difference": 0.002360104357247428
+        }
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "date": "2026-12-21",
+      "surface": "tilted south",
+      "reference": 4.772417010198245,
+      "steps": [
+        {
+          "step": 5,
+          "value": 4.77248297508696,
+          "difference": 0.00006596488871490891
+        },
+        {
+          "step": 15,
+          "value": 4.773032750831496,
+          "difference": 0.000615740633251427
+        },
+        {
+          "step": 30,
+          "value": 4.774889145324462,
+          "difference": 0.0024721351262169122
+        },
+        {
+          "step": 60,
+          "value": 4.782328654896623,
+          "difference": 0.00991164469837802
+        }
+      ]
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-03-20",
+      "surface": "roof",
+      "reference": 4.745280608796708,
+      "steps": [
+        {
+          "step": 5,
+          "value": 4.74529734863465,
+          "difference": 0.00001673983794159284
+        },
+        {
+          "step": 15,
+          "value": 4.745816002437475,
+          "difference": 0.0005353936407663795
+        },
+        {
+          "step": 30,
+          "value": 4.74756731026752,
+          "difference": 0.0022867014708118916
+        },
+        {
+          "step": 60,
+          "value": 4.754585698704824,
+          "difference": 0.00930508990811596
+        }
+      ]
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-03-20",
+      "surface": "north",
+      "reference": 2.857133990042117,
+      "steps": [
+        {
+          "step": 5,
+          "value": 2.857114662046607,
+          "difference": -0.000019327995509854645
+        },
+        {
+          "step": 15,
+          "value": 2.856851898368711,
+          "difference": -0.000282091673406093
+        },
+        {
+          "step": 30,
+          "value": 2.8578966103802257,
+          "difference": 0.0007626203381088104
+        },
+        {
+          "step": 60,
+          "value": 2.862607226733853,
+          "difference": 0.005473236691736272
+        }
+      ]
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-03-20",
+      "surface": "east",
+      "reference": 2.797789701196996,
+      "steps": [
+        {
+          "step": 5,
+          "value": 2.819270546295943,
+          "difference": 0.02148084509894721
+        },
+        {
+          "step": 15,
+          "value": 2.8193855944454294,
+          "difference": 0.021595893248433473
+        },
+        {
+          "step": 30,
+          "value": 2.820510732667829,
+          "difference": 0.022721031470833264
+        },
+        {
+          "step": 60,
+          "value": 2.825019738655648,
+          "difference": 0.027230037458652046
+        }
+      ]
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-03-20",
+      "surface": "south",
+      "reference": 0.7204449582099859,
+      "steps": [
+        {
+          "step": 5,
+          "value": 0.7207416091736275,
+          "difference": 0.00029665096364162036
+        },
+        {
+          "step": 15,
+          "value": 0.7201307343719358,
+          "difference": -0.00031422383805013165
+        },
+        {
+          "step": 30,
+          "value": 0.7200000000000004,
+          "difference": -0.00044495820998546876
+        },
+        {
+          "step": 60,
+          "value": 0.7200000000000002,
+          "difference": -0.0004449582099856908
+        }
+      ]
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-03-20",
+      "surface": "west",
+      "reference": 2.51664076806989,
+      "steps": [
+        {
+          "step": 5,
+          "value": 2.5166248525094006,
+          "difference": -0.00001591556048952114
+        },
+        {
+          "step": 15,
+          "value": 2.516691843746785,
+          "difference": 0.000051075676894996036
+        },
+        {
+          "step": 30,
+          "value": 2.517654710990855,
+          "difference": 0.0010139429209647943
+        },
+        {
+          "step": 60,
+          "value": 2.521513413561702,
+          "difference": 0.004872645491811767
+        }
+      ]
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-03-20",
+      "surface": "tilted south",
+      "reference": 3.1376507486627565,
+      "steps": [
+        {
+          "step": 5,
+          "value": 3.13782323526726,
+          "difference": 0.00017248660450341902
+        },
+        {
+          "step": 15,
+          "value": 3.1380983470743793,
+          "difference": 0.0004475984116227849
+        },
+        {
+          "step": 30,
+          "value": 3.1390273009533223,
+          "difference": 0.001376552290565769
+        },
+        {
+          "step": 60,
+          "value": 3.142750095456841,
+          "difference": 0.005099346794084525
+        }
+      ]
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-06-21",
+      "surface": "roof",
+      "reference": 2.9666903141086634,
+      "steps": [
+        {
+          "step": 5,
+          "value": 2.966714063214714,
+          "difference": 0.000023749106050630076
+        },
+        {
+          "step": 15,
+          "value": 2.9667860448509114,
+          "difference": 0.00009573074224800138
+        },
+        {
+          "step": 30,
+          "value": 2.967148404321958,
+          "difference": 0.0004580902132946818
+        },
+        {
+          "step": 60,
+          "value": 2.9733527064174883,
+          "difference": 0.006662392308824927
+        }
+      ]
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-06-21",
+      "surface": "north",
+      "reference": 4.16311679078208,
+      "steps": [
+        {
+          "step": 5,
+          "value": 4.161356169485538,
+          "difference": -0.0017606212965421975
+        },
+        {
+          "step": 15,
+          "value": 4.170287284780789,
+          "difference": 0.007170493998708949
+        },
+        {
+          "step": 30,
+          "value": 4.2179199688106435,
+          "difference": 0.05480317802856316
+        },
+        {
+          "step": 60,
+          "value": 4.2220842212312935,
+          "difference": 0.058967430449213154
+        }
+      ]
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-06-21",
+      "surface": "east",
+      "reference": 1.854068936491767,
+      "steps": [
+        {
+          "step": 5,
+          "value": 1.845026396300527,
+          "difference": -0.009042540191240178
+        },
+        {
+          "step": 15,
+          "value": 1.8903340255452115,
+          "difference": 0.03626508905344439
+        },
+        {
+          "step": 30,
+          "value": 1.891025023234204,
+          "difference": 0.036956086742437
+        },
+        {
+          "step": 60,
+          "value": 1.8937942012962585,
+          "difference": 0.039725264804491456
+        }
+      ]
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-06-21",
+      "surface": "south",
+      "reference": 0.6000000000000004,
+      "steps": [
+        {
+          "step": 5,
+          "value": 0.6000000000000004,
+          "difference": 0
+        },
+        {
+          "step": 15,
+          "value": 0.6000000000000004,
+          "difference": 0
+        },
+        {
+          "step": 30,
+          "value": 0.6000000000000003,
+          "difference": -1.1102230246251565e-16
+        },
+        {
+          "step": 60,
+          "value": 0.6000000000000001,
+          "difference": -3.3306690738754696e-16
+        }
+      ]
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-06-21",
+      "surface": "west",
+      "reference": 1.8032555608754715,
+      "steps": [
+        {
+          "step": 5,
+          "value": 1.8090384917491593,
+          "difference": 0.005782930873687864
+        },
+        {
+          "step": 15,
+          "value": 1.7801558905983783,
+          "difference": -0.023099670277093143
+        },
+        {
+          "step": 30,
+          "value": 1.868036173619838,
+          "difference": 0.06478061274436664
+        },
+        {
+          "step": 60,
+          "value": 1.8707562181797004,
+          "difference": 0.06750065730422894
+        }
+      ]
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-06-21",
+      "surface": "tilted south",
+      "reference": 1.1838842390889632,
+      "steps": [
+        {
+          "step": 5,
+          "value": 1.1838784243946845,
+          "difference": -0.000005814694278738486
+        },
+        {
+          "step": 15,
+          "value": 1.1839207210341736,
+          "difference": 0.000036481945210331546
+        },
+        {
+          "step": 30,
+          "value": 1.1837470973365054,
+          "difference": -0.00013714175245782556
+        },
+        {
+          "step": 60,
+          "value": 1.1855698966079324,
+          "difference": 0.001685657518969208
+        }
+      ]
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-12-21",
+      "surface": "roof",
+      "reference": 6.202829476226523,
+      "steps": [
+        {
+          "step": 5,
+          "value": 6.202884492616866,
+          "difference": 0.00005501639034299899
+        },
+        {
+          "step": 15,
+          "value": 6.203343019532552,
+          "difference": 0.0005135433060292627
+        },
+        {
+          "step": 30,
+          "value": 6.2048912996262935,
+          "difference": 0.0020618233997709012
+        },
+        {
+          "step": 60,
+          "value": 6.2110960393130865,
+          "difference": 0.008266563086563927
+        }
+      ]
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-12-21",
+      "surface": "north",
+      "reference": 1.2622969742872747,
+      "steps": [
+        {
+          "step": 5,
+          "value": 1.2622837378009482,
+          "difference": -0.000013236486326562158
+        },
+        {
+          "step": 15,
+          "value": 1.262443951875861,
+          "difference": 0.0001469775885862834
+        },
+        {
+          "step": 30,
+          "value": 1.262446133856162,
+          "difference": 0.00014915956888716941
+        },
+        {
+          "step": 60,
+          "value": 1.26073243532558,
+          "difference": -0.001564538961694728
+        }
+      ]
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-12-21",
+      "surface": "east",
+      "reference": 3.194783052981906,
+      "steps": [
+        {
+          "step": 5,
+          "value": 3.194744247627669,
+          "difference": -0.00003880535423705922
+        },
+        {
+          "step": 15,
+          "value": 3.1943007943524693,
+          "difference": -0.00048225862943684916
+        },
+        {
+          "step": 30,
+          "value": 3.1955611455184485,
+          "difference": 0.0007780925365423741
+        },
+        {
+          "step": 60,
+          "value": 3.200612008446401,
+          "difference": 0.0058289554644948005
+        }
+      ]
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-12-21",
+      "surface": "south",
+      "reference": 1.7520364327534304,
+      "steps": [
+        {
+          "step": 5,
+          "value": 1.7519862707927865,
+          "difference": -0.00005016196064389078
+        },
+        {
+          "step": 15,
+          "value": 1.75183873432692,
+          "difference": -0.00019769842651040648
+        },
+        {
+          "step": 30,
+          "value": 1.7508017536688238,
+          "difference": -0.0012346790846065048
+        },
+        {
+          "step": 60,
+          "value": 1.7449236059120208,
+          "difference": -0.00711282684140957
+        }
+      ]
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-12-21",
+      "surface": "west",
+      "reference": 3.1251616088858643,
+      "steps": [
+        {
+          "step": 5,
+          "value": 3.1251214809919476,
+          "difference": -0.000040127893916608315
+        },
+        {
+          "step": 15,
+          "value": 3.1246670051848078,
+          "difference": -0.000494603701056473
+        },
+        {
+          "step": 30,
+          "value": 3.12589013726347,
+          "difference": 0.0007285283776057305
+        },
+        {
+          "step": 60,
+          "value": 3.1307918449804704,
+          "difference": 0.005630236094606111
+        }
+      ]
+    },
+    {
+      "city": "Sydney",
+      "date": "2026-12-21",
+      "surface": "tilted south",
+      "reference": 5.729216291809212,
+      "steps": [
+        {
+          "step": 5,
+          "value": 5.72924547466374,
+          "difference": 0.000029182854527576296
+        },
+        {
+          "step": 15,
+          "value": 5.729488695350656,
+          "difference": 0.0002724035414436443
+        },
+        {
+          "step": 30,
+          "value": 5.730309963924812,
+          "difference": 0.001093672115599631
+        },
+        {
+          "step": 60,
+          "value": 5.733601201504335,
+          "difference": 0.0043849096951227295
+        }
+      ]
+    }
+  ],
+  "shaded": [
+    {
+      "city": "Cairo",
+      "date": "2026-03-20",
+      "reference": 0.4055732201491802,
+      "steps": [
+        {
+          "step": 5,
+          "value": 0.40861066974318433,
+          "difference": 0.003037449594004149
+        },
+        {
+          "step": 15,
+          "value": 0.4084696112373297,
+          "difference": 0.0028963910881495414
+        },
+        {
+          "step": 30,
+          "value": 0.364821418101688,
+          "difference": -0.04075180204749218
+        },
+        {
+          "step": 60,
+          "value": 0.45881885182607196,
+          "difference": 0.05324563167689178
+        }
+      ]
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-06-21",
+      "reference": 0.32570289470904956,
+      "steps": [
+        {
+          "step": 5,
+          "value": 0.3292092433821465,
+          "difference": 0.0035063486730969595
+        },
+        {
+          "step": 15,
+          "value": 0.3383222292685659,
+          "difference": 0.01261933455951636
+        },
+        {
+          "step": 30,
+          "value": 0.31243071912966003,
+          "difference": -0.013272175579389534
+        },
+        {
+          "step": 60,
+          "value": 0.31254802478187355,
+          "difference": -0.013154869927176016
+        }
+      ]
+    },
+    {
+      "city": "Cairo",
+      "date": "2026-12-21",
+      "reference": 0.6388708581727918,
+      "steps": [
+        {
+          "step": 5,
+          "value": 0.6333031427544294,
+          "difference": -0.005567715418362318
+        },
+        {
+          "step": 15,
+          "value": 0.6602828470565957,
+          "difference": 0.021411988883803912
+        },
+        {
+          "step": 30,
+          "value": 0.5791082681943795,
+          "difference": -0.05976258997841222
+        },
+        {
+          "step": 60,
+          "value": 0.579955220182444,
+          "difference": -0.05891563799034771
+        }
+      ]
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-03-20",
+      "reference": 0.5855172691205693,
+      "steps": [
+        {
+          "step": 5,
+          "value": 0.5855242140839686,
+          "difference": 0.000006944963399257986
+        },
+        {
+          "step": 15,
+          "value": 0.564968056990832,
+          "difference": -0.02054921212973737
+        },
+        {
+          "step": 30,
+          "value": 0.6238817220492534,
+          "difference": 0.03836445292868407
+        },
+        {
+          "step": 60,
+          "value": 0.5025533702231005,
+          "difference": -0.0829638988974688
+        }
+      ]
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-06-21",
+      "reference": 0.46183629091970385,
+      "steps": [
+        {
+          "step": 5,
+          "value": 0.46737081567979055,
+          "difference": 0.005534524760086701
+        },
+        {
+          "step": 15,
+          "value": 0.4809204812478012,
+          "difference": 0.019084190328097328
+        },
+        {
+          "step": 30,
+          "value": 0.4391204188657914,
+          "difference": -0.022715872053912456
+        },
+        {
+          "step": 60,
+          "value": 0.5286073441260621,
+          "difference": 0.06677105320635829
+        }
+      ]
+    },
+    {
+      "city": "Berlin",
+      "date": "2026-12-21",
+      "reference": 0.6945310949309681,
+      "steps": [
+        {
+          "step": 5,
+          "value": 0.6827817211885628,
+          "difference": -0.011749373742405256
+        },
+        {
+          "step": 15,
+          "value": 0.6825113134402735,
+          "difference": -0.012019781490694603
+        },
+        {
+          "step": 30,
+          "value": 0.7730037463494076,
+          "difference": 0.07847265141843951
+        },
+        {
+          "step": 60,
+          "value": 0.5984154190922736,
+          "difference": -0.09611567583869451
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "cases": 144,
+    "passed": 144,
+    "maxAbsoluteDifference": 0.048056366716923815,
+    "maxRelativePercent": 1.7472111992449304,
+    "maxTimeStepDifference": {
+      "5": 0.021498798646978567,
+      "15": 0.05865896403058635,
+      "30": 0.1323510418524454,
+      "60": 0.19473490238079627
+    },
+    "maxShaded5MinuteDifference": 0.011749373742405256,
+    "maxSkyError512": 0.009999454021453857
+  }
+}

@@ -1,0 +1,6 @@
+const $=s=>document.querySelector(s),number=v=>v.toFixed(4);
+function row(id,values){const tr=document.createElement('tr');for(const value of values){const td=document.createElement('td');td.textContent=value;tr.append(td);}$(id).append(tr);}
+try{const response=await fetch('./radiation-validation.json');if(!response.ok)throw Error('Report unavailable');const r=await response.json(),s=r.summary;$('#status').textContent=`${s.passed} of ${s.cases} reference comparisons passed the stated regression gate.`;
+row('#metrics',['Maximum absolute daily-total difference',number(s.maxAbsoluteDifference)+' kWh/m²']);row('#metrics',['Maximum relative daily-total difference',s.maxRelativePercent.toFixed(2)+'%']);row('#metrics',['Maximum sky-factor difference, 512 rays',(s.maxSkyError512*100).toFixed(2)+' percentage points']);
+for(const [step,value] of Object.entries(s.maxTimeStepDifference))row('#time',[step+' minutes',number(value)+' kWh/m²']);$('#shaded').textContent=`For six east-facing box-shaded scenarios, the largest change between 5 and 1 minutes was ${number(s.maxShaded5MinuteDifference)} kWh/m².`;
+for(const p of r.sky)row('#sky',[p.position.join(', '),number(p.sky),...p.results.map(v=>number(v.value))]);}catch(e){$('#status').textContent='The report could not load. Download the JSON or retry.';}
