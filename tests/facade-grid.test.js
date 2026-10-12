@@ -1,0 +1,7 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {facadeGrid} from '../dist/facade-grid.js';import {solarSettings} from '../dist/solar.js';
+const wall=[0,0,0,10,0,0,10,12,0,0,0,0,10,12,0,0,12,0];
+test('regular grid produces equal spacing and unique centres across triangle seams',()=>{const g=facadeGrid(wall,2,3);assert.equal(g.samples.length,20);assert.equal(new Set(g.samples.map(s=>s.position.join(','))).size,20);assert.deepEqual([...new Set(g.samples.map(s=>s.position[1]))],[1.5,4.5,7.5,10.5]);assert.ok(g.lines.length);for(const s of g.samples){assert.equal(s.position[2],0);assert.ok(s.position[0]>=0&&s.position[0]<=10);}});
+test('tilted facade points and lines lie on actual plane',()=>{const tris=wall.map((v,i)=>i%3===2?wall[i-1]*.3:v),g=facadeGrid(tris,2,3);assert.equal(g.samples.length,20);for(const s of g.samples)assert.ok(Math.abs(s.position[2]-.3*s.position[1])<1e-8);});
+test('roofs excluded, gaps preserved, oversized grids rejected',()=>{assert.equal(facadeGrid([0,0,0,10,0,0,10,0,10]).samples.length,0);const t=wall.map((v,i)=>i%3===0?v+20:v),g=facadeGrid([...wall,...t],2,3);assert.equal(g.samples.length,40);assert.ok(g.samples.every(s=>s.position[0]<10||s.position[0]>20));assert.throws(()=>facadeGrid(wall,1,1,5),/exceeds/);assert.throws(()=>facadeGrid(wall,0,3));});
+test('grid settings normalized and retained',()=>{assert.equal(solarSettings().gridWidth,5);assert.equal(solarSettings({gridWidth:8,gridHeight:4}).gridHeight,4);assert.equal(solarSettings({gridWidth:0}).gridWidth,1);});
