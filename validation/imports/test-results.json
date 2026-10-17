@@ -1,0 +1,8 @@
+{
+  "tests": 126,
+  "pass": 126,
+  "fail": 0,
+  "command": "npm test",
+  "additionalCommand": "npm run validate:radiation",
+  "additionalExitCode": 0
+}

@@ -8,7 +8,7 @@ import {fileURLToPath} from 'node:url';
 import {defaults} from '../../dist/geometry.js';
 import {replayAnalysisCSV} from '../replay_csv.mjs';
 const require=createRequire(import.meta.url),{chromium}=require(process.env.FORM_PLAYWRIGHT_MODULE||'playwright');
-const root=fileURLToPath(new URL('../../dist/',import.meta.url)),out=fileURLToPath(new URL('./',import.meta.url));
+const root=fileURLToPath(new URL('../../dist/',import.meta.url)),out=process.env.FORM_BROWSER_OUTPUT||fileURLToPath(new URL('./',import.meta.url));
 fs.mkdirSync(path.join(out,'screenshots'),{recursive:true});fs.mkdirSync(path.join(out,'exports'),{recursive:true});
 const server=http.createServer((req,res)=>{const name=decodeURIComponent(new URL(req.url,'http://localhost').pathname),file=path.resolve(root,'.'+(name==='/'?'/index.html':name));if(!file.startsWith(root)||!fs.existsSync(file)){res.writeHead(404);res.end();return;}res.setHeader('Content-Type',({'.js':'text/javascript','.html':'text/html','.css':'text/css','.json':'application/json'})[path.extname(file)]||'application/octet-stream');res.end(fs.readFileSync(file));});
 await new Promise(r=>server.listen(0,'127.0.0.1',r));const url='http://127.0.0.1:'+server.address().port;

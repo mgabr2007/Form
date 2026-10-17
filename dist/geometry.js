@@ -1,3 +1,4 @@
+import {normalizeImports} from './imported-model.js';
 import {solarSettings} from './solar.js';
 import clipping from './vendor/polygon-clipping.js';
 export const defaults = () => ({version:1,name:'Untitled tower',shape:'rounded',width:36,depth:30,floors:48,storey:3.6,orientation:0,podium:true,podiumFloors:3,podiumWidth:64,podiumDepth:52,modifiers:[{id:'twist-1',type:'twist',value:65,start:1,end:48,enabled:true},{id:'taper-1',type:'taper',value:22,start:1,end:48,enabled:true}]});
@@ -25,13 +26,14 @@ export function duplicateModifier(modifiers,index,id){if(modifiers.length>=12||!
 export function modifierOptions(m){const out={};for(const [key,p]of Object.entries(specs[m.type]?.options||{})){const v=m[key]??p.value;out[key]=p.choices?(p.choices.includes(v)?v:p.value):Math.min(p.max,Math.max(p.min,Number.isFinite(+v)?Math.round(+v/p.step)*p.step:p.value));}return out;}
 const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
 export function normalize(raw){
- if(!raw||raw.version!==1||typeof raw!=='object')throw Error('Choose a FORM project JSON file (version 1).');
+ if(!raw||![1,2].includes(raw.version)||typeof raw!=='object')throw Error('Choose a FORM project JSON file (version 1 or 2).');
  const s=defaults();
  const n=(key,a,b,integer=false)=>{if(raw[key]!==undefined){const v=Number(raw[key]);if(!Number.isFinite(v))throw Error('Invalid '+key);s[key]=integer?Math.round(clamp(v,a,b)):clamp(v,a,b);}};
  s.name=String(raw.name||s.name).slice(0,70);s.shape=['rectangle','rounded','ellipse','hexagon'].includes(raw.shape)?raw.shape:s.shape;
  n('width',12,80);n('depth',12,80);n('floors',5,100,true);n('storey',2.8,5.5);n('orientation',-180,180);n('podiumFloors',1,8,true);n('podiumWidth',25,110);n('podiumDepth',25,110);s.podium=raw.podium===undefined?s.podium:!!raw.podium;
  s.modifiers=(Array.isArray(raw.modifiers)?raw.modifiers:[]).slice(0,12).map((m,i)=>{const p=specs[m.type];if(!p)throw Error('Unknown modifier');const v=Number(m.value);if(!Number.isFinite(v))throw Error('Invalid modifier value');const start=clamp(Math.round(Number(m.start)||1),1,s.floors);return{id:'mod-'+i,type:m.type,value:clamp(v,p.min,p.max),start,end:clamp(Math.round(Number(m.end)||s.floors),start,s.floors),enabled:m.enabled!==false,...(progressiveTypes.includes(m.type)?{curve:Object.hasOwn(curves,m.curve)?m.curve:'linear'}:{}),...modifierOptions(m)};});
  if(raw.solar)s.solar=solarSettings(raw.solar);
+ if(raw.imports){s.imports=normalizeImports(raw.imports);s.version=2;}
  return s;
 }
 export function footprint(shape,w,d,radius=Math.min(w,d)*.18){
