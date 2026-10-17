@@ -1,13 +1,36 @@
-import {solarPosition,dot,blocked} from './solar.js';
+import {solarPosition,dot,blocked,rayOrigin} from './solar.js';
+export const IRRADIATION_METHOD_VERSION='FORM-irradiation-4';
+export const DEFAULT_SKY_PATCHES=8192;
+const directionCache=new Map();
+function skyDirections(patches){
+ if(!directionCache.has(patches)){const angle=Math.PI*(3-Math.sqrt(5));directionCache.set(patches,Array.from({length:patches},(_,j)=>{const up=(j+.5)/patches,r=Math.sqrt(1-up*up),a=j*angle;return [r*Math.cos(a),up,r*Math.sin(a)];}));}
+ return directionCache.get(patches);
+}
 // Isotropic sky radiance, normalized to DHI. Ground/reflected radiation excluded.
-export function skyFactor(sample,tris,bvh,resolution=16){
- if(!Number.isInteger(resolution)||resolution<4||resolution>256)throw Error('Invalid sky resolution');
- const origin=sample.position.map((v,i)=>v+.02*sample.normal[i]);let visible=0,total=0;
- for(let j=0;j<resolution;j++){const up=(j+.5)/resolution,r=Math.sqrt(1-up*up);for(let k=0;k<resolution*2;k++){const a=2*Math.PI*(k+.5)/(resolution*2),d=[r*Math.cos(a),up,r*Math.sin(a)],w=Math.max(0,dot(sample.normal,d));total+=w;if(w&&!blocked(origin,d,tris,bvh))visible+=w;}}
+export function skyFactor(sample,tris,bvh,patches=DEFAULT_SKY_PATCHES){
+ if(![512,2048,8192].includes(patches))throw Error('Sky resolution must be 512, 2048 or 8192.');
+ // Spherical Fibonacci directions avoid aligned latitude/azimuth bands at shadow edges.
+ // Equal vertical spacing samples equal solid angle; normalize discrete cosine weights.
+ const origin=rayOrigin(sample);let visible=0,total=0;
+ for(const d of skyDirections(patches)){const w=Math.max(0,dot(sample.normal,d));total+=w;if(w&&!blocked(origin,d,tris,bvh))visible+=w;}
  return (1+sample.normal[1])/2*(total?visible/total:0);
 }
-export function radiationSteps(records,settings,maxStepMinutes=5){if(!Number.isFinite(settings.step)||settings.step<1||!Number.isFinite(maxStepMinutes)||maxStepMinutes<1)throw Error('Invalid radiation time step');const steps=[];for(const r of records){for(let t=r.start;t<r.end;){const end=Math.min(r.end,t+Math.min(settings.step,maxStepMinutes)*60),date=new Date((t+end)*500),p=solarPosition(date.toISOString().slice(0,10),date.getUTCHours()+date.getUTCMinutes()/60+date.getUTCSeconds()/3600,settings.lat,settings.lon,0,settings.north);steps.push({...p,hours:(end-t)/3600,dni:r.dni,dhi:r.dhi});t=end;}}return steps;}
-export function irradiation(sample,steps,tris,bvh){const origin=sample.position.map((v,i)=>v+.02*sample.normal[i]),sky=skyFactor(sample,tris,bvh);let direct=0,diffuse=0;for(const s of steps){const cos=Math.max(0,dot(sample.normal,s.direction));if(s.altitude>0&&cos&&!blocked(origin,s.direction,tris,bvh))direct+=s.dni*cos*s.hours/1000;diffuse+=s.dhi*sky*s.hours/1000;}return{direct,diffuse,total:direct+diffuse,sky};}
+// Production integrates geometry at <=1 minute. The explicit third argument is
+// for matched-step benchmark characterization only; it does not refine weather.
+export function radiationSteps(records,settings,maxStepMinutes=1){
+ if(!Number.isFinite(settings.step)||settings.step<.25||!Number.isFinite(maxStepMinutes)||maxStepMinutes<.25)throw Error('Invalid radiation time step: must be positive and at least 0.25 minutes.');
+ const steps=[];
+ for(const r of records){
+  if(![r.start,r.end,r.dni,r.dhi].every(Number.isFinite)||r.end<=r.start||r.dni<0||r.dhi<0)throw Error('Invalid radiation interval.');
+  for(let t=r.start;t<r.end;){
+   const end=Math.min(r.end,t+Math.min(settings.step,maxStepMinutes)*60),date=new Date((t+end)*500);
+   const p=solarPosition(date.toISOString().slice(0,10),date.getUTCHours()+date.getUTCMinutes()/60+date.getUTCSeconds()/3600+date.getUTCMilliseconds()/3600000,settings.lat,settings.lon,0,settings.north);
+   steps.push({...p,hours:(end-t)/3600,dni:r.dni,dhi:r.dhi});t=end;
+  }
+ }
+ return steps;
+}
+export function irradiation(sample,steps,tris,bvh,patches=DEFAULT_SKY_PATCHES){const origin=rayOrigin(sample),sky=skyFactor(sample,tris,bvh,patches);let direct=0,diffuse=0;for(const s of steps){const cos=Math.max(0,dot(sample.normal,s.direction));if(s.altitude>0&&cos&&!blocked(origin,s.direction,tris,bvh))direct+=s.dni*cos*s.hours/1000;diffuse+=s.dhi*sky*s.hours/1000;}return{direct,diffuse,total:direct+diffuse,sky};}
 export function dayWindow(settings){const start=Date.parse(settings.date+'T00:00:00Z')/1000-settings.utc*3600;return{start,end:start+86400};}
 export function parseRadiation(data,settings){
  const h=data.hourly,u=data.hourly_units,{start,end}=dayWindow(settings),names=['shortwave_radiation','direct_normal_irradiance','diffuse_radiation'];

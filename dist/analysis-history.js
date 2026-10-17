@@ -1,5 +1,6 @@
+import {DEFAULT_SKY_PATCHES} from './radiation.js';
 export const HISTORY_KEY='form-analysis-history-v1';
-export const ENGINE='FORM-environment-2026-10-12';
+export const ENGINE='FORM-environment-2026-10-17-convergence';
 export const metrics={sunlight:['Direct sunlight','h'],radiation:['Solar irradiation','kWh/m²'],daylight:['Façade VSC','%'],sky:['Horizontal sky-view factor','%']};
 export function summarize(values){if(!Array.isArray(values)||!values.length||values.some(v=>!Number.isFinite(v)))throw Error('This run has no valid results.');return {min:Math.min(...values),max:Math.max(...values),mean:values.reduce((a,b)=>a+b,0)/values.length,count:values.length};}
 export function snapshot(result,name,id=globalThis.crypto.randomUUID(),now=new Date().toISOString()){
@@ -11,8 +12,8 @@ function stable(value){if(Array.isArray(value))return value.map(stable);if(value
 export function conditions(run){const r=run.result,s=r.settings,sky=['daylight','sky'].includes(s.analysis);return {
  'sampling':r.sampling||'area-samples-v1',...(s.target==='facade'&&r.sampling==='facade-grid-v1'?{'grid width':s.gridWidth,'grid row height':s.gridHeight}:{}),'engine':run.engine,'metric':s.analysis,'surface target':s.target,'sample count':r.values.length,
  'context blocks':s.context||[],...(s.target==='ground'?{'ground extent':s.extent}:{}),
- ...(sky?{'sky resolution':s.skyResolution}:{'date':s.date,'latitude':s.lat,'longitude':s.lon,'UTC offset':s.utc,'north rotation':s.north,'time step':s.analysis==='radiation'?Math.min(5,s.step):s.step}),
- ...(s.analysis==='radiation'?{'weather':r.weather?{source:r.weather.source,latitude:r.weather.gridLatitude,longitude:r.weather.gridLongitude,records:r.weather.records}:null}:{})};}
+ ...(sky?{'sky resolution':s.skyResolution}:{'date':s.date,'latitude':s.lat,'longitude':s.lon,'UTC offset':s.utc,'north rotation':s.north,'time step':s.analysis==='radiation'?Math.min(run.engine===ENGINE?1:5,s.step):s.step}),
+ ...(s.analysis==='radiation'?{'irradiation sky rays':s.skyPatches??(run.engine===ENGINE?DEFAULT_SKY_PATCHES:run.engine==='FORM-environment-2026-10-17-audit-integration'?2048:512),'weather':r.weather?{source:r.weather.source,latitude:r.weather.gridLatitude,longitude:r.weather.gridLongitude,records:r.weather.records}:null}:{})};}
 export function compare(run,baseline){const a=conditions(run),b=conditions(baseline),reasons=[...new Set([...Object.keys(a),...Object.keys(b)])].filter(k=>JSON.stringify(stable(a[k]))!==JSON.stringify(stable(b[k])));const mean=summarize(run.result.values).mean,base=summarize(baseline.result.values).mean;return {reasons,delta:reasons.length?null:mean-base,relative:reasons.length||base===0?null:(mean-base)/base*100};}
 export function readHistory(storage){const raw=storage.getItem(HISTORY_KEY);if(!raw)return [];const runs=JSON.parse(raw);if(!Array.isArray(runs)||runs.length>12)throw Error('Saved results could not be read.');for(const r of runs){if(!r?.id||typeof r.name!=='string'||!metrics[r.result?.settings?.analysis])throw Error('Saved results could not be read.');summarize(r.result.values);}return runs;}
 export function writeHistory(storage,runs){if(runs.length>12)throw Error('Keep up to 12 runs. Export a backup, then delete a run to make space.');storage.setItem(HISTORY_KEY,JSON.stringify(runs));}

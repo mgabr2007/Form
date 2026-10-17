@@ -1,7 +1,7 @@
 // Regular (horizontal tangent, world elevation) lattice, clipped to each façade triangle.
 // Horizontal coordinates are world-origin anchored within each planar face.
 export function facadeGrid(tris,width=5,height=3,limit=6000){
- if(!Number.isFinite(width)||!Number.isFinite(height)||width<1||height<1)throw Error('Grid spacing must be at least 1 m.');
+ if(!Number.isFinite(width)||!Number.isFinite(height)||width<.25||height<.25)throw Error('Grid spacing must be at least 0.25 m.');
  const samples=[],lines=[],seen=new Set(),sampleKeys=new Map(),pieces=[];let candidates=0;
  const dot=(a,b)=>a.reduce((s,v,i)=>s+v*b[i],0),sub=(a,b)=>a.map((v,i)=>v-b[i]),cross=(a,b)=>[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]],area=(a,b,c)=>(b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0]);
  for(let f=0;f<tris.length;f+=9){const p=[Array.from(tris.slice(f,f+3)),Array.from(tris.slice(f+3,f+6)),Array.from(tris.slice(f+6,f+9))],raw=cross(sub(p[1],p[0]),sub(p[2],p[0])),len=Math.hypot(...raw);if(len<1e-8)continue;const n=raw.map(v=>v/len);if(Math.abs(n[1])>.7)continue;

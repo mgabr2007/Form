@@ -1,0 +1,35 @@
+[
+  {
+    "scene": "setback",
+    "sensor": "terrace_south",
+    "form": 0.6769752502441406,
+    "reference": 0.6824951,
+    "error": -0.005519849755859396,
+    "pass": false,
+    "radiance65536": 0.6824951,
+    "referenceChange": 0.0,
+    "referenceConverged": true
+  },
+  {
+    "scene": "setback",
+    "sensor": "terrace_west",
+    "form": 0.6769752502441406,
+    "reference": 0.682373,
+    "error": -0.005397749755859382,
+    "pass": false,
+    "radiance65536": 0.6824188000000001,
+    "referenceChange": 4.5800000000095764e-05,
+    "referenceConverged": true
+  },
+  {
+    "scene": "neighbours",
+    "sensor": "south_mid",
+    "form": 0.11660928813758555,
+    "reference": 0.1224365,
+    "error": -0.005827211862414458,
+    "pass": false,
+    "radiance65536": 0.1221161,
+    "referenceChange": -0.00032039999999999846,
+    "referenceConverged": true
+  }
+]

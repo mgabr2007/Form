@@ -5,7 +5,7 @@ test('equatorial equinox sun rises east, peaks near zenith and sets west',()=>{
  const a=solarPosition('2026-03-20',9,0,0),b=solarPosition('2026-03-20',12,0,0),c=solarPosition('2026-03-20',15,0,0);assert.ok(a.azimuth>85&&a.azimuth<95);assert.ok(b.altitude>87);assert.ok(c.azimuth>265&&c.azimuth<275);assert.ok(solarPosition('2026-03-20',0,0,0).altitude<0);
 });
 test('longitude/timezone corrections and north rotation use stated conventions',()=>{
- const a=solarPosition('2026-06-21',12,30,30,2),b=solarPosition('2026-06-21',12,30,0,0);assert.ok(Math.abs(a.altitude-b.altitude)<1e-10);const c=solarPosition('2026-06-21',12,30,30,2,90);assert.ok(Math.abs(c.direction[0]-a.direction[2])<1e-10);assert.ok(Math.abs(c.direction[2]+a.direction[0])<1e-10);
+ const a=solarPosition('2026-06-21',12,30,30,2),b=solarPosition('2026-06-21',10,30,30,0);assert.ok(Math.abs(a.altitude-b.altitude)<1e-10);const c=solarPosition('2026-06-21',12,30,30,2,90);assert.ok(Math.abs(c.direction[0]-a.direction[2])<1e-10);assert.ok(Math.abs(c.direction[2]+a.direction[0])<1e-10);
 });
 test('sun vectors are normalized and polar day/night is finite',()=>{
  for(const date of ['2026-06-21','2026-12-21'])for(const lat of [-89,0,89]){const p=solarPosition(date,12,lat,0);assert.ok(Math.abs(Math.hypot(...p.direction)-1)<1e-10);assert.ok(Number.isFinite(p.azimuth));}

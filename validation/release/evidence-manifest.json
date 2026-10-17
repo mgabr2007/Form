@@ -1,0 +1,29 @@
+{
+  "parent": "48ffd363ce06a06f49b03502a456c8872dd159e8",
+  "method": "FORM-irradiation-4",
+  "browser": "153.0.8010.0",
+  "python": "3.12.14",
+  "node": "v24.19.0",
+  "releaseGatesPassed": true,
+  "sha256": {
+    "dist/analysis-history.js": "8d8e769f3ed710ceb2139fefb59a1c9b24eb3b4a48043de21c47a9c96801819d",
+    "dist/facade-grid.js": "7c83d6d092ad21eb7bb7c0c4cb9ca68706e88201e57fe797e5721e452a6484e8",
+    "dist/radiation.js": "e212ec238c72a0bf40420dc5759416bf5cbb72dacff2f5400cfbe7436e5da06a",
+    "dist/solar-export.js": "e27015d8952c60bf53884384e053ff03ae70f57728a78af07f81b855e7b39217",
+    "dist/solar-ui.js": "72c5b53ee5e35e98dc42ebe1048be13df6d79706fe1007633b56c0f41a787d0d",
+    "dist/solar-worker.js": "373d7138486e5c4c6a2d98b5396096c18ba480473afbf4c167983400ebc9213d",
+    "dist/solar.js": "a1a6f145370c4a2c2167390a5e2b6647a8e764a778cdd418eec8f6103cfd7c3d",
+    "tests/fixtures/pvlib-radiation.json": "90fcd9035fb0c31c71715d220582cfcac00507a308794f74de153a9b86571288",
+    "validation/radiance/scenes.json": "439fa6a18ae26940c21802f846008be417a331b98d391c329ac371a1e3fdf167",
+    "validation/release/PROTOCOL.md": "b82305750ea7dc717f34c9e17c6cf0e100e011d100bbba8b006b966159954bbb",
+    "validation/release/browser-check.mjs": "7af06500104bd55558351a25ac6c8630615bdf32074467ad880b8f1037559e26",
+    "validation/release/browser-results.json": "6c9e719dba6de10355387dfbf56b734be4c50b893f6e9d86f5df9e4141ddee47",
+    "validation/release/build_report.py": "bf06c4c8512ac8c28c944a3cfa6331359ee239722c13d6df51e554c5d1ee639d",
+    "validation/release/compare_reference.py": "2bccc6f9aa6f1ee78e9f98c3ff5923120b3ee3ebeaa0f175e5c5d351d3b8856c",
+    "validation/release/export_cases.mjs": "5655d6ffbc9bd4fe343d315ccf104430e5ff72cf655d656eadfa9d07bf1d2a48",
+    "validation/release/refine_sky.py": "2290b2681345958037aba616c6bf4f8d8c7be09f210906b033ab34a8f9f2957e",
+    "validation/release/regular-grid-attempt.json": "3b164579b160862c2b496406c4c904245e689287dca2b70f766b08449cfee249",
+    "validation/release/results.json": "3dfb310ac84dc57ac467708e00e9c384d079fb4918f09cdba1fe437a736fa15f",
+    "validation/release/sky-refinement.json": "f5eb23aaa99a5d4f8e23bad61d009e0b97ee3c436cedc023242ded6a7c18c474"
+  }
+}

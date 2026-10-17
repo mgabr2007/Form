@@ -1,0 +1,4609 @@
+{
+  "method": "FORM-irradiation-4",
+  "skyDirections": 8192,
+  "daily": [
+    {
+      "scene": "box",
+      "sensor": "roof",
+      "day": "Berlin_summer",
+      "form": 7.312897020044365,
+      "reference": 7.312897020044359,
+      "error": 6.217248937900877e-15,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_low",
+      "day": "Berlin_summer",
+      "form": 2.7446034648413744,
+      "reference": 2.7441059539367068,
+      "error": 0.0004975109046676529,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_mid",
+      "day": "Berlin_summer",
+      "form": 2.7446034648413744,
+      "reference": 2.7443049909008623,
+      "error": 0.00029847394051207843,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_high",
+      "day": "Berlin_summer",
+      "form": 2.7446034648413744,
+      "reference": 2.7447029018177362,
+      "error": -9.943697636183302e-05,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "east",
+      "day": "Berlin_summer",
+      "form": 4.301716440477247,
+      "reference": 4.302014914417766,
+      "error": -0.00029847394051873977,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "north",
+      "day": "Berlin_summer",
+      "form": 2.1316036704667343,
+      "reference": 2.131703107443095,
+      "error": -9.943697636094484e-05,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "west",
+      "day": "Berlin_summer",
+      "form": 4.160621049410189,
+      "reference": 4.160123538505521,
+      "error": 0.000497510904668097,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "roof",
+      "day": "Berlin_winter",
+      "form": 1.4538691926166467,
+      "reference": 1.453869192616644,
+      "error": 2.6645352591003757e-15,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_low",
+      "day": "Berlin_winter",
+      "form": 4.494705579068062,
+      "reference": 4.494495863009056,
+      "error": 0.00020971605900577117,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_mid",
+      "day": "Berlin_winter",
+      "form": 4.494705579068062,
+      "reference": 4.494579763175518,
+      "error": 0.00012581589254345715,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_high",
+      "day": "Berlin_winter",
+      "form": 4.494705579068062,
+      "reference": 4.4947474947941375,
+      "error": -4.1915726075814064e-05,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "east",
+      "day": "Berlin_winter",
+      "form": 1.3345900732741771,
+      "reference": 1.3347158891667172,
+      "error": -0.00012581589254012648,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "north",
+      "day": "Berlin_winter",
+      "form": 0.3435715252340154,
+      "reference": 0.3436134409600926,
+      "error": -4.191572607720184e-05,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "west",
+      "day": "Berlin_winter",
+      "form": 1.3356036253089323,
+      "reference": 1.3353939092499278,
+      "error": 0.0002097160590044389,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "roof",
+      "day": "Cairo_summer",
+      "form": 7.089208625287865,
+      "reference": 7.089208625287858,
+      "error": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_low",
+      "day": "Cairo_summer",
+      "form": 1.0064234640036953,
+      "reference": 1.005975847089815,
+      "error": 0.0004476169138802888,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_mid",
+      "day": "Cairo_summer",
+      "form": 1.0064234640036953,
+      "reference": 1.0061549231880595,
+      "error": 0.00026854081563576493,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_high",
+      "day": "Cairo_summer",
+      "form": 1.0064234640036953,
+      "reference": 1.0065129287210777,
+      "error": -8.946471738235928e-05,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "east",
+      "day": "Cairo_summer",
+      "form": 3.5705088457297913,
+      "reference": 3.5707773865454167,
+      "error": -0.00026854081562532883,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "north",
+      "day": "Cairo_summer",
+      "form": 1.9109384138225916,
+      "reference": 1.9110278785399741,
+      "error": -8.946471738258133e-05,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "west",
+      "day": "Cairo_summer",
+      "form": 3.5827820688824827,
+      "reference": 3.5823344519686025,
+      "error": 0.0004476169138802888,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "roof",
+      "day": "Cairo_winter",
+      "form": 3.4699715454434035,
+      "reference": 3.4699715454434052,
+      "error": -1.7763568394002505e-15,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_low",
+      "day": "Cairo_winter",
+      "form": 4.8937985426303,
+      "reference": 4.893506962186366,
+      "error": 0.00029158044393451377,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_mid",
+      "day": "Cairo_winter",
+      "form": 4.8937985426303,
+      "reference": 4.89362361347144,
+      "error": 0.00017492915886041516,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_high",
+      "day": "Cairo_winter",
+      "form": 4.8937985426303,
+      "reference": 4.893856820504089,
+      "error": -5.827787378898108e-05,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "east",
+      "day": "Cairo_winter",
+      "form": 2.0996297494059575,
+      "reference": 2.099804678564819,
+      "error": -0.00017492915886130334,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "north",
+      "day": "Cairo_winter",
+      "form": 0.4776874900639467,
+      "reference": 0.47774576793773577,
+      "error": -5.8277873789092105e-05,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "west",
+      "day": "Cairo_winter",
+      "form": 2.1840184161262517,
+      "reference": 2.1837268356823176,
+      "error": 0.0002915804439340697,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "roof",
+      "day": "Berlin_summer",
+      "form": 7.312897020044365,
+      "reference": 7.312897020044359,
+      "error": 6.217248937900877e-15,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_low",
+      "day": "Berlin_summer",
+      "form": 2.0176841737209927,
+      "reference": 2.019383062408288,
+      "error": -0.0016988886872950637,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_mid",
+      "day": "Berlin_summer",
+      "form": 0.4584694709472713,
+      "reference": 0.45787271771052784,
+      "error": 0.0005967532367434636,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_high",
+      "day": "Berlin_summer",
+      "form": 2.7446034648413744,
+      "reference": 2.7447029018177362,
+      "error": -9.943697636183302e-05,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "east",
+      "day": "Berlin_summer",
+      "form": 4.298985807962041,
+      "reference": 4.299328648953132,
+      "error": -0.00034284099109083144,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "north",
+      "day": "Berlin_summer",
+      "form": 2.1316036704667343,
+      "reference": 2.131703107443095,
+      "error": -9.943697636094484e-05,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "west",
+      "day": "Berlin_summer",
+      "form": 4.1578193580266145,
+      "reference": 4.157437273040887,
+      "error": 0.00038208498572789296,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "roof",
+      "day": "Berlin_winter",
+      "form": 1.4538691926166467,
+      "reference": 1.453869192616644,
+      "error": 2.6645352591003757e-15,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_low",
+      "day": "Berlin_winter",
+      "form": 4.464379901779335,
+      "reference": 4.465096035308951,
+      "error": -0.000716133529616414,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_mid",
+      "day": "Berlin_winter",
+      "form": 4.3443929547296625,
+      "reference": 4.344141404993096,
+      "error": 0.00025154973656604795,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_high",
+      "day": "Berlin_winter",
+      "form": 4.494705579068062,
+      "reference": 4.4947474947941375,
+      "error": -4.1915726075814064e-05,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "east",
+      "day": "Berlin_winter",
+      "form": 1.2647438192570715,
+      "reference": 1.2648883372180688,
+      "error": -0.00014451796099734793,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "north",
+      "day": "Berlin_winter",
+      "form": 0.3435715252340154,
+      "reference": 0.3436134409600926,
+      "error": -4.191572607720184e-05,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "west",
+      "day": "Berlin_winter",
+      "form": 1.2654264121012002,
+      "reference": 1.2652653515964731,
+      "error": 0.0001610605047270841,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "roof",
+      "day": "Cairo_summer",
+      "form": 7.089208625287865,
+      "reference": 7.089208625287858,
+      "error": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_low",
+      "day": "Cairo_summer",
+      "form": 0.6685903807676187,
+      "reference": 0.6701188926134691,
+      "error": -0.0015285118458504554,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_mid",
+      "day": "Cairo_summer",
+      "form": 0.41249083741757836,
+      "reference": 0.41195393091026217,
+      "error": 0.0005369065073161927,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_high",
+      "day": "Cairo_summer",
+      "form": 1.0064234640036953,
+      "reference": 1.0065129287210777,
+      "error": -8.946471738235928e-05,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "east",
+      "day": "Cairo_summer",
+      "form": 3.5680520607871573,
+      "reference": 3.568360519204733,
+      "error": -0.0003084584175758742,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "north",
+      "day": "Cairo_summer",
+      "form": 1.9109384138225916,
+      "reference": 1.9110278785399741,
+      "error": -8.946471738258133e-05,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "west",
+      "day": "Cairo_summer",
+      "form": 3.5802613513686037,
+      "reference": 3.579917584627919,
+      "error": 0.00034376674068470336,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "roof",
+      "day": "Cairo_winter",
+      "form": 3.4699715454434035,
+      "reference": 3.4699715454434052,
+      "error": -1.7763568394002505e-15,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_low",
+      "day": "Cairo_winter",
+      "form": 4.851634988305849,
+      "reference": 4.852630670436605,
+      "error": -0.0009956821307559593,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_mid",
+      "day": "Cairo_winter",
+      "form": 2.745942141352266,
+      "reference": 2.74559239711137,
+      "error": 0.0003497442408963991,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_high",
+      "day": "Cairo_winter",
+      "form": 4.8937985426303,
+      "reference": 4.893856820504089,
+      "error": -5.827787378898108e-05,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "east",
+      "day": "Cairo_winter",
+      "form": 2.0980293844018316,
+      "reference": 2.098230316135066,
+      "error": -0.00020093173323454394,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "north",
+      "day": "Cairo_winter",
+      "form": 0.4776874900639467,
+      "reference": 0.47774576793773577,
+      "error": -5.8277873789092105e-05,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "west",
+      "day": "Cairo_winter",
+      "form": 2.182376405047253,
+      "reference": 2.182152473252565,
+      "error": 0.00022393179468815916,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "roof",
+      "day": "Berlin_summer",
+      "form": 7.312897020044365,
+      "reference": 7.312897020044359,
+      "error": 6.217248937900877e-15,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_south",
+      "day": "Berlin_summer",
+      "form": 6.67739145202075,
+      "reference": 6.675950360049069,
+      "error": 0.0014410919716807413,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_west",
+      "day": "Berlin_summer",
+      "form": 4.498045402839444,
+      "reference": 4.497751132951279,
+      "error": 0.00029426988816450006,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_lower",
+      "day": "Berlin_summer",
+      "form": 2.7446034648413744,
+      "reference": 2.7447029018177362,
+      "error": -9.943697636183302e-05,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_upper",
+      "day": "Berlin_summer",
+      "form": 2.7446034648413744,
+      "reference": 2.7447029018177362,
+      "error": -9.943697636183302e-05,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "east_lower",
+      "day": "Berlin_summer",
+      "form": 4.301716440477247,
+      "reference": 4.301617003500892,
+      "error": 9.943697635517168e-05,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "north_upper",
+      "day": "Berlin_summer",
+      "form": 2.1316036704667343,
+      "reference": 2.131802707430891,
+      "error": -0.00019903696415690675,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "roof",
+      "day": "Berlin_winter",
+      "form": 1.4538691926166467,
+      "reference": 1.453869192616644,
+      "error": 2.6645352591003757e-15,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_south",
+      "day": "Berlin_winter",
+      "form": 1.236305371423276,
+      "reference": 1.235697907092098,
+      "error": 0.0006074643311779759,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_west",
+      "day": "Berlin_winter",
+      "form": 1.124834387542265,
+      "reference": 1.1247103437863406,
+      "error": 0.00012404375592445227,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_lower",
+      "day": "Berlin_winter",
+      "form": 4.494705579068062,
+      "reference": 4.4947474947941375,
+      "error": -4.1915726075814064e-05,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_upper",
+      "day": "Berlin_winter",
+      "form": 4.494705579068062,
+      "reference": 4.4947474947941375,
+      "error": -4.1915726075814064e-05,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "east_lower",
+      "day": "Berlin_winter",
+      "form": 1.3345900732741771,
+      "reference": 1.334548157548098,
+      "error": 4.191572607914473e-05,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "north_upper",
+      "day": "Berlin_winter",
+      "form": 0.3435715252340154,
+      "reference": 0.3436554254004762,
+      "error": -8.390016646081522e-05,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "roof",
+      "day": "Cairo_summer",
+      "form": 7.089208625287865,
+      "reference": 7.089208625287858,
+      "error": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_south",
+      "day": "Cairo_summer",
+      "form": 6.6234938832481,
+      "reference": 6.622197314399222,
+      "error": 0.001296568848878188,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_west",
+      "day": "Cairo_summer",
+      "form": 4.461262562447432,
+      "reference": 4.460997804071387,
+      "error": 0.00026475837604511554,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_lower",
+      "day": "Cairo_summer",
+      "form": 1.0064234640036953,
+      "reference": 1.0065129287210777,
+      "error": -8.946471738235928e-05,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_upper",
+      "day": "Cairo_summer",
+      "form": 1.0064234640036953,
+      "reference": 1.0065129287210777,
+      "error": -8.946471738235928e-05,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "east_lower",
+      "day": "Cairo_summer",
+      "form": 3.5705088457297913,
+      "reference": 3.5704193810123983,
+      "error": 8.946471739301742e-05,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "north_upper",
+      "day": "Cairo_summer",
+      "form": 1.9109384138225916,
+      "reference": 1.911117489920832,
+      "error": -0.00017907609824052706,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "roof",
+      "day": "Cairo_winter",
+      "form": 3.4699715454434035,
+      "reference": 3.4699715454434052,
+      "error": -1.7763568394002505e-15,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_south",
+      "day": "Cairo_winter",
+      "form": 3.1674799009341763,
+      "reference": 3.1666353079153957,
+      "error": 0.0008445930187805928,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_west",
+      "day": "Cairo_winter",
+      "form": 2.5169960633244504,
+      "reference": 2.516823598070279,
+      "error": 0.00017246525417125014,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_lower",
+      "day": "Cairo_winter",
+      "form": 4.8937985426303,
+      "reference": 4.893856820504089,
+      "error": -5.827787378898108e-05,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_upper",
+      "day": "Cairo_winter",
+      "form": 4.8937985426303,
+      "reference": 4.893856820504089,
+      "error": -5.827787378898108e-05,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "east_lower",
+      "day": "Cairo_winter",
+      "form": 2.0996297494059575,
+      "reference": 2.09957147153217,
+      "error": 5.8277873787648815e-05,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "north_upper",
+      "day": "Cairo_winter",
+      "form": 0.4776874900639467,
+      "reference": 0.47780414134902166,
+      "error": -0.00011665128507498679,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "roof",
+      "day": "Berlin_summer",
+      "form": 7.312897020044365,
+      "reference": 7.312897020044359,
+      "error": 6.217248937900877e-15,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "court_floor",
+      "day": "Berlin_summer",
+      "form": 0.38991317218879307,
+      "reference": 0.39096271739833516,
+      "error": -0.001049545209542091,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south",
+      "day": "Berlin_summer",
+      "form": 1.4259892989386531,
+      "reference": 1.4260862543462811,
+      "error": -9.695540762799659e-05,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south_high",
+      "day": "Berlin_summer",
+      "form": 2.49993664163401,
+      "reference": 2.500046535068669,
+      "error": -0.00010989343465928059,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_east",
+      "day": "Berlin_summer",
+      "form": 2.057080913274012,
+      "reference": 2.058120607887099,
+      "error": -0.001039694613087061,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_west",
+      "day": "Berlin_summer",
+      "form": 2.054353421397181,
+      "reference": 2.0539283905570436,
+      "error": 0.0004250308401374525,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_north",
+      "day": "Berlin_summer",
+      "form": 0.3106927112987915,
+      "reference": 0.3100241158590691,
+      "error": 0.0006685954397224192,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "roof",
+      "day": "Berlin_winter",
+      "form": 1.4538691926166467,
+      "reference": 1.453869192616644,
+      "error": 2.6645352591003757e-15,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "court_floor",
+      "day": "Berlin_winter",
+      "form": 0.16436032468254655,
+      "reference": 0.16480274008093077,
+      "error": -0.00044241539838421606,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south",
+      "day": "Berlin_winter",
+      "form": 0.071298871545053,
+      "reference": 0.07133974121403105,
+      "error": -4.086966897805244e-05,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south_high",
+      "day": "Berlin_winter",
+      "form": 2.534722138085147,
+      "reference": 2.534768461528133,
+      "error": -4.632344298638458e-05,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_east",
+      "day": "Berlin_winter",
+      "form": 0.13033028172047878,
+      "reference": 0.1307685447912493,
+      "error": -0.0004382630707705226,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_west",
+      "day": "Berlin_winter",
+      "form": 0.1307799766681684,
+      "reference": 0.1306008131726301,
+      "error": 0.0001791634955383148,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_north",
+      "day": "Berlin_winter",
+      "form": 0.1309664780466679,
+      "reference": 0.13068464462478718,
+      "error": 0.00028183342188070615,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "roof",
+      "day": "Cairo_summer",
+      "form": 7.089208625287865,
+      "reference": 7.089208625287858,
+      "error": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "court_floor",
+      "day": "Cairo_summer",
+      "form": 2.7730137255223046,
+      "reference": 2.7739580147494545,
+      "error": -0.0009442892271498415,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south",
+      "day": "Cairo_summer",
+      "form": 0.41680406907229484,
+      "reference": 0.41689130109060674,
+      "error": -8.72320183119002e-05,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south_high",
+      "day": "Cairo_summer",
+      "form": 0.7862935989014894,
+      "reference": 0.7863924714279229,
+      "error": -9.887252643347999e-05,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_east",
+      "day": "Cairo_summer",
+      "form": 1.8696674987696769,
+      "reference": 1.8706029252894079,
+      "error": -0.0009354265197309974,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_west",
+      "day": "Cairo_summer",
+      "form": 1.8732282587777984,
+      "reference": 1.8728458531035104,
+      "error": 0.0003824056742880444,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_north",
+      "day": "Cairo_summer",
+      "form": 0.29831460561742795,
+      "reference": 0.2977130617627044,
+      "error": 0.0006015438547235519,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "roof",
+      "day": "Cairo_winter",
+      "form": 3.4699715454434035,
+      "reference": 3.4699715454434052,
+      "error": -1.7763568394002505e-15,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "court_floor",
+      "day": "Cairo_winter",
+      "form": 0.228519726453536,
+      "reference": 0.22913484233392228,
+      "error": -0.0006151158803862911,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south",
+      "day": "Cairo_winter",
+      "form": 0.09913097125715022,
+      "reference": 0.09918779473686228,
+      "error": -5.6823479712059255e-05,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south_high",
+      "day": "Cairo_winter",
+      "form": 3.683597241363758,
+      "reference": 3.683661647542921,
+      "error": -6.440617916281255e-05,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_east",
+      "day": "Cairo_winter",
+      "form": 0.1812057769105794,
+      "reference": 0.18181511956818758,
+      "error": -0.0006093426576081751,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_west",
+      "day": "Cairo_winter",
+      "form": 0.18183101397209256,
+      "reference": 0.18158191253553838,
+      "error": 0.00024910143655418326,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_north",
+      "day": "Cairo_winter",
+      "form": 0.1820903176944506,
+      "reference": 0.18169846828311398,
+      "error": 0.0003918494113366311,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "roof",
+      "day": "Berlin_summer",
+      "form": 7.259779411441496,
+      "reference": 7.259170080637311,
+      "error": 0.0006093308041847934,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_low",
+      "day": "Berlin_summer",
+      "form": 0.8728976885623144,
+      "reference": 0.8729690223093035,
+      "error": -7.133374698908845e-05,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_mid",
+      "day": "Berlin_summer",
+      "form": 2.128204658454344,
+      "reference": 2.12860949056428,
+      "error": -0.0004048321099356933,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_high",
+      "day": "Berlin_summer",
+      "form": 2.220082734953757,
+      "reference": 2.2200696652824283,
+      "error": 1.3069671328747035e-05,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "east",
+      "day": "Berlin_summer",
+      "form": 2.2096863066324284,
+      "reference": 2.2093520230720176,
+      "error": 0.0003342835604107641,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "north",
+      "day": "Berlin_summer",
+      "form": 2.125349353573415,
+      "reference": 2.125833065609157,
+      "error": -0.00048371203574193444,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "west",
+      "day": "Berlin_summer",
+      "form": 4.1464972318210425,
+      "reference": 4.148184254862051,
+      "error": -0.0016870230410086506,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "roof",
+      "day": "Berlin_winter",
+      "form": 0.7307807225922031,
+      "reference": 0.7305238710263667,
+      "error": 0.0002568515658363246,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_low",
+      "day": "Berlin_winter",
+      "form": 0.2347504256895508,
+      "reference": 0.23478049504512138,
+      "error": -3.0069355570594425e-05,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_mid",
+      "day": "Berlin_winter",
+      "form": 0.08374058035213093,
+      "reference": 0.08391122946525878,
+      "error": -0.00017064911312784925,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_high",
+      "day": "Berlin_winter",
+      "form": 0.27725749080572853,
+      "reference": 0.2772519815396245,
+      "error": 5.509266104042343e-06,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "east",
+      "day": "Berlin_winter",
+      "form": 0.4594333777905562,
+      "reference": 0.45929246704825955,
+      "error": 0.00014091074229666267,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "north",
+      "day": "Berlin_winter",
+      "form": 0.340935139421539,
+      "reference": 0.3411390388353573,
+      "error": -0.00020389941381826482,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "west",
+      "day": "Berlin_winter",
+      "form": 1.2164674133157427,
+      "reference": 1.2171785451126182,
+      "error": -0.0007111317968755415,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "roof",
+      "day": "Cairo_summer",
+      "form": 7.041418034544833,
+      "reference": 7.040869811839481,
+      "error": 0.0005482227053521527,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_low",
+      "day": "Cairo_summer",
+      "form": 0.44392848517175,
+      "reference": 0.4439926650548094,
+      "error": -6.417988305940092e-05,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_mid",
+      "day": "Cairo_summer",
+      "form": 0.4518415868190607,
+      "reference": 0.4522058194378584,
+      "error": -0.00036423261879769964,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_high",
+      "day": "Cairo_summer",
+      "form": 0.5345054654787571,
+      "reference": 0.5344937065285689,
+      "error": 1.1758950188234252e-05,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "east",
+      "day": "Cairo_summer",
+      "form": 2.0069685198622853,
+      "reference": 2.006667760674372,
+      "error": 0.0003007591879131688,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "north",
+      "day": "Cairo_summer",
+      "form": 1.9053113250494347,
+      "reference": 1.9057465269447316,
+      "error": -0.00043520189529688835,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "west",
+      "day": "Cairo_summer",
+      "form": 3.570074689844054,
+      "reference": 3.5715925260164005,
+      "error": -0.001517836172346687,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "roof",
+      "day": "Cairo_winter",
+      "form": 3.43884045715611,
+      "reference": 3.4384833414733698,
+      "error": 0.0003571156827404387,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_low",
+      "day": "Cairo_winter",
+      "form": 0.8283875912354424,
+      "reference": 0.828429398410761,
+      "error": -4.18071753186533e-05,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_mid",
+      "day": "Cairo_winter",
+      "form": 0.6925239308666724,
+      "reference": 0.6927611942617583,
+      "error": -0.000237263395085896,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_high",
+      "day": "Cairo_winter",
+      "form": 0.876714971363183,
+      "reference": 0.8767073115098376,
+      "error": 7.659853345387546e-06,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "east",
+      "day": "Cairo_winter",
+      "form": 0.9296611756378019,
+      "reference": 0.9294652592306865,
+      "error": 0.00019591640711547065,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "north",
+      "day": "Cairo_winter",
+      "form": 0.4740219694107417,
+      "reference": 0.4743054626342953,
+      "error": -0.0002834932235535881,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "west",
+      "day": "Cairo_winter",
+      "form": 2.0957909770604273,
+      "reference": 2.0967797049910195,
+      "error": -0.000988727930592237,
+      "pass": true
+    }
+  ],
+  "sky": [
+    {
+      "scene": "box",
+      "sensor": "roof",
+      "form": 1,
+      "reference": 1.0,
+      "error": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_low",
+      "form": 0.5,
+      "reference": 0.49969480000000005,
+      "error": 0.00030519999999994996,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_mid",
+      "form": 0.5,
+      "reference": 0.49981690000000006,
+      "error": 0.0001830999999999361,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_high",
+      "form": 0.5,
+      "reference": 0.500061,
+      "error": -6.099999999997774e-05,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "east",
+      "form": 0.5,
+      "reference": 0.5001831,
+      "error": -0.0001830999999999916,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "north",
+      "form": 0.5,
+      "reference": 0.500061,
+      "error": -6.099999999997774e-05,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "west",
+      "form": 0.5,
+      "reference": 0.49969480000000005,
+      "error": 0.00030519999999994996,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "roof",
+      "form": 1,
+      "reference": 1.0,
+      "error": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_low",
+      "form": 0.4558670101253739,
+      "reference": 0.45690919999999996,
+      "error": -0.001042189874626065,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_mid",
+      "form": 0.28124988059470696,
+      "reference": 0.2808838,
+      "error": 0.0003660805947069412,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_high",
+      "form": 0.5,
+      "reference": 0.500061,
+      "error": -6.099999999997774e-05,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "east",
+      "form": 0.4983248828602192,
+      "reference": 0.4985352,
+      "error": -0.00021031713978081346,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "north",
+      "form": 0.5,
+      "reference": 0.500061,
+      "error": -6.099999999997774e-05,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "west",
+      "form": 0.4982812915209722,
+      "reference": 0.4980469,
+      "error": 0.00023439152097221028,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "roof",
+      "form": 1,
+      "reference": 1.0,
+      "error": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_south",
+      "form": 0.6833791434764862,
+      "reference": 0.6824951,
+      "error": 0.0008840434764861849,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_west",
+      "form": 0.6825993210077286,
+      "reference": 0.6824188000000001,
+      "error": 0.00018052100772847357,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_lower",
+      "form": 0.5,
+      "reference": 0.500061,
+      "error": -6.099999999997774e-05,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_upper",
+      "form": 0.5,
+      "reference": 0.500061,
+      "error": -6.099999999997774e-05,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "east_lower",
+      "form": 0.5,
+      "reference": 0.4999390000000001,
+      "error": 6.099999999992223e-05,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "north_upper",
+      "form": 0.5,
+      "reference": 0.5001221,
+      "error": -0.00012210000000001386,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "roof",
+      "form": 1,
+      "reference": 1.0,
+      "error": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "court_floor",
+      "form": 0.23919375240802765,
+      "reference": 0.2398376,
+      "error": -0.000643847591972363,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south",
+      "form": 0.10376132232799223,
+      "reference": 0.1038208,
+      "error": -5.94776720077711e-05,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south_high",
+      "form": 0.34990818544497676,
+      "reference": 0.3499756,
+      "error": -6.741455502323745e-05,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_east",
+      "form": 0.18966979529474592,
+      "reference": 0.1903076,
+      "error": -0.0006378047052540692,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_west",
+      "form": 0.19032423682243582,
+      "reference": 0.19006350000000002,
+      "error": 0.00026073682243579754,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_north",
+      "form": 0.19059565247362178,
+      "reference": 0.1901855,
+      "error": 0.00041015247362177765,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "roof",
+      "form": 0.9674147963523865,
+      "reference": 0.967041,
+      "error": 0.00037379635238643516,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_low",
+      "form": 0.1164723400353901,
+      "reference": 0.1165161,
+      "error": -4.3759964609896285e-05,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_mid",
+      "form": 0.12186775416718983,
+      "reference": 0.1221161,
+      "error": -0.00024834583281017897,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_high",
+      "form": 0.17823071764072318,
+      "reference": 0.17822269999999998,
+      "error": 8.017640723195774e-06,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "east",
+      "form": 0.2832861675506359,
+      "reference": 0.2830811,
+      "error": 0.00020506755063592896,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "north",
+      "form": 0.49616326496982455,
+      "reference": 0.49646000000000007,
+      "error": -0.00029673503017552116,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "west",
+      "form": 0.4913356891522607,
+      "reference": 0.49237059999999994,
+      "error": -0.0010349108477392122,
+      "pass": true
+    }
+  ],
+  "temporal": [
+    {
+      "scene": "box",
+      "sensor": "roof",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 7.3128952356389565,
+      "value": 7.31289559251989,
+      "change": 3.5688093369401486e-07,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "roof",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 7.3128952356389565,
+      "value": 7.312897020044359,
+      "change": 1.784405402105449e-06,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_low",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 2.7441066879056537,
+      "value": 2.744106717606356,
+      "change": 2.9700702341983742e-08,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_low",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 2.7441066879056537,
+      "value": 2.7441059539367068,
+      "change": -7.339689469532118e-07,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_mid",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 2.7443057248698093,
+      "value": 2.7443057545705116,
+      "change": 2.9700702341983742e-08,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_mid",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 2.7443057248698093,
+      "value": 2.7443049909008623,
+      "change": -7.339689469532118e-07,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_high",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 2.7447036357866836,
+      "value": 2.744703665487386,
+      "change": 2.9700702341983742e-08,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_high",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 2.7447036357866836,
+      "value": 2.7447029018177362,
+      "change": -7.33968947397301e-07,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "east",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 4.302013096833051,
+      "value": 4.302012840637739,
+      "change": -2.561953120761018e-07,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "east",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 4.302013096833051,
+      "value": 4.302014914417766,
+      "change": 1.8175847147361424e-06,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "north",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 2.131706168540441,
+      "value": 2.131705732815655,
+      "change": -4.35724786029823e-07,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "north",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 2.131706168540441,
+      "value": 2.131703107443095,
+      "change": -3.0610973458244928e-06,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "west",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 4.160121825826253,
+      "value": 4.160121548649857,
+      "change": -2.7717639561331e-07,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "west",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 4.160121825826253,
+      "value": 4.160123538505521,
+      "change": 1.7126792677402136e-06,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "roof",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 1.453867901507696,
+      "value": 1.4538678320933882,
+      "change": -6.941430785722957e-08,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "roof",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 1.453867901507696,
+      "value": 1.453869192616644,
+      "change": 1.2911089479761273e-06,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_low",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 4.4927238145367046,
+      "value": 4.494494088643544,
+      "change": 0.0017702741068390537,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_low",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 4.4927238145367046,
+      "value": 4.494495863009056,
+      "change": 0.0017720484723513508,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_mid",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 4.492807714703167,
+      "value": 4.494577988810006,
+      "change": 0.0017702741068390537,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_mid",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 4.492807714703167,
+      "value": 4.494579763175518,
+      "change": 0.0017720484723513508,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_high",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 4.492975446321786,
+      "value": 4.494745720428625,
+      "change": 0.0017702741068390537,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_high",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 4.492975446321786,
+      "value": 4.4947474947941375,
+      "change": 0.0017720484723513508,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "east",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 1.3347192261355443,
+      "value": 1.3347193734349878,
+      "change": 1.4729944353142344e-07,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "east",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 1.3347192261355443,
+      "value": 1.3347158891667172,
+      "change": -3.336968827039044e-06,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "north",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.3436134409600926,
+      "value": 0.3436134409600926,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "north",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 0.3436134409600926,
+      "value": 0.3436134409600926,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "west",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 1.3333471797810263,
+      "value": 1.3353973928983809,
+      "change": 0.002050213117354538,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "west",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 1.3333471797810263,
+      "value": 1.3353939092499278,
+      "change": 0.002046729468901498,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "roof",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 7.089205784368652,
+      "value": 7.08920635255226,
+      "change": 5.68183608606887e-07,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "roof",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 7.089205784368652,
+      "value": 7.089208625287858,
+      "change": 2.8409192065481648e-06,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_low",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 1.0059754138357209,
+      "value": 1.005975430304634,
+      "change": 1.6468913122125173e-08,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_low",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 1.0059754138357209,
+      "value": 1.005975847089815,
+      "change": 4.3325409415650995e-07,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_mid",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 1.0061544899339654,
+      "value": 1.0061545064028787,
+      "change": 1.6468913344169778e-08,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_mid",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 1.0061544899339654,
+      "value": 1.0061549231880595,
+      "change": 4.3325409415650995e-07,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_high",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 1.0065124954669837,
+      "value": 1.0065125119358969,
+      "change": 1.6468913122125173e-08,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_high",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 1.0065124954669837,
+      "value": 1.0065129287210777,
+      "change": 4.3325409393446535e-07,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "east",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 3.57077540853374,
+      "value": 3.570775699054411,
+      "change": 2.9052067107571133e-07,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "east",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 3.57077540853374,
+      "value": 3.5707773865454167,
+      "change": 1.978011676673219e-06,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "north",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 1.9110290884062802,
+      "value": 1.9110287762512477,
+      "change": -3.1215503248915866e-07,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "north",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 1.9110290884062802,
+      "value": 1.9110278785399741,
+      "change": -1.2098663060289283e-06,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "west",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 3.5823324648354156,
+      "value": 3.582332757180387,
+      "change": 2.923449713421178e-07,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "west",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 3.5823324648354156,
+      "value": 3.5823344519686025,
+      "change": 1.9871331868870357e-06,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "roof",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 3.4699687226923244,
+      "value": 3.4699692872422947,
+      "change": 5.645499703277324e-07,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "roof",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 3.4699687226923244,
+      "value": 3.4699715454434052,
+      "change": 2.8227510808775946e-06,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_low",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 4.893505329534777,
+      "value": 4.893505656064952,
+      "change": 3.2653017534300943e-07,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_low",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 4.893505329534777,
+      "value": 4.893506962186366,
+      "change": 1.6326515890341398e-06,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_mid",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 4.893621980819851,
+      "value": 4.893622307350026,
+      "change": 3.2653017534300943e-07,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_mid",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 4.893621980819851,
+      "value": 4.89362361347144,
+      "change": 1.6326515890341398e-06,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_high",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 4.8938551878525,
+      "value": 4.893855514382675,
+      "change": 3.2653017534300943e-07,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "south_high",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 4.8938551878525,
+      "value": 4.893856820504089,
+      "change": 1.6326515890341398e-06,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "east",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 2.099803473183126,
+      "value": 2.099803714259364,
+      "change": 2.4107623808333756e-07,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "east",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 2.099803473183126,
+      "value": 2.099804678564819,
+      "change": 1.2053816926815841e-06,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "north",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.47774576793773577,
+      "value": 0.47774576793773577,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "north",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 0.47774576793773577,
+      "value": 0.47774576793773577,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "west",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 2.183725567556566,
+      "value": 2.1837258211816124,
+      "change": 2.5362504629811156e-07,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "sensor": "west",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 2.183725567556566,
+      "value": 2.1837268356823176,
+      "change": 1.2681257515190225e-06,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "roof",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 7.3128952356389565,
+      "value": 7.31289559251989,
+      "change": 3.5688093369401486e-07,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "roof",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 7.3128952356389565,
+      "value": 7.312897020044359,
+      "change": 1.784405402105449e-06,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_low",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 2.0215869476011887,
+      "value": 2.0215872668866406,
+      "change": 3.192854518552224e-07,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_low",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 2.0215869476011887,
+      "value": 2.019383062408288,
+      "change": -0.002203885192900934,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_mid",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 0.45787271771052784,
+      "value": 0.45787271771052784,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_mid",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 0.45787271771052784,
+      "value": 0.45787271771052784,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_high",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 2.7447036357866836,
+      "value": 2.744703665487386,
+      "change": 2.9700702341983742e-08,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_high",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 2.7447036357866836,
+      "value": 2.7447029018177362,
+      "change": -7.33968947397301e-07,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "east",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 4.299326831368417,
+      "value": 4.299326575173105,
+      "change": -2.561953120761018e-07,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "east",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 4.299326831368417,
+      "value": 4.299328648953132,
+      "change": 1.8175847147361424e-06,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "north",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 2.131706168540441,
+      "value": 2.131705732815655,
+      "change": -4.35724786029823e-07,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "north",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 2.131706168540441,
+      "value": 2.131703107443095,
+      "change": -3.0610973458244928e-06,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "west",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 4.157435560361619,
+      "value": 4.157435283185223,
+      "change": -2.7717639561331e-07,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "west",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 4.157435560361619,
+      "value": 4.157437273040887,
+      "change": 1.7126792677402136e-06,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "roof",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 1.453867901507696,
+      "value": 1.4538678320933882,
+      "change": -6.941430785722957e-08,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "roof",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 1.453867901507696,
+      "value": 1.453869192616644,
+      "change": 1.2911089479761273e-06,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_low",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 4.4633239868366,
+      "value": 4.465094260943439,
+      "change": 0.0017702741068390537,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_low",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 4.4633239868366,
+      "value": 4.465096035308951,
+      "change": 0.0017720484723513508,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_mid",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 4.342369356520745,
+      "value": 4.344139630627584,
+      "change": 0.0017702741068390537,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_mid",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 4.342369356520745,
+      "value": 4.344141404993096,
+      "change": 0.0017720484723513508,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_high",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 4.492975446321786,
+      "value": 4.494745720428625,
+      "change": 0.0017702741068390537,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_high",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 4.492975446321786,
+      "value": 4.4947474947941375,
+      "change": 0.0017720484723513508,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "east",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 1.2636712951235594,
+      "value": 1.2636714320316786,
+      "change": 1.3690811928590563e-07,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "east",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 1.2636712951235594,
+      "value": 1.2648883372180688,
+      "change": 0.0012170420945094573,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "north",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.3436134409600926,
+      "value": 0.3436134409600926,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "north",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 0.3436134409600926,
+      "value": 0.3436134409600926,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "west",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 1.262606431398953,
+      "value": 1.2640458386510285,
+      "change": 0.0014394072520755863,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "west",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 1.262606431398953,
+      "value": 1.2652653515964731,
+      "change": 0.0026589201975202315,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "roof",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 7.089205784368652,
+      "value": 7.08920635255226,
+      "change": 5.68183608606887e-07,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "roof",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 7.089205784368652,
+      "value": 7.089208625287858,
+      "change": 2.8409192065481648e-06,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_low",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 0.6701188926134691,
+      "value": 0.6701188926134691,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_low",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 0.6701188926134691,
+      "value": 0.6701188926134691,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_mid",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 0.41195393091026217,
+      "value": 0.41195393091026217,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_mid",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 0.41195393091026217,
+      "value": 0.41195393091026217,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_high",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 1.0065124954669837,
+      "value": 1.0065125119358969,
+      "change": 1.6468913122125173e-08,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_high",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 1.0065124954669837,
+      "value": 1.0065129287210777,
+      "change": 4.3325409393446535e-07,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "east",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 3.5683585411930565,
+      "value": 3.5683588317137276,
+      "change": 2.9052067107571133e-07,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "east",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 3.5683585411930565,
+      "value": 3.568360519204733,
+      "change": 1.978011676673219e-06,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "north",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 1.9110290884062802,
+      "value": 1.9110287762512477,
+      "change": -3.1215503248915866e-07,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "north",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 1.9110290884062802,
+      "value": 1.9110278785399741,
+      "change": -1.2098663060289283e-06,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "west",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 3.5799155974947325,
+      "value": 3.5799158898397034,
+      "change": 2.923449708980286e-07,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "west",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 3.5799155974947325,
+      "value": 3.579917584627919,
+      "change": 1.9871331864429465e-06,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "roof",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 3.4699687226923244,
+      "value": 3.4699692872422947,
+      "change": 5.645499703277324e-07,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "roof",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 3.4699687226923244,
+      "value": 3.4699715454434052,
+      "change": 2.8227510808775946e-06,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_low",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 4.852629037785016,
+      "value": 4.852629364315192,
+      "change": 3.2653017534300943e-07,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_low",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 4.852629037785016,
+      "value": 4.852630670436605,
+      "change": 1.6326515890341398e-06,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_mid",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 2.74356572855448,
+      "value": 2.741540696095328,
+      "change": -0.0020250324591519764,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_mid",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 2.74356572855448,
+      "value": 2.74559239711137,
+      "change": 0.0020266685568897103,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_high",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 4.8938551878525,
+      "value": 4.893855514382675,
+      "change": 3.2653017534300943e-07,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "south_high",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 4.8938551878525,
+      "value": 4.893856820504089,
+      "change": 1.6326515890341398e-06,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "east",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 2.0982291107533735,
+      "value": 2.098229351829611,
+      "change": 2.4107623763924835e-07,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "east",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 2.0982291107533735,
+      "value": 2.098230316135066,
+      "change": 1.2053816926815841e-06,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "north",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.47774576793773577,
+      "value": 0.47774576793773577,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "north",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 0.47774576793773577,
+      "value": 0.47774576793773577,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "west",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 2.1821512051268135,
+      "value": 2.18215145875186,
+      "change": 2.5362504629811156e-07,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "sensor": "west",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 2.1821512051268135,
+      "value": 2.182152473252565,
+      "change": 1.2681257515190225e-06,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "roof",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 7.3128952356389565,
+      "value": 7.31289559251989,
+      "change": 3.5688093369401486e-07,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "roof",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 7.3128952356389565,
+      "value": 7.312897020044359,
+      "change": 1.784405402105449e-06,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_south",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 6.676391895558275,
+      "value": 6.676832829104783,
+      "change": 0.0004409335465078712,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_south",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 6.676391895558275,
+      "value": 6.675950360049069,
+      "change": -0.00044153550920622564,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_west",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 4.500068167421874,
+      "value": 4.497750197351484,
+      "change": -0.0023179700703899186,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_west",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 4.500068167421874,
+      "value": 4.497751132951279,
+      "change": -0.0023170344705949475,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_lower",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 2.7447036357866836,
+      "value": 2.744703665487386,
+      "change": 2.9700702341983742e-08,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_lower",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 2.7447036357866836,
+      "value": 2.7447029018177362,
+      "change": -7.33968947397301e-07,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_upper",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 2.7447036357866836,
+      "value": 2.744703665487386,
+      "change": 2.9700702341983742e-08,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_upper",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 2.7447036357866836,
+      "value": 2.7447029018177362,
+      "change": -7.33968947397301e-07,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "east_lower",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 4.3016151859161775,
+      "value": 4.3016149297208655,
+      "change": -2.561953120761018e-07,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "east_lower",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 4.3016151859161775,
+      "value": 4.301617003500892,
+      "change": 1.8175847147361424e-06,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "north_upper",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 2.131805768528237,
+      "value": 2.131805332803451,
+      "change": -4.35724786029823e-07,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "north_upper",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 2.131805768528237,
+      "value": 2.131802707430891,
+      "change": -3.0610973458244928e-06,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "roof",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 1.453867901507696,
+      "value": 1.4538678320933882,
+      "change": -6.941430785722957e-08,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "roof",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 1.453867901507696,
+      "value": 1.453869192616644,
+      "change": 1.2911089479761273e-06,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_south",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 1.2356966159831497,
+      "value": 1.235696546568842,
+      "change": -6.941430763518497e-08,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_south",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 1.2356966159831497,
+      "value": 1.235697907092098,
+      "change": 1.291108948198172e-06,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_west",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 1.125181708508297,
+      "value": 1.1256530762457482,
+      "change": 0.00047136773745126703,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_west",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 1.125181708508297,
+      "value": 1.1247103437863406,
+      "change": -0.0004713647219563022,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_lower",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 4.492975446321786,
+      "value": 4.494745720428625,
+      "change": 0.0017702741068390537,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_lower",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 4.492975446321786,
+      "value": 4.4947474947941375,
+      "change": 0.0017720484723513508,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_upper",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 4.492975446321786,
+      "value": 4.494745720428625,
+      "change": 0.0017702741068390537,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_upper",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 4.492975446321786,
+      "value": 4.4947474947941375,
+      "change": 0.0017720484723513508,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "east_lower",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 1.334551494516925,
+      "value": 1.3345516418163688,
+      "change": 1.4729944375346804e-07,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "east_lower",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 1.334551494516925,
+      "value": 1.334548157548098,
+      "change": -3.336968827039044e-06,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "north_upper",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.3436554254004762,
+      "value": 0.3436554254004762,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "north_upper",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 0.3436554254004762,
+      "value": 0.3436554254004762,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "roof",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 7.089205784368652,
+      "value": 7.08920635255226,
+      "change": 5.68183608606887e-07,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "roof",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 7.089205784368652,
+      "value": 7.089208625287858,
+      "change": 2.8409192065481648e-06,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_south",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 6.622138524321346,
+      "value": 6.622080877147991,
+      "change": -5.764717335488001e-05,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_south",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 6.622138524321346,
+      "value": 6.622197314399222,
+      "change": 5.8790077876125224e-05,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_west",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 4.463610660649315,
+      "value": 4.46099636069423,
+      "change": -0.0026142999550851087,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_west",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 4.463610660649315,
+      "value": 4.460997804071387,
+      "change": -0.002612856577927758,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_lower",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 1.0065124954669837,
+      "value": 1.0065125119358969,
+      "change": 1.6468913122125173e-08,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_lower",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 1.0065124954669837,
+      "value": 1.0065129287210777,
+      "change": 4.3325409393446535e-07,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_upper",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 1.0065124954669837,
+      "value": 1.0065125119358969,
+      "change": 1.6468913122125173e-08,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_upper",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 1.0065124954669837,
+      "value": 1.0065129287210777,
+      "change": 4.3325409393446535e-07,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "east_lower",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 3.5704174030007216,
+      "value": 3.5704176935213927,
+      "change": 2.9052067107571133e-07,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "east_lower",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 3.5704174030007216,
+      "value": 3.5704193810123983,
+      "change": 1.978011676673219e-06,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "north_upper",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 1.911118699787138,
+      "value": 1.9111183876321056,
+      "change": -3.1215503248915866e-07,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "north_upper",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 1.911118699787138,
+      "value": 1.911117489920832,
+      "change": -1.2098663060289283e-06,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "roof",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 3.4699687226923244,
+      "value": 3.4699692872422947,
+      "change": 5.645499703277324e-07,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "roof",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 3.4699687226923244,
+      "value": 3.4699715454434052,
+      "change": 2.8227510808775946e-06,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_south",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 3.166632485164315,
+      "value": 3.166633049714285,
+      "change": 5.645499703277324e-07,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_south",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 3.166632485164315,
+      "value": 3.1666353079153957,
+      "change": 2.8227510808775946e-06,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_west",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 2.516821570834245,
+      "value": 2.5168219762812787,
+      "change": 4.054470337244709e-07,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "terrace_west",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 2.516821570834245,
+      "value": 2.516823598070279,
+      "change": 2.0272360341522244e-06,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_lower",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 4.8938551878525,
+      "value": 4.893855514382675,
+      "change": 3.2653017534300943e-07,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_lower",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 4.8938551878525,
+      "value": 4.893856820504089,
+      "change": 1.6326515890341398e-06,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_upper",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 4.8938551878525,
+      "value": 4.893855514382675,
+      "change": 3.2653017534300943e-07,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "south_upper",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 4.8938551878525,
+      "value": 4.893856820504089,
+      "change": 1.6326515890341398e-06,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "east_lower",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 2.099570266150477,
+      "value": 2.099570507226715,
+      "change": 2.4107623763924835e-07,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "east_lower",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 2.099570266150477,
+      "value": 2.09957147153217,
+      "change": 1.2053816926815841e-06,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "north_upper",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.47780414134902166,
+      "value": 0.47780414134902166,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "sensor": "north_upper",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 0.47780414134902166,
+      "value": 0.47780414134902166,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "roof",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 7.3128952356389565,
+      "value": 7.31289559251989,
+      "change": 3.5688093369401486e-07,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "roof",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 7.3128952356389565,
+      "value": 7.312897020044359,
+      "change": 1.784405402105449e-06,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "court_floor",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 0.39096271739833516,
+      "value": 0.39096271739833516,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "court_floor",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 0.39096271739833516,
+      "value": 0.39096271739833516,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 1.4281052868128865,
+      "value": 1.4281055751699199,
+      "change": 2.8835703336227425e-07,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 1.4281052868128865,
+      "value": 1.4260862543462811,
+      "change": -0.002019032466605397,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south_high",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 2.5000472690376165,
+      "value": 2.500047298738319,
+      "change": 2.9700702341983742e-08,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south_high",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 2.5000472690376165,
+      "value": 2.500046535068669,
+      "change": -7.33968947397301e-07,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_east",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 2.0557038066970077,
+      "value": 2.0581195682801385,
+      "change": 0.0024157615831308377,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_east",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 2.0557038066970077,
+      "value": 2.058120607887099,
+      "change": 0.0024168011900913555,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_west",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 2.056343789165065,
+      "value": 2.0539273532118782,
+      "change": -0.0024164359531866353,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_west",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 2.056343789165065,
+      "value": 2.0539283905570436,
+      "change": -0.002415398608021313,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_north",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 0.3100241158590691,
+      "value": 0.3100241158590691,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_north",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 0.3100241158590691,
+      "value": 0.3100241158590691,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "roof",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 1.453867901507696,
+      "value": 1.4538678320933882,
+      "change": -6.941430785722957e-08,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "roof",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 1.453867901507696,
+      "value": 1.453869192616644,
+      "change": 1.2911089479761273e-06,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "court_floor",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.16480274008093077,
+      "value": 0.16480274008093077,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "court_floor",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 0.16480274008093077,
+      "value": 0.16480274008093077,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.07133974121403105,
+      "value": 0.07133974121403105,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 0.07133974121403105,
+      "value": 0.07133974121403105,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south_high",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 2.5323722279299736,
+      "value": 2.534767448205503,
+      "change": 0.0023952202755292973,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south_high",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 2.5323722279299736,
+      "value": 2.534768461528133,
+      "change": 0.0023962335981595473,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_east",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.1307685447912493,
+      "value": 0.1307685447912493,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_east",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 0.1307685447912493,
+      "value": 0.1307685447912493,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_west",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.1306008131726301,
+      "value": 0.1306008131726301,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_west",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 0.1306008131726301,
+      "value": 0.1306008131726301,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_north",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.13068464462478718,
+      "value": 0.13068464462478718,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_north",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 0.13068464462478718,
+      "value": 0.13068464462478718,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "roof",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 7.089205784368652,
+      "value": 7.08920635255226,
+      "change": 5.68183608606887e-07,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "roof",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 7.089205784368652,
+      "value": 7.089208625287858,
+      "change": 2.8409192065481648e-06,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "court_floor",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 2.7739587597732873,
+      "value": 2.7739589339516284,
+      "change": 1.741783410835751e-07,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "court_floor",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 2.7739587597732873,
+      "value": 2.7739580147494545,
+      "change": -7.450238328488012e-07,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 0.41697389301661325,
+      "value": 0.41689051807015387,
+      "change": -8.337494645938026e-05,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 0.41697389301661325,
+      "value": 0.41689130109060674,
+      "change": -8.259192600651444e-05,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south_high",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 0.7863920381738289,
+      "value": 0.786392054642742,
+      "change": 1.6468913122125173e-08,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south_high",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 0.7863920381738289,
+      "value": 0.7863924714279229,
+      "change": 4.3325409404548765e-07,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_east",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 1.8729715538515486,
+      "value": 1.8753421544693871,
+      "change": 0.0023706006178385586,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_east",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 1.8729715538515486,
+      "value": 1.8706029252894079,
+      "change": -0.0023686285621407066,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_west",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 1.8728447993011827,
+      "value": 1.872844904980059,
+      "change": 1.0567887631651729e-07,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_west",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 1.8728447993011827,
+      "value": 1.8728458531035104,
+      "change": 1.0538023276218667e-06,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_north",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 0.29812655732516913,
+      "value": 0.297988359538374,
+      "change": -0.0001381977867951356,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_north",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 0.29812655732516913,
+      "value": 0.2977130617627044,
+      "change": -0.0004134955624647274,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "roof",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 3.4699687226923244,
+      "value": 3.4699692872422947,
+      "change": 5.645499703277324e-07,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "roof",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 3.4699687226923244,
+      "value": 3.4699715454434052,
+      "change": 2.8227510808775946e-06,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "court_floor",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.22913484233392228,
+      "value": 0.22913484233392228,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "court_floor",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 0.22913484233392228,
+      "value": 0.22913484233392228,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.09918779473686228,
+      "value": 0.09918779473686228,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 0.09918779473686228,
+      "value": 0.09918779473686228,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south_high",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 3.687056708725889,
+      "value": 3.6870567143669066,
+      "change": 5.641017430946249e-09,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_south_high",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 3.687056708725889,
+      "value": 3.683661647542921,
+      "change": -0.003395061182968284,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_east",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.18181511956818758,
+      "value": 0.18181511956818758,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_east",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 0.18181511956818758,
+      "value": 0.18181511956818758,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_west",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.18158191253553838,
+      "value": 0.18158191253553838,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_west",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 0.18158191253553838,
+      "value": 0.18158191253553838,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_north",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.18169846828311398,
+      "value": 0.18169846828311398,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "sensor": "inner_north",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 0.18169846828311398,
+      "value": 0.18169846828311398,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "roof",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 7.259168296231909,
+      "value": 7.259168653112843,
+      "change": 3.5688093369401486e-07,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "roof",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 7.259168296231909,
+      "value": 7.259170080637311,
+      "change": 1.784405402105449e-06,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_low",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 0.872754434456318,
+      "value": 0.8747578962644845,
+      "change": 0.0020034618081665734,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_low",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 0.872754434456318,
+      "value": 0.8729690223093035,
+      "change": 0.00021458785298555938,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_mid",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 2.128610224533227,
+      "value": 2.128610254233929,
+      "change": 2.9700702341983742e-08,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_mid",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 2.128610224533227,
+      "value": 2.12860949056428,
+      "change": -7.339689469532118e-07,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_high",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 2.2200703992513757,
+      "value": 2.220070428952078,
+      "change": 2.9700702341983742e-08,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_high",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 2.2200703992513757,
+      "value": 2.2200696652824283,
+      "change": -7.33968947397301e-07,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "east",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 2.2069352218819263,
+      "value": 2.209350983465057,
+      "change": 0.0024157615831308377,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "east",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 2.2069352218819263,
+      "value": 2.2093520230720176,
+      "change": 0.0024168011900913555,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "north",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 2.1258361267065027,
+      "value": 2.1258356909817167,
+      "change": -4.35724786029823e-07,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "north",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 2.1258361267065027,
+      "value": 2.125833065609157,
+      "change": -3.0610973458244928e-06,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "west",
+      "day": "Berlin_summer",
+      "step": 0.5,
+      "reference15Seconds": 4.148182542182784,
+      "value": 4.148182265006389,
+      "change": -2.7717639561331e-07,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "west",
+      "day": "Berlin_summer",
+      "step": 1,
+      "reference15Seconds": 4.148182542182784,
+      "value": 4.148184254862051,
+      "change": 1.7126792668520352e-06,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "roof",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.7305239418026117,
+      "value": 0.7305236000113807,
+      "change": -3.41791230984434e-07,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "roof",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 0.7305239418026117,
+      "value": 0.7305238710263667,
+      "change": -7.077624497586754e-08,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_low",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.2330105904665556,
+      "value": 0.2347804357948109,
+      "change": 0.001769845328255304,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_low",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 0.2330105904665556,
+      "value": 0.23478049504512138,
+      "change": 0.0017699045785657952,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_mid",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.08391122946525878,
+      "value": 0.08391122946525878,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_mid",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 0.08391122946525878,
+      "value": 0.08391122946525878,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_high",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.2772519074214668,
+      "value": 0.27725192224508854,
+      "change": 1.4823621719006752e-08,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_high",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 0.2772519074214668,
+      "value": 0.2772519815396245,
+      "change": 7.411815766689145e-08,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "east",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.46222814791177785,
+      "value": 0.4636066150154392,
+      "change": 0.0013784671036613516,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "east",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 0.46222814791177785,
+      "value": 0.45929246704825955,
+      "change": -0.0029356808635183085,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "north",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.3411390388353573,
+      "value": 0.3411390388353573,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "north",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 0.3411390388353573,
+      "value": 0.3411390388353573,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "west",
+      "day": "Berlin_winter",
+      "step": 0.5,
+      "reference15Seconds": 1.2135758616604648,
+      "value": 1.2156260577226983,
+      "change": 0.0020501960622334447,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "west",
+      "day": "Berlin_winter",
+      "step": 1,
+      "reference15Seconds": 1.2135758616604648,
+      "value": 1.2171785451126182,
+      "change": 0.0036026834521534212,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "roof",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 7.040866970920274,
+      "value": 7.040867539103883,
+      "change": 5.68183608606887e-07,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "roof",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 7.040866970920274,
+      "value": 7.040869811839481,
+      "change": 2.8409192065481648e-06,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_low",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 0.44399223180071534,
+      "value": 0.44399224826962846,
+      "change": 1.6468913122125173e-08,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_low",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 0.44399223180071534,
+      "value": 0.4439926650548094,
+      "change": 4.3325409404548765e-07,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_mid",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 0.4522053861837644,
+      "value": 0.4522054026526775,
+      "change": 1.6468913122125173e-08,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_mid",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 0.4522053861837644,
+      "value": 0.4522058194378584,
+      "change": 4.3325409404548765e-07,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_high",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 0.5344932732744748,
+      "value": 0.534493289743388,
+      "change": 1.6468913122125173e-08,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_high",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 0.5344932732744748,
+      "value": 0.5344937065285689,
+      "change": 4.3325409404548765e-07,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "east",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 2.009036389236513,
+      "value": 2.0114069898543514,
+      "change": 0.0023706006178385586,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "east",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 2.009036389236513,
+      "value": 2.006667760674372,
+      "change": -0.0023686285621407066,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "north",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 1.9057477368110374,
+      "value": 1.9057474246560049,
+      "change": -3.1215503248915866e-07,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "north",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 1.9057477368110374,
+      "value": 1.9057465269447316,
+      "change": -1.2098663058068837e-06,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "west",
+      "day": "Cairo_summer",
+      "step": 0.5,
+      "reference15Seconds": 3.571590538883214,
+      "value": 3.571590831228185,
+      "change": 2.923449708980286e-07,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "west",
+      "day": "Cairo_summer",
+      "step": 1,
+      "reference15Seconds": 3.571590538883214,
+      "value": 3.5715925260164005,
+      "change": 1.9871331864429465e-06,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "roof",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 3.438480518722289,
+      "value": 3.438481083272259,
+      "change": 5.645499703277324e-07,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "roof",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 3.438480518722289,
+      "value": 3.4384833414733698,
+      "change": 2.8227510808775946e-06,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_low",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.8284291897956194,
+      "value": 0.8284292315186235,
+      "change": 4.172300405169693e-08,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_low",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 0.8284291897956194,
+      "value": 0.828429398410761,
+      "change": 2.0861514160586125e-07,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_mid",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.6942877122977988,
+      "value": 0.6958155932589886,
+      "change": 0.0015278809611897204,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_mid",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 0.6942877122977988,
+      "value": 0.6927611942617583,
+      "change": -0.0015265180360405362,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_high",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.8810661486919803,
+      "value": 0.8792730242663547,
+      "change": -0.0017931244256256251,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_high",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 0.8810661486919803,
+      "value": 0.8767073115098376,
+      "change": -0.004358837182142694,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "east",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.9269778013009851,
+      "value": 0.9294648674217896,
+      "change": 0.0024870661208045153,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "east",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 0.9269778013009851,
+      "value": 0.9294652592306865,
+      "change": 0.0024874579297013977,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "north",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 0.4743054626342953,
+      "value": 0.4743054626342953,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "north",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 0.4743054626342953,
+      "value": 0.4743054626342953,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "west",
+      "day": "Cairo_winter",
+      "step": 0.5,
+      "reference15Seconds": 2.0961247528715887,
+      "value": 2.0954686371924818,
+      "change": -0.00065611567910695,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "west",
+      "day": "Cairo_winter",
+      "step": 1,
+      "reference15Seconds": 2.0961247528715887,
+      "value": 2.0967797049910195,
+      "change": 0.000654952119430785,
+      "pass": true
+    }
+  ],
+  "spatial": [
+    {
+      "scene": "box",
+      "spacing": 4,
+      "count": 9,
+      "mean": 1.0064234640036955,
+      "referenceQuarterMetre": 1.0064234640037069,
+      "change": -1.1324274851176597e-14,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "spacing": 2,
+      "count": 36,
+      "mean": 1.0064234640036955,
+      "referenceQuarterMetre": 1.0064234640037069,
+      "change": -1.1324274851176597e-14,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "spacing": 1,
+      "count": 144,
+      "mean": 1.0064234640036918,
+      "referenceQuarterMetre": 1.0064234640037069,
+      "change": -1.509903313490213e-14,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "spacing": 0.5,
+      "count": 576,
+      "mean": 1.0064234640036986,
+      "referenceQuarterMetre": 1.0064234640037069,
+      "change": -8.215650382226158e-15,
+      "pass": true
+    },
+    {
+      "scene": "box",
+      "spacing": 0.25,
+      "count": 2304,
+      "mean": 1.0064234640037069,
+      "referenceQuarterMetre": 1.0064234640037069,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "spacing": 4,
+      "count": 6,
+      "mean": 0.5447098503410785,
+      "referenceQuarterMetre": 0.5243877719863126,
+      "change": 0.02032207835476596,
+      "pass": false
+    },
+    {
+      "scene": "overhang",
+      "spacing": 2,
+      "count": 24,
+      "mean": 0.5286387397478305,
+      "referenceQuarterMetre": 0.5243877719863126,
+      "change": 0.004250967761517899,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "spacing": 1,
+      "count": 96,
+      "mean": 0.5252863828765375,
+      "referenceQuarterMetre": 0.5243877719863126,
+      "change": 0.0008986108902249157,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "spacing": 0.5,
+      "count": 384,
+      "mean": 0.5246129352455234,
+      "referenceQuarterMetre": 0.5243877719863126,
+      "change": 0.00022516325921084768,
+      "pass": true
+    },
+    {
+      "scene": "overhang",
+      "spacing": 0.25,
+      "count": 1536,
+      "mean": 0.5243877719863126,
+      "referenceQuarterMetre": 0.5243877719863126,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "spacing": 4,
+      "count": 6,
+      "mean": 1.0064234640036955,
+      "referenceQuarterMetre": 1.0064234640036929,
+      "change": 2.6645352591003757e-15,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "spacing": 2,
+      "count": 18,
+      "mean": 1.0064234640036955,
+      "referenceQuarterMetre": 1.0064234640036929,
+      "change": 2.6645352591003757e-15,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "spacing": 1,
+      "count": 72,
+      "mean": 1.0064234640036949,
+      "referenceQuarterMetre": 1.0064234640036929,
+      "change": 1.9984014443252818e-15,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "spacing": 0.5,
+      "count": 288,
+      "mean": 1.0064234640036935,
+      "referenceQuarterMetre": 1.0064234640036929,
+      "change": 6.661338147750939e-16,
+      "pass": true
+    },
+    {
+      "scene": "setback",
+      "spacing": 0.25,
+      "count": 1152,
+      "mean": 1.0064234640036929,
+      "referenceQuarterMetre": 1.0064234640036929,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "spacing": 4,
+      "count": 9,
+      "mean": 0.6206145654743639,
+      "referenceQuarterMetre": 0.5311416022175205,
+      "change": 0.0894729632568434,
+      "pass": false
+    },
+    {
+      "scene": "courtyard",
+      "spacing": 2,
+      "count": 30,
+      "mean": 0.48530934267085896,
+      "referenceQuarterMetre": 0.5311416022175205,
+      "change": -0.045832259546661536,
+      "pass": false
+    },
+    {
+      "scene": "courtyard",
+      "spacing": 1,
+      "count": 100,
+      "mean": 0.5316748095126724,
+      "referenceQuarterMetre": 0.5311416022175205,
+      "change": 0.0005332072951519384,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "spacing": 0.5,
+      "count": 400,
+      "mean": 0.5312775667348917,
+      "referenceQuarterMetre": 0.5311416022175205,
+      "change": 0.00013596451737118986,
+      "pass": true
+    },
+    {
+      "scene": "courtyard",
+      "spacing": 0.25,
+      "count": 1600,
+      "mean": 0.5311416022175205,
+      "referenceQuarterMetre": 0.5311416022175205,
+      "change": 0.0,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "spacing": 4,
+      "count": 9,
+      "mean": 0.4825028125106024,
+      "referenceQuarterMetre": 0.4871775303015733,
+      "change": -0.004674717790970895,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "spacing": 2,
+      "count": 36,
+      "mean": 0.48633678463592606,
+      "referenceQuarterMetre": 0.4871775303015733,
+      "change": -0.0008407456656472356,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "spacing": 1,
+      "count": 144,
+      "mean": 0.48691027071230386,
+      "referenceQuarterMetre": 0.4871775303015733,
+      "change": -0.0002672595892694307,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "spacing": 0.5,
+      "count": 576,
+      "mean": 0.4870596795835639,
+      "referenceQuarterMetre": 0.4871775303015733,
+      "change": -0.00011785071800940461,
+      "pass": true
+    },
+    {
+      "scene": "neighbours",
+      "spacing": 0.25,
+      "count": 2304,
+      "mean": 0.4871775303015733,
+      "referenceQuarterMetre": 0.4871775303015733,
+      "change": 0.0,
+      "pass": true
+    }
+  ],
+  "summary": {
+    "daily": {
+      "passed": 140,
+      "cases": 140,
+      "n": 140,
+      "bias": -3.9901100813083795e-05,
+      "mae": 0.0002956392280613126,
+      "rmse": 0.00046547802651975917,
+      "maxAbsolute": 0.0016988886872950637
+    },
+    "sky": {
+      "passed": 35,
+      "cases": 35,
+      "maxAbsolute": 0.001042189874626065
+    },
+    "time": {
+      "0.5": {
+        "passed": 140,
+        "cases": 140,
+        "maxChange": 0.0026142999550851087
+      },
+      "1": {
+        "passed": 140,
+        "cases": 140,
+        "maxChange": 0.004358837182142694
+      }
+    },
+    "halfMetreGrid": {
+      "passed": 5,
+      "cases": 5
+    }
+  }
+}

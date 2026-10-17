@@ -1,0 +1,772 @@
+{
+  "units": "m",
+  "coordinates": "east,up,north",
+  "scenes": [
+    {
+      "id": "box",
+      "boxes": [
+        {
+          "name": "building",
+          "min": [
+            0,
+            0,
+            0
+          ],
+          "max": [
+            12,
+            12,
+            12
+          ]
+        },
+        {
+          "name": "ground",
+          "min": [
+            -100,
+            -0.2,
+            -100
+          ],
+          "max": [
+            100,
+            0,
+            100
+          ]
+        }
+      ],
+      "sensors": [
+        {
+          "id": "roof",
+          "position": [
+            6,
+            12,
+            6
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "id": "south_low",
+          "position": [
+            3,
+            2,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "id": "south_mid",
+          "position": [
+            6,
+            6,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "id": "south_high",
+          "position": [
+            9,
+            10,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "id": "east",
+          "position": [
+            12,
+            6,
+            6
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "north",
+          "position": [
+            6,
+            6,
+            12
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "id": "west",
+          "position": [
+            0,
+            6,
+            6
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ]
+        }
+      ],
+      "probe": {
+        "x": [
+          0,
+          12
+        ],
+        "height": [
+          0,
+          12
+        ],
+        "z": 0
+      }
+    },
+    {
+      "id": "overhang",
+      "boxes": [
+        {
+          "name": "building",
+          "min": [
+            0,
+            0,
+            0
+          ],
+          "max": [
+            12,
+            12,
+            12
+          ]
+        },
+        {
+          "name": "overhang",
+          "min": [
+            -2,
+            8,
+            -3
+          ],
+          "max": [
+            14,
+            8.3,
+            0
+          ]
+        },
+        {
+          "name": "ground",
+          "min": [
+            -100,
+            -0.2,
+            -100
+          ],
+          "max": [
+            100,
+            0,
+            100
+          ]
+        }
+      ],
+      "sensors": [
+        {
+          "id": "roof",
+          "position": [
+            6,
+            12,
+            6
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "id": "south_low",
+          "position": [
+            3,
+            2,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "id": "south_mid",
+          "position": [
+            6,
+            6,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "id": "south_high",
+          "position": [
+            9,
+            10,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "id": "east",
+          "position": [
+            12,
+            6,
+            6
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "north",
+          "position": [
+            6,
+            6,
+            12
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "id": "west",
+          "position": [
+            0,
+            6,
+            6
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ]
+        }
+      ],
+      "probe": {
+        "x": [
+          0,
+          12
+        ],
+        "height": [
+          0,
+          8
+        ],
+        "z": 0
+      }
+    },
+    {
+      "id": "setback",
+      "boxes": [
+        {
+          "name": "lower",
+          "min": [
+            0,
+            0,
+            0
+          ],
+          "max": [
+            12,
+            6,
+            12
+          ]
+        },
+        {
+          "name": "upper",
+          "min": [
+            3,
+            6,
+            3
+          ],
+          "max": [
+            9,
+            12,
+            9
+          ]
+        },
+        {
+          "name": "ground",
+          "min": [
+            -100,
+            -0.2,
+            -100
+          ],
+          "max": [
+            100,
+            0,
+            100
+          ]
+        }
+      ],
+      "sensors": [
+        {
+          "id": "roof",
+          "position": [
+            6,
+            12,
+            6
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "id": "terrace_south",
+          "position": [
+            6,
+            6,
+            1.5
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "id": "terrace_west",
+          "position": [
+            1.5,
+            6,
+            6
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "id": "south_lower",
+          "position": [
+            6,
+            3,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "id": "south_upper",
+          "position": [
+            6,
+            9,
+            3
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "id": "east_lower",
+          "position": [
+            12,
+            3,
+            6
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "north_upper",
+          "position": [
+            6,
+            9,
+            9
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "probe": {
+        "x": [
+          0,
+          12
+        ],
+        "height": [
+          0,
+          6
+        ],
+        "z": 0
+      }
+    },
+    {
+      "id": "courtyard",
+      "boxes": [
+        {
+          "name": "west",
+          "min": [
+            0,
+            0,
+            0
+          ],
+          "max": [
+            5,
+            10,
+            20
+          ]
+        },
+        {
+          "name": "east",
+          "min": [
+            15,
+            0,
+            0
+          ],
+          "max": [
+            20,
+            10,
+            20
+          ]
+        },
+        {
+          "name": "south",
+          "min": [
+            5,
+            0,
+            0
+          ],
+          "max": [
+            15,
+            10,
+            5
+          ]
+        },
+        {
+          "name": "north",
+          "min": [
+            5,
+            0,
+            15
+          ],
+          "max": [
+            15,
+            10,
+            20
+          ]
+        },
+        {
+          "name": "ground",
+          "min": [
+            -100,
+            -0.2,
+            -100
+          ],
+          "max": [
+            100,
+            0,
+            100
+          ]
+        }
+      ],
+      "sensors": [
+        {
+          "id": "roof",
+          "position": [
+            10,
+            10,
+            2.5
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "id": "court_floor",
+          "position": [
+            10,
+            0.0002,
+            10
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "id": "inner_south",
+          "position": [
+            10,
+            2,
+            15
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "id": "inner_south_high",
+          "position": [
+            10,
+            8,
+            15
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "id": "inner_east",
+          "position": [
+            5,
+            5,
+            10
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "inner_west",
+          "position": [
+            15,
+            5,
+            10
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "inner_north",
+          "position": [
+            10,
+            5,
+            5
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "probe": {
+        "x": [
+          5,
+          15
+        ],
+        "height": [
+          0,
+          10
+        ],
+        "z": 15
+      }
+    },
+    {
+      "id": "neighbours",
+      "boxes": [
+        {
+          "name": "building",
+          "min": [
+            0,
+            0,
+            0
+          ],
+          "max": [
+            12,
+            12,
+            12
+          ]
+        },
+        {
+          "name": "neighbour_south",
+          "min": [
+            -4,
+            0,
+            -15
+          ],
+          "max": [
+            16,
+            18,
+            -7
+          ]
+        },
+        {
+          "name": "neighbour_east",
+          "min": [
+            18,
+            0,
+            -4
+          ],
+          "max": [
+            26,
+            9,
+            16
+          ]
+        },
+        {
+          "name": "ground",
+          "min": [
+            -100,
+            -0.2,
+            -100
+          ],
+          "max": [
+            100,
+            0,
+            100
+          ]
+        }
+      ],
+      "sensors": [
+        {
+          "id": "roof",
+          "position": [
+            6,
+            12,
+            6
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "id": "south_low",
+          "position": [
+            3,
+            2,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "id": "south_mid",
+          "position": [
+            6,
+            6,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "id": "south_high",
+          "position": [
+            9,
+            10,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "id": "east",
+          "position": [
+            12,
+            6,
+            6
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "north",
+          "position": [
+            6,
+            6,
+            12
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "id": "west",
+          "position": [
+            0,
+            6,
+            6
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ]
+        }
+      ],
+      "probe": {
+        "x": [
+          0,
+          12
+        ],
+        "height": [
+          0,
+          12
+        ],
+        "z": 0
+      }
+    }
+  ]
+}
