@@ -1,0 +1,781 @@
+{
+  "browser": "153.0.8010.0",
+  "renderer": "SwiftShader software WebGL2",
+  "weather": "intercepted synthetic fixture",
+  "checks": [
+    {
+      "name": "Existing viewer starts with imported-model controls",
+      "pass": true
+    },
+    {
+      "name": "GLB dimensions and nested mirrored transforms preserved",
+      "pass": true,
+      "models": [
+        {
+          "name": "envelope.glb",
+          "id": "68fef9c30fdf2a24bb2a9cdc9dfae158415ddf8cd417e9ed51b2eaf41d3bce81",
+          "bounds": {
+            "min": [
+              -6,
+              0,
+              -6
+            ],
+            "max": [
+              6,
+              12,
+              6
+            ],
+            "size": [
+              12,
+              12,
+              12
+            ]
+          },
+          "origin": [
+            0,
+            0,
+            0
+          ],
+          "triangles": 12,
+          "meshes": [
+            {
+              "id": "mesh:0",
+              "properties": {
+                "sourceNode": 0,
+                "sourceMesh": 0
+              }
+            },
+            {
+              "id": "mesh:1",
+              "properties": {
+                "sourceNode": 1,
+                "sourceMesh": 1
+              }
+            },
+            {
+              "id": "mesh:2",
+              "properties": {
+                "sourceNode": 2,
+                "sourceMesh": 2
+              }
+            },
+            {
+              "id": "mesh:3",
+              "properties": {
+                "sourceNode": 3,
+                "sourceMesh": 3
+              }
+            },
+            {
+              "id": "mesh:4",
+              "properties": {
+                "sourceNode": 4,
+                "sourceMesh": 4
+              }
+            },
+            {
+              "id": "mesh:5",
+              "properties": {
+                "sourceNode": 5,
+                "sourceMesh": 5
+              }
+            }
+          ],
+          "warnings": [],
+          "elapsedMs": 125.40000000223517
+        },
+        {
+          "name": "nested-transform.glb",
+          "id": "722308d0f028dff1f9b080bc42330173549f300e1dcdca6339743e44086ba14b",
+          "bounds": {
+            "min": [
+              -4,
+              0,
+              -2
+            ],
+            "max": [
+              4,
+              6,
+              2
+            ],
+            "size": [
+              8,
+              6,
+              4
+            ]
+          },
+          "origin": [
+            100,
+            17,
+            -50
+          ],
+          "triangles": 12,
+          "meshes": [
+            {
+              "id": "mesh:0",
+              "properties": {
+                "sourceNode": 1,
+                "sourceMesh": 0
+              }
+            }
+          ],
+          "warnings": [],
+          "elapsedMs": 105.69999999925494
+        }
+      ]
+    },
+    {
+      "name": "IFC4 metre conversion, identifiers, storeys and source properties preserved",
+      "pass": true,
+      "model": {
+        "name": "form-ifc4.ifc",
+        "id": "7ced4a995cb0a3c03a2436a53566dd9ac672d15191c354a8f32ffd986ed60ee4",
+        "bounds": {
+          "min": [
+            -6,
+            0,
+            -6
+          ],
+          "max": [
+            6,
+            12.230000004172325,
+            6
+          ],
+          "size": [
+            12,
+            12.230000004172325,
+            12
+          ]
+        },
+        "origin": [
+          0,
+          -0.23000000208616256,
+          0
+        ],
+        "triangles": 1324,
+        "meshes": [
+          {
+            "id": "ifc:86:0",
+            "properties": {
+              "expressId": 86,
+              "globalId": "03ZsfBlhbVSMotJ_hoY0Yx",
+              "class": "IfcSlab",
+              "name": "Tower · Floor 1 slab",
+              "description": "Concept slab; nominal thickness, not structural design",
+              "storey": "Tower · Floor 1",
+              "propertySets": [
+                {
+                  "name": "FORM_Slab",
+                  "values": {
+                    "NominalThickness": 0.23,
+                    "ModelledArea": 144,
+                    "BaseLevel": 0
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "ifc:151:0",
+            "properties": {
+              "expressId": 151,
+              "globalId": "1UpWScfRgc12ACEvM5NUIv",
+              "class": "IfcSlab",
+              "name": "Tower · Floor 2 slab",
+              "description": "Concept slab; nominal thickness, not structural design",
+              "storey": "Tower · Floor 2",
+              "propertySets": [
+                {
+                  "name": "FORM_Slab",
+                  "values": {
+                    "NominalThickness": 0.23,
+                    "ModelledArea": 144,
+                    "BaseLevel": 3
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "ifc:216:0",
+            "properties": {
+              "expressId": 216,
+              "globalId": "39AKjGN9qzXjZ7Z1T4bIKm",
+              "class": "IfcSlab",
+              "name": "Tower · Floor 3 slab",
+              "description": "Concept slab; nominal thickness, not structural design",
+              "storey": "Tower · Floor 3",
+              "propertySets": [
+                {
+                  "name": "FORM_Slab",
+                  "values": {
+                    "NominalThickness": 0.23,
+                    "ModelledArea": 144,
+                    "BaseLevel": 6
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "ifc:281:0",
+            "properties": {
+              "expressId": 281,
+              "globalId": "2uUPN0m0zhP6oiPhIsMjW3",
+              "class": "IfcSlab",
+              "name": "Tower · Floor 4 slab",
+              "description": "Concept slab; nominal thickness, not structural design",
+              "storey": "Tower · Floor 4",
+              "propertySets": [
+                {
+                  "name": "FORM_Slab",
+                  "values": {
+                    "NominalThickness": 0.23,
+                    "ModelledArea": 144,
+                    "BaseLevel": 9
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "ifc:345:0",
+            "properties": {
+              "expressId": 345,
+              "globalId": "1VG0v1hsx_klrD4HnIet4n",
+              "class": "IfcSlab",
+              "name": "Tower roof slab",
+              "description": "Concept slab; nominal thickness, not structural design",
+              "storey": "Tower · Floor 4",
+              "propertySets": [
+                {
+                  "name": "FORM_Slab",
+                  "values": {
+                    "NominalThickness": 0.23,
+                    "ModelledArea": 144,
+                    "BaseLevel": 12
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "ifc:357:0",
+            "properties": {
+              "expressId": 357,
+              "globalId": "0jK4JSrPw_3z04UlMBNdHb",
+              "class": "IfcBuildingElementProxy",
+              "name": "Concept envelope",
+              "description": "Open massing surface, not a detailed wall system",
+              "storey": null,
+              "propertySets": []
+            }
+          }
+        ],
+        "schema": "IFC4",
+        "coverage": {
+          "representedProducts": 6,
+          "tessellatedProducts": 6,
+          "withoutTriangleGeometry": []
+        },
+        "warnings": [
+          "IFC tessellation is approximate. Review openings, normals and selected exterior faces.",
+          "Properties are source information, not verified quantities. Colours only; all analytical surfaces are opaque."
+        ],
+        "elapsedMs": 2769
+      }
+    },
+    {
+      "name": "IFC millimetre conversion preserves known metre dimensions",
+      "pass": true,
+      "model": {
+        "name": "form-millimetres.ifc",
+        "id": "7d119d01f1102c27fcdce5aef784333c3b93cba021d103596ba49c0200a0e826",
+        "bounds": {
+          "min": [
+            -6,
+            0,
+            -4
+          ],
+          "max": [
+            6,
+            12.000230000004173,
+            4
+          ],
+          "size": [
+            12,
+            12.000230000004173,
+            8
+          ]
+        },
+        "origin": [
+          0,
+          -0.00023000000208616258,
+          0
+        ],
+        "triangles": 1324,
+        "meshes": [
+          {
+            "id": "ifc:86:0",
+            "properties": {
+              "expressId": 86,
+              "globalId": "0YxBdBLYJ1bOEkWdmCpVsW",
+              "class": "IfcSlab",
+              "name": "Tower · Floor 1 slab",
+              "description": "Concept slab; nominal thickness, not structural design",
+              "storey": "Tower · Floor 1",
+              "propertySets": [
+                {
+                  "name": "FORM_Slab",
+                  "values": {
+                    "NominalThickness": 0.23,
+                    "ModelledArea": 96000000,
+                    "BaseLevel": 0
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "ifc:151:0",
+            "properties": {
+              "expressId": 151,
+              "globalId": "0vYULLF2EVjMR4FURVOqwC",
+              "class": "IfcSlab",
+              "name": "Tower · Floor 2 slab",
+              "description": "Concept slab; nominal thickness, not structural design",
+              "storey": "Tower · Floor 2",
+              "propertySets": [
+                {
+                  "name": "FORM_Slab",
+                  "values": {
+                    "NominalThickness": 0.23,
+                    "ModelledArea": 96000000,
+                    "BaseLevel": 3000
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "ifc:216:0",
+            "properties": {
+              "expressId": 216,
+              "globalId": "2GYB5F4c6EAJJE2KaTZ6Ck",
+              "class": "IfcSlab",
+              "name": "Tower · Floor 3 slab",
+              "description": "Concept slab; nominal thickness, not structural design",
+              "storey": "Tower · Floor 3",
+              "propertySets": [
+                {
+                  "name": "FORM_Slab",
+                  "values": {
+                    "NominalThickness": 0.23,
+                    "ModelledArea": 96000000,
+                    "BaseLevel": 6000
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "ifc:281:0",
+            "properties": {
+              "expressId": 281,
+              "globalId": "37LFmUv16NNaC6_eb9qhKS",
+              "class": "IfcSlab",
+              "name": "Tower · Floor 4 slab",
+              "description": "Concept slab; nominal thickness, not structural design",
+              "storey": "Tower · Floor 4",
+              "propertySets": [
+                {
+                  "name": "FORM_Slab",
+                  "values": {
+                    "NominalThickness": 0.23,
+                    "ModelledArea": 96000000,
+                    "BaseLevel": 9000
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "ifc:345:0",
+            "properties": {
+              "expressId": 345,
+              "globalId": "2XmdGjpdDBLIgHaZXJ_brX",
+              "class": "IfcSlab",
+              "name": "Tower roof slab",
+              "description": "Concept slab; nominal thickness, not structural design",
+              "storey": "Tower · Floor 4",
+              "propertySets": [
+                {
+                  "name": "FORM_Slab",
+                  "values": {
+                    "NominalThickness": 0.23,
+                    "ModelledArea": 96000000,
+                    "BaseLevel": 12000
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "ifc:357:0",
+            "properties": {
+              "expressId": 357,
+              "globalId": "3upqMx3XsueSK$MIYPQp9U",
+              "class": "IfcBuildingElementProxy",
+              "name": "Concept envelope",
+              "description": "Open massing surface, not a detailed wall system",
+              "storey": null,
+              "propertySets": []
+            }
+          }
+        ],
+        "schema": "IFC4",
+        "coverage": {
+          "representedProducts": 6,
+          "tessellatedProducts": 6,
+          "withoutTriangleGeometry": []
+        },
+        "warnings": [
+          "IFC tessellation is approximate. Review openings, normals and selected exterior faces.",
+          "Properties are source information, not verified quantities. Colours only; all analytical surfaces are opaque."
+        ],
+        "elapsedMs": 645.1000000014901
+      }
+    },
+    {
+      "name": "One archived Revit 2021 IFC2X3 sample parses with units and properties",
+      "pass": true,
+      "model": {
+        "id": "db372f3f57796e2f572958c1c144bf3d8be7912493738636a2152cf18f08a14d",
+        "schema": "IFC2X3",
+        "bounds": {
+          "min": [
+            -12.65038164955304,
+            0,
+            -4.870976019300926
+          ],
+          "max": [
+            12.650381649553037,
+            5.916999978637695,
+            4.870976019300926
+          ],
+          "size": [
+            25.300763299106077,
+            5.916999978637695,
+            9.741952038601852
+          ]
+        },
+        "origin": [
+          -28.30430402236599,
+          -0.5588000030517578,
+          -99.69336244684114
+        ],
+        "triangles": 27660,
+        "meshes": 119,
+        "units": [
+          {
+            "type": "LENGTHUNIT",
+            "name": "METRE",
+            "prefix": "MILLI"
+          },
+          {
+            "type": "AREAUNIT",
+            "name": "SQUARE_METRE",
+            "prefix": null
+          },
+          {
+            "type": "VOLUMEUNIT",
+            "name": "CUBIC_METRE",
+            "prefix": null
+          },
+          {
+            "type": "PLANEANGLEUNIT",
+            "name": "DEGREE"
+          },
+          {
+            "type": "MASSUNIT",
+            "name": "GRAM",
+            "prefix": "KILO"
+          },
+          {
+            "type": "MASSDENSITYUNIT"
+          },
+          {
+            "type": "MOMENTOFINERTIAUNIT"
+          },
+          {
+            "type": "TIMEUNIT",
+            "name": "SECOND",
+            "prefix": null
+          },
+          {
+            "type": "FREQUENCYUNIT",
+            "name": "HERTZ",
+            "prefix": null
+          },
+          {
+            "type": "THERMODYNAMICTEMPERATUREUNIT",
+            "name": "DEGREE_CELSIUS",
+            "prefix": null
+          },
+          {
+            "type": "THERMALTRANSMITTANCEUNIT"
+          },
+          {
+            "type": "VOLUMETRICFLOWRATEUNIT"
+          },
+          {
+            "type": "ELECTRICCURRENTUNIT",
+            "name": "AMPERE",
+            "prefix": null
+          },
+          {
+            "type": "ELECTRICVOLTAGEUNIT",
+            "name": "VOLT",
+            "prefix": null
+          },
+          {
+            "type": "POWERUNIT",
+            "name": "WATT",
+            "prefix": null
+          },
+          {
+            "type": "FORCEUNIT",
+            "name": "NEWTON",
+            "prefix": null
+          },
+          {
+            "type": "ILLUMINANCEUNIT",
+            "name": "LUX",
+            "prefix": null
+          },
+          {
+            "type": "LUMINOUSFLUXUNIT",
+            "name": "LUMEN",
+            "prefix": null
+          },
+          {
+            "type": "LUMINOUSINTENSITYUNIT",
+            "name": "CANDELA",
+            "prefix": null
+          },
+          {
+            "type": "USERDEFINED"
+          },
+          {
+            "type": "LINEARVELOCITYUNIT"
+          },
+          {
+            "type": "PRESSUREUNIT",
+            "name": "PASCAL",
+            "prefix": null
+          },
+          {
+            "type": "USERDEFINED"
+          },
+          {
+            "type": "LINEARFORCEUNIT"
+          },
+          {
+            "type": "PLANARFORCEUNIT"
+          }
+        ],
+        "coverage": {
+          "representedProducts": 116,
+          "tessellatedProducts": 115,
+          "withoutTriangleGeometry": [
+            9989
+          ]
+        },
+        "warnings": [
+          "1 represented IFC products have no imported triangles. They may be openings, annotations or unsupported geometry; inspect the source model before analysis.",
+          "IFC tessellation is approximate. Review openings, normals and selected exterior faces.",
+          "Properties are source information, not verified quantities. Colours only; all analytical surfaces are opaque.",
+          "90 zero-area triangles removed."
+        ],
+        "first": {
+          "expressId": 917,
+          "globalId": "0sfBnoLAb0R9H9P$iaZWyE",
+          "class": "IfcSlab",
+          "name": "Foundation Slab:125mm SLAB:670677",
+          "description": "",
+          "storey": "Level 1",
+          "propertySets": [
+            {
+              "name": "Pset_ElementShading",
+              "values": {
+                "Roughness": 914.4
+              }
+            },
+            {
+              "name": "Pset_ProductRequirements",
+              "values": {
+                "Category": "Structural Foundations"
+              }
+            },
+            {
+              "name": "Pset_QuantityTakeOff",
+              "values": {
+                "Reference": "125mm SLAB"
+              }
+            },
+            {
+              "name": "Pset_ReinforcementBarPitchOfSlab",
+              "values": {
+                "Reference": "125mm SLAB"
+              }
+            },
+            {
+              "name": "Pset_SlabCommon",
+              "values": {
+                "IsExternal": false,
+                "LoadBearing": true,
+                "Reference": "125mm SLAB",
+                "ThermalTransmittance": 8.368,
+                "PitchAngle": 0
+              }
+            }
+          ]
+        },
+        "elapsedMs": 927.5999999977648
+      }
+    },
+    {
+      "name": "Resource and portable-package failures are explicit",
+      "pass": true,
+      "cases": [
+        {
+          "name": "oversized source",
+          "rejected": true,
+          "message": "Choose a model no larger than 25 MiB."
+        },
+        {
+          "name": "missing browser asset",
+          "rejected": true,
+          "message": "A model file is missing from this browser. Reopen its FORM package or reimport the matching original file."
+        },
+        {
+          "name": "missing package source",
+          "rejected": true,
+          "message": "Missing or invalid packaged model."
+        },
+        {
+          "name": "checksum mismatch",
+          "rejected": true,
+          "message": "Package model checksum does not match."
+        },
+        {
+          "name": "unexpected ZIP path",
+          "rejected": true,
+          "message": "Unexpected package entry."
+        }
+      ]
+    },
+    {
+      "name": "Declared per-model triangle budget decodes in a worker",
+      "pass": true,
+      "triangles": 150000,
+      "sourceBytes": 5400368,
+      "elapsedMs": 363,
+      "scope": "Worker decoding only; not a rendering, analysis or physical-device speed guarantee"
+    },
+    {
+      "name": "Malformed model rejected without changing the project",
+      "pass": true,
+      "message": "GLB header is incomplete."
+    },
+    {
+      "name": "Target import excludes the parametric building explicitly",
+      "pass": true
+    },
+    {
+      "name": "Unreviewed imported receiver surfaces block calculation",
+      "pass": true
+    },
+    {
+      "name": "Reviewed orientation suggestions select four exterior sides and the roof",
+      "pass": true
+    },
+    {
+      "name": "imported-radiation CSV preserves model identity and replays",
+      "pass": true,
+      "method": "FORM-irradiation-4",
+      "samples": 64,
+      "maxAbsoluteError": 0,
+      "passed": true
+    },
+    {
+      "name": "Imported heatmap cells can be selected and show source mesh identity",
+      "pass": true
+    },
+    {
+      "name": "Imported façade refinement reuses weather and retains grid tools",
+      "pass": true
+    },
+    {
+      "name": "imported-sunlight CSV preserves model identity and replays",
+      "pass": true,
+      "method": "FORM-irradiation-4",
+      "samples": 256,
+      "maxAbsoluteError": 0,
+      "passed": true
+    },
+    {
+      "name": "imported-daylight CSV preserves model identity and replays",
+      "pass": true,
+      "method": "FORM-irradiation-4",
+      "samples": 256,
+      "maxAbsoluteError": 0,
+      "passed": true
+    },
+    {
+      "name": "imported-sky CSV preserves model identity and replays",
+      "pass": true,
+      "method": "FORM-irradiation-4",
+      "samples": 256,
+      "maxAbsoluteError": 0,
+      "passed": true
+    },
+    {
+      "name": "imported-roof-sky CSV preserves model identity and replays",
+      "pass": true,
+      "method": "FORM-irradiation-4",
+      "samples": 500,
+      "maxAbsoluteError": 0,
+      "passed": true
+    },
+    {
+      "name": "Placement changes support undo/redo",
+      "pass": true
+    },
+    {
+      "name": "Reload restores model manifests and browser assets",
+      "pass": true
+    },
+    {
+      "name": "Portable package restores both files, roles, transforms and receiver selection in a fresh browser",
+      "pass": true
+    },
+    {
+      "name": "IFC element inspection works in the actual model panel",
+      "pass": true
+    },
+    {
+      "name": "Models tab and import controls fit the mobile viewport",
+      "pass": true
+    },
+    {
+      "name": "Import cancellation terminates parsing without project changes",
+      "pass": true
+    },
+    {
+      "name": "No browser page errors",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

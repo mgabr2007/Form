@@ -71,6 +71,15 @@
     <p>Geometry, floor areas and IFC/CAD exports are conceptual. They do not establish structural adequacy, regulatory compliance or construction readiness. Check units, geometry and interpretation in the receiving application; modelled floor area is not automatically a code-defined area.</p>
   </section>
 
+  <section aria-labelledby="import-limitations">
+    <h2 id="import-limitations">Imported GLB and IFC models</h2>
+    <p>Check units, source origin, placement, north and dimensions before analysis. Only the selected analysis building supplies receiver surfaces; context supplies obstructions and references are visual only. Hiding a context model does not remove it from calculations.</p>
+    <p>Choose and review exterior meshes explicitly. Orientation suggestions cannot identify interiors, validate openings or prove that normals point outwards. A combined mesh containing interior floors may need splitting in the authoring tool. All imported surfaces are opaque, including glass; textures and material transmission are omitted.</p>
+    <p>IFC tessellation and schema support are limited. The coverage diagnostic identifies represented products with no imported triangles but cannot certify the complete building. Source properties are descriptive data, not verified quantities. IFC4 metre/millimetre fixtures and one IFC2X3 Revit sample were checked; arbitrary authoring exports and IFC4X3 remain unverified.</p>
+    <p>Parametric floor areas, plans and building exports still refer to the FORM-generated building. Imported models do not become parametric modifiers. Keep a downloaded FORM package containing original files; local browser storage can be cleared or fail. File and triangle limits are budgets, not guarantees of speed on physical mobile devices.</p>
+    <p><a href="https://github.com/mgabr2007/Form/blob/feature/model-import-20261017/validation/imports/REPORT.md" target="_blank" rel="noopener">Imported geometry verification report</a> · <a href="./vendor/imports/README.md" target="_blank" rel="noopener">Import dependencies and licences</a></p>
+  </section>
+
   <section aria-labelledby="browser-deployment">
     <h2 id="browser-deployment">Browser and deployment scope</h2>
     <p>Recorded interaction checks used local Chromium with software WebGL at desktop and mobile viewport sizes. A mobile viewport is not a physical-device test. Safari, real mobile GPUs and the deployed public site remain outside that verification.</p>

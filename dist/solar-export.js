@@ -13,6 +13,7 @@ export function analysisCSV(r,scale={}){
   ['settings JSON',JSON.stringify(settings)],['project JSON',JSON.stringify(r.project)],
   ['date',settings.date],['latitude',settings.lat],['longitude',settings.lon],['UTC offset',settings.utc],['north rotation',settings.north],['target',settings.target],
   ['context blocks JSON',JSON.stringify(settings.context??[])],
+  ...(r.importProvenance?[['imported geometry provenance JSON',JSON.stringify(r.importProvenance)],['sample source mapping JSON',JSON.stringify(r.samples.map(s=>s.source??null))],['import assumption','User-selected receivers; opaque imported geometry; no field validation']]:[]),
   ['sampled daylight hours',r.daylight],['ray offset metres',RAY_OFFSET_METRES],
   ['coordinate convention','x=east, y=up, z=plan north at north=0; metres'],
   ['colour scale JSON',JSON.stringify(scale)],['analysis triangles JSON',JSON.stringify(Array.from(r.triangles))],

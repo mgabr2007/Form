@@ -1,0 +1,32 @@
+[
+  {
+    "name": "external buffer",
+    "rejected": true,
+    "message": "Only self-contained GLB geometry is supported. External buffers are blocked."
+  },
+  {
+    "name": "external texture",
+    "rejected": true,
+    "message": "External or URI textures are unsupported. Export a GLB with embedded resources."
+  },
+  {
+    "name": "unsupported compression",
+    "rejected": true,
+    "message": "Unsupported glTF extension: KHR_draco_mesh_compression. Export static, uncompressed geometry without material extensions."
+  },
+  {
+    "name": "animation",
+    "rejected": true,
+    "message": "Animated, skinned and morph-target models are unsupported. Export a static mesh."
+  },
+  {
+    "name": "cyclic hierarchy",
+    "rejected": true,
+    "message": "Invalid or excessively deep GLB hierarchy."
+  },
+  {
+    "name": "allocation budget",
+    "rejected": true,
+    "message": "Model exceeds the triangle limit."
+  }
+]

@@ -5,3 +5,6 @@ node_modules/
 .openai/
 .DS_Store
 *.log
+
+validation/imports/external/
+validation/imports/screenshots/failure.png
