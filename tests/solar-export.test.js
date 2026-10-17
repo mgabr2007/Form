@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {analysisCSV} from '../dist/solar-export.js';
-import {buildBVH} from '../dist/solar.js';
-import {irradiation,radiationSteps,IRRADIATION_METHOD_VERSION} from '../dist/radiation.js';
+import {analysisCSV} from '../public/solar-export.js';
+import {buildBVH} from '../public/solar.js';
+import {irradiation,radiationSteps,IRRADIATION_METHOD_VERSION} from '../public/radiation.js';
 import {replayAnalysisCSV} from '../validation/replay_csv.mjs';
 // Parse RFC4180 quoting, including embedded newlines in project names.
 function parse(csv){const rows=[];let row=[],field='',quoted=false;for(let i=0;i<csv.length;i++){const c=csv[i];if(c==='"'){if(quoted&&csv[i+1]==='"'){field+='"';i++;}else quoted=!quoted;}else if(!quoted&&c===','){row.push(field);field='';}else if(!quoted&&c==='\r'&&csv[i+1]==='\n'){row.push(field);rows.push(row);row=[];field='';i++;}else field+=c;}row.push(field);rows.push(row);return rows;}

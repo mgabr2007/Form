@@ -1,8 +1,8 @@
 import fs from 'node:fs';
 import crypto from 'node:crypto';
-import {buildBVH,rayOrigin,RAY_OFFSET_METRES} from '../../dist/solar.js';
-import {irradiation,radiationSteps,skyFactor,IRRADIATION_METHOD_VERSION} from '../../dist/radiation.js';
-import {facadeGrid} from '../../dist/facade-grid.js';
+import {buildBVH,rayOrigin,RAY_OFFSET_METRES} from '../../public/solar.js';
+import {irradiation,radiationSteps,skyFactor,IRRADIATION_METHOD_VERSION} from '../../public/radiation.js';
+import {facadeGrid} from '../../public/facade-grid.js';
 const dir=new URL('./',import.meta.url),spec=JSON.parse(fs.readFileSync(new URL('scenes.json',dir))),fixture=JSON.parse(fs.readFileSync(new URL('../../tests/fixtures/pvlib-radiation.json',import.meta.url)));
 function boxTriangles(box){
  const [x0,y0,z0]=box.min,[x1,y1,z1]=box.max;

@@ -1,6 +1,6 @@
 import fs from 'node:fs';import assert from 'node:assert/strict';
-import {buildBVH} from '../../dist/solar.js';import {irradiation,radiationSteps,skyFactor,DEFAULT_SKY_PATCHES} from '../../dist/radiation.js';
-import {facadeGrid} from '../../dist/facade-grid.js';
+import {buildBVH} from '../../public/solar.js';import {irradiation,radiationSteps,skyFactor,DEFAULT_SKY_PATCHES} from '../../public/radiation.js';
+import {facadeGrid} from '../../public/facade-grid.js';
 const read=name=>JSON.parse(fs.readFileSync(new URL(name,import.meta.url)));
 const decoded=read('./decoded-scenes.json'),spec=read('../radiance/scenes.json'),reference=read('../release/results.json'),fixture=read('../../tests/fixtures/pvlib-radiation.json');
 const days=fixture.cases.filter(d=>['Berlin_summer','Berlin_winter','Cairo_summer','Cairo_winter'].includes(d.name));

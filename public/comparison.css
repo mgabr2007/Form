@@ -1,0 +1,20 @@
+body.dashboard-page{background:#edf2f1;color:#183c3e;font-size:14px}
+.dashboard-page header{background:#102f33;color:#d8ece8;border:0}.dashboard-page .brand{color:#fff}.dashboard-page .local-indicator{color:#bed3cb}
+#comparison-dashboard{display:block;height:auto;min-height:calc(100dvh - 76px);max-width:1480px;margin:auto;padding:32px clamp(16px,4vw,60px) 60px}
+#comparison-dashboard .dialog-head{display:flex;justify-content:space-between;align-items:center;gap:24px;margin:0 0 20px;padding:28px 0}
+#comparison-dashboard .eyebrow{color:#387f7c;font-size:11px}#comparison-dashboard h2{font:600 clamp(32px,5vw,62px)/1.1 Georgia,serif;letter-spacing:-2px;margin:12px 0}
+#comparison-dashboard .compare-subtitle{font-size:16px;color:#5b7470}
+#comparison-dashboard .compare-toolbar{grid-template-columns:repeat(4,minmax(0,1fr));padding:20px;background:#fff;border-radius:14px}
+#comparison-dashboard .compare-kpi{background:linear-gradient(120deg,#173b40,#255e5c);border:1px solid #307476}
+#comparison-dashboard .compare-kpi strong{color:#daefad}#comparison-dashboard .compare-kpi small{color:#d1e3de}
+.insight-grid{display:grid;grid-template-columns:1fr;gap:24px;margin:24px 0 40px}
+.insight-chart{background:white;padding:24px;border:1px solid #d9e4e0;border-radius:16px;box-shadow:0 8px 30px #1a433507}
+.insight-chart-head{display:flex;justify-content:space-between;align-items:center;gap:15px}.insight-chart h3{font-size:22px;margin:0;letter-spacing:-.5px}.insight-chart-head .button{font-size:11px}
+.chart-scroll{overflow:auto;margin-top:22px}.chart-scroll svg{display:block;width:100%;min-width:600px;font-family:Arial,sans-serif}
+.chart-data{margin-top:18px;color:#4c605e;font-size:12px;overflow:auto}.chart-data summary{cursor:pointer;padding:8px 0}.chart-data table{width:100%;border-collapse:collapse}.chart-data td,.chart-data th{padding:9px;border-bottom:1px solid #dce5e2;text-align:left;white-space:nowrap}
+#comparison-dashboard .compare-chart{border-radius:16px}#comparison-dashboard .compare-card{border-radius:14px}#comparison-dashboard .compare-muted{color:#627571;line-height:1.6}
+#comparison-dashboard a.button{text-decoration:none;display:inline-block;white-space:nowrap}
+@media(min-width:1400px){.insight-grid{grid-template-columns:1fr 1fr}.chart-scroll svg{min-width:560px}}
+@media(max-width:750px){#comparison-dashboard .compare-toolbar{grid-template-columns:1fr 1fr}#comparison-dashboard .dialog-head{align-items:flex-start;flex-direction:column}.dashboard-page .tagline{display:none}.insight-chart{padding:16px}.dashboard-page header{padding:0 20px}}
+@media(max-width:450px){#comparison-dashboard .compare-toolbar{grid-template-columns:1fr}}
+.facade-dashboard-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.facade-dashboard-actions button{background:#e5f1ee;border-color:#b9d6ce;color:#174b48}.compare-card-actions{flex-wrap:wrap}

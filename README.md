@@ -1,165 +1,38 @@
-# FORM — Parametric Tower Studio
+# FORM — integrated tower studio
 
-A static, browser-based architectural massing tool. All geometry and project storage run on the visitor's device. No backend, API keys, paid computation, or package installation is needed to serve it.
+Live application: https://form-tower-studio.fabled-lily-4445.chatgpt.site
 
-## Validation & limitations
+The canonical application source is `public/`, with the hosted API in `server/` and the Vinext/Cloudflare shell in `app/` and `build/`. `dist/` is generated build output, not a second editable application. GitHub and Sites use the same source files.
 
-**Field accuracy and live-site deployment remain unverified.**
+## Run and verify
 
-The app links to a dedicated [Validation & limitations page](dist/limitations.html) covering numerical verification, weather and physics assumptions, sampling, daylight, BIM exports, browser coverage and deployment status. The status was reviewed on 17 October 2026. See the [release evidence](validation/release/REPORT.md) for the selected numerical and local browser checks; these do not establish field accuracy or verify a public deployment.
+Use Node 22.13 or newer. Run `npm ci`, `npm test`, `npm run validate:radiation`, and `npm run build`. Use `npm run dev` for local development. The production root opens the simple welcome page; the studio is `/studio.html`.
 
-## 3D model import (research preview)
-
-Use **Models → Import GLB / IFC**. Inspect the 3D preview, dimensions, source origin and warnings; choose placement and a role, then confirm the opaque-surface assumption.
-
-- **Surrounding context** casts analytical shadows. **Reference only** is visual and excluded from calculations. **Analysis building** is the single target; promoting an import makes the parametric building a hidden reference by default. Visibility and isolation do not change analytical roles.
-- Placement supports shared source coordinates, centre/ground placement, translation, elevation, Y-axis rotation and uniform scale. Import, placement and role edits participate in undo/redo.
-- For an imported target, select exterior façade/roof meshes and review outward normals before calculating. Orientation suggestions require confirmation and do not distinguish internal from external faces. Split combined meshes in the authoring tool when needed. Interiors and glazing are not automatically interpreted.
-- Sunlight, irradiation, VSC and sky-view studies use the existing engine, façade heatmaps and refinement controls. CSV results retain original-file SHA-256 hashes, transforms, receiver selections, element/mesh/triangle identity and geometry for replay. Imported geometry is immutable; it is not converted to editable FORM modifiers.
-- **Download FORM package** saves a `.formpkg` ZIP containing the project and original files. It can restore a project in a fresh browser. Browser autosave/IndexedDB alone is not a portable backup. Old project JSON remains supported; JSON with imports refers to browser-local files, so the export action offers a package instead.
-- Parametric dimensions, floor areas, 2D plans and IFC/GLB/DXF building exports still describe the FORM parametric building. The interface labels that scope when imports are present. Use a FORM package to retain imports. Side-by-side parametric design comparison is disabled for imported projects; saved environmental results retain compatibility checks.
-
-Supported input profile: static, self-contained **glTF 2.0 binary `.glb`**, uncompressed triangle geometry, nested transforms and material colours. Embedded textures are omitted; URI resources, compression extensions, animation, skinning, morph targets and non-triangle primitives are rejected. `.gltf`, OBJ, STL, FBX, SKP, DWG and RVT are not imported directly.
-
-**IFC** uses the pinned local web-ifc parser. IFC4 metre/millimetre fixtures and one archived Revit 2021 IFC2X3 sample were exercised. IFC4X3 is parser-accepted but not covered by this verification. Source GlobalId, class, name, storey and available scalar property sets are retained; quantities and BIM semantics are not independently certified. A coverage diagnostic reports represented products with no imported triangles. It cannot prove complete or correct tessellation, openings or relationships. All analytical geometry is opaque, including nominal glass.
-
-Limits: 25 MiB/source, 150,000 triangles/source, 2,000 meshes/source, 12 instances, 300,000 triangles in the imported analysis scene and a 100 MiB package. These are resource budgets, not physical-device performance guarantees. Files are parsed locally in cancellable workers; there is no model upload. Large or detailed buildings should be simplified to the envelope and relevant obstructions.
-
-See the [import verification report](validation/imports/REPORT.md), [reproduction instructions](validation/imports/README.md), [deployment integration status](validation/imports/DEPLOYMENT.md) and [dependency provenance](dist/vendor/imports/README.md). The current hosted Site has a separate, newer application architecture; this repository change is not evidence that the live Site contains these imports.
-
-## Run or host
-
-Serve the `dist/` folder with a static web server. The entry point is `dist/index.html`. ES modules require HTTP(S), so opening the file directly with `file://` is not supported.
-
-For Cloudflare Pages Direct Upload, upload the contents of `dist/`, or a ZIP whose root contains `index.html`, `app.js`, `geometry.js`, `style.css`, and `vendor/`. Use the free plan for static hosting. A Cloudflare account is required for that deployment. The current ChatGPT Site has a separate source repository and deployment configuration.
+The hosted build preserves the R2 project-snapshot binding. Configure weather-provider keys as runtime secrets, never in client files. Open-Meteo is available subject to its usage terms; paid OpenWeather calls require owner sign-in and configuration. PVGIS TMY data retains its provider irradiance timestamps.
 
 ## Features
 
-- Rectangular, rounded, elliptical and hexagonal footprints; dimensions, orientation, tower storeys, floor height and independent podium.
-- Up to 12 enabled/disabled twist, taper, lean, bend, bulge, setback, shape transition, corner treatment, wave, stepped terraces and floor offset modifiers with floor ranges.
-- Perspective orbit and orthographic front/side/top views, auto-rotate, façade/mass/floor views.
-- Six presets, 30 browser-local saved alternatives, comparison and undo/redo (Ctrl/Cmd-Z, Shift-Ctrl/Cmd-Z).
-- Project JSON, binary glTF/GLB, PNG viewport, CSV calculations, and DXF floor-outline exports.
-- Autosave where browser storage is permitted. Export JSON for durable backups.
+- Parametric massing, modifiers, floor plans, conceptual IFC/GLB, CSV, DXF and image exports.
+- Models → Import GLB / IFC: local worker parsing, placement, reference/context/target roles, explicit exterior receiver review, and portable FORM packages.
+- Sunlight, irradiation, façade VSC and sky exposure; configurable façade grids, heatmaps, refinement, unfolded views, saved comparisons and replayable CSV.
+- Hour/day/date-range studies, weather provenance, site context, location/north controls and weather libraries.
+- Project revisions, explicit cloud snapshots and parameter search. Snapshots embed original imported files up to the existing 8 MB total cap; larger designs use FORM packages. Cloud sync is not automatic.
+- Experimental structural exploration on the FORM parametric building. Imported geometry does not become a structural frame. Structural runs remain a separate browser store.
 
-## Geometry and units
+## Scientific scope
 
-Metres and degrees. Floor outlines have 48 vertices. The model applies scale modifiers, combined rotation, then centreline offsets. A modifier begins at the base of its starting floor and completes at the top of its ending floor. Setbacks apply from their starting floor through the roof. At an intermediate setback, the envelope includes a horizontal terrace.
+Irradiation uses NOAA/Meeus solar positions, direct-ray visibility, isotropic sky diffuse radiation with selectable 512/2048/8192 directions, and a shared 0.1 mm ray offset. Date-specific hourly means use geometry steps of one minute or finer. TMY uses hourly quadrature at provider irradiance timestamps. GHI is a check, not an added irradiance component. Exterior parametric roof filtering excludes enclosed floor plates; imported receivers require user review.
 
-Reported area is the sum of modelled floor outlines, including podium floors but excluding the roof plate. No wall, core, atrium or void deductions are made. Curved outline areas are polygon approximations. The tower storey count excludes the podium. The model is conceptual; there is no structural, environmental or regulatory validation.
+No reflections, glazing transmission, PV electrical output, indoor daylight compliance or structural safety certification is implied. Display precision is not physical accuracy. Grid/temporal refinement is necessary for shadow-sensitive scenes.
 
-GLB uses metres with Y up and exports only the current building, excluding reference comparisons and the scene environment. JSON preserves editable parameters. DXF uses metres, with closed 2D polylines superimposed at their actual plan coordinates on named per-floor layers; use layer isolation to inspect individual floors. CSV includes parameters and modelled areas, not code-defined GFA.
+**Field accuracy and live-site deployment remain unverified.**
 
-## Verification
+The retained disclaimer concerns end-to-end operational and field validation; successful build and hosting publication alone do not establish those. See `/limitations.html`, `/validation.html`, and `validation/INTEGRATED_RELEASE.md` for scope and evidence. Historical reports retain their original revision-specific claims; rerunnable scripts now import `public/`.
 
-`node --test tests/*.test.js`
+## Import limits
 
-Analytical tests cover area, height, podium accounting, area-preserving transformations, taper, terraces, combined modifiers and project round-tripping. Recorded Chromium checks are documented in the release and import reports; verify file opening in your target browsers/CAD tools before professional use.
+Static uncompressed GLB triangles and material colours; IFC geometry supported by bundled web-ifc 0.0.75. No external resources, textures, animation or native RVT import. Limits: 25 MiB/source, 150,000 triangles/source, 12 instances, 300,000 analytical triangles. Inspect units, placement, missing products, normal directions and receiver selections. Rendering visibility is independent of analytical role. Parametric metrics, floor plans and generated IFC/GLB exports describe the FORM building only; FORM packages retain imported originals.
 
-## Dependencies
+## Rights
 
-Three.js 0.180.0 is bundled under its MIT licence (`dist/vendor/LICENSE.txt`). Includes OrbitControls and GLTFExporter from that release.
-
-## 2D Plans
-
-The 2D Plans tab shows individual podium and tower floor outlines, their base elevations, area and optional axis-aligned overall dimensions. Solid grey overlays can show one or all lower floors, masked inside the selected floor outline. It is independent of WebGL. Export the selected floor as an annotated SVG or PNG, or a closed DXF outline in metres. These are conceptual floor outlines, not room layouts.
-
-## BIM export and copyright
-
-Export → IFC creates an IFC4 file containing the Project/Site/Building/Storey hierarchy, IfcSlab floor and roof elements, and an explicitly labelled conceptual envelope as IfcBuildingElementProxy with triangulated surface geometry. Uses metre units, Z-up, the same X/Y plan coordinates as DXF, and nominal slab thicknesses of 0.23 m (tower) and 0.30 m (podium). Parameters and modelled floor areas are exported as FORM properties. The envelope is an open surface, not a detailed wall assembly. This is a conceptual BIM exchange, not a native RVT file or a construction-ready model.
-
-Copyright © 2026 Mostafa A. Gabr. All rights reserved for the FORM application. Third-party Three.js components retain their MIT licence.
-
-## Additional form modifiers
-Shape transition blends to a target footprint. Corner treatment rounds toward a chosen radius (percentage of half the shorter dimension). These footprint operations run in list order before global scale, rotation and translation. Wave shifts floor centres along X or Y with cycle and phase controls and smooth zero displacement at range boundaries. Stepped terraces inset all or one side every N floors and retain at least 20% width/depth; the final inset persists above the range. Floor offsets alternate unshifted/shifted groups every N floors and return to the original centre above the range. Discontinuous changes have horizontal envelope transitions. All new settings survive project JSON, browser storage and IFC parameters; CSV includes options JSON.
-
-## Openings, balconies and local form controls
-- Atrium/courtyard: rectangular or elliptical subtraction, with X/Y offsets and a floor range. Overlapping openings are merged by polygon operations; openings reaching the façade become recesses and can split a floor into separate regions.
-- Façade cut-out: depth, opening width, selected plan-axis side and along-side position. Coordinates are plan X/Y axes, relative to each floor's bounding box, and do not rotate independently with its façade.
-- Local rotation: rotates only the chosen group of floors; upper floors return to their original orientation.
-- Balconies: separate conceptual slab extensions, selected side and every-N-floor repetition. Projection uses an expanded floor outline (axis-based extension, not a constant normal offset on curves). Balcony area is shown separately and excluded from modelled tower floor area. No railings or structural detailing.
-- Slenderness: multiplies width/depth ratio progressively while preserving area before other modifiers and openings.
-
-3D caps are triangulated with holes and concave boundaries. IFC slabs use profiles with voids and separate slab parts for disconnected regions; balconies are separate slabs. SVG/PNG plans use even-odd fill and DXF exports include interior rings. For models containing openings, the envelope lofts clipped sections at quarter-storey intervals. Changes in polygon topology are refined to narrow stepped strips and flagged in the interface; this is a sampled concept mesh, not an exact solid-boolean CAD surface. The podium is unchanged. A cut can remove an entire floor; its area then reads zero and no slab is exported for that floor. Roof openings persist when the range ends at the top storey.
-
-Polygon boolean operations use polygon-clipping 0.15.7 (MIT); its license is bundled in `dist/vendor/polygon-clipping-LICENSE.txt`. Selected local Chromium checks are recorded in the verification reports.
-
-## Geometry review
-The 3D viewer and IFC proxy share one envelope triangulation. Floor-area calculations and slab profiles remain based on floor sections. Removed or disconnected floors are identified in the controls; empty models use safe camera bounds. Roof/opening and abrupt modifier boundaries include horizontal transition surfaces. Numerical regression tests cover mixed openings/twist/taper, unequal polygon vertex counts and topology changes; interactive browser and target-application verification are still required.
-
-## Modifier editing
-Progressive modifiers offer linear, ease-in (t²), ease-out (1−(1−t)²), and smooth S-curve (3t²−2t³) transitions across their floor range. Existing projects default to linear and preserve their geometry. For waves, bend and bulge, the curve remaps progress through the existing profile. Discrete floor-group modifiers retain exact floor boundaries and do not show a transition selector.
-
-Copy inserts an independent modifier immediately after the original; Up/Down works on mobile and keyboard, while the handle supports desktop drag-and-drop. Edits participate in undo/redo and JSON/browser saves. The established evaluation stages are preserved: outline operations (shape transition, corners, slenderness, terraces) execute in list order, then combined scale, rotation, translation, openings and balconies. Moving cards between stages does not change that stage order; each card and the panel explain this. CSV now records transition curves explicitly.
-
-## Browser solar studies
-The Solar panel calculates approximate sun position using NOAA/Meeus Julian-century equations (https://gml.noaa.gov/grad/solcalc/calcdetails.html), independently compared with pvlib SPA in the cases documented below. It uses latitude, east-positive longitude, user-entered UTC offset (including any daylight saving), date, local clock time and model north rotation. North 0° follows plan +Y; positive rotation turns north toward +X. No atmospheric refraction is applied.
-
-Enable sun path/shadows, optionally add up to five opaque rectangular context buildings, and calculate direct sunlight hours for one selected day. Ground uses a 25×25 point grid; exterior roofs use 500 deterministic area-weighted samples and façades use the configurable clipped grid described below. Analysis rays use a dedicated full mass model, independent of display mode, and include envelope/slabs/balconies/podium/context; comparison designs are excluded. Rays originate 0.1 mm off each surface to reduce self-intersection. Midpoint time steps are 0.25, 0.5, 1, 5, 15, 30 or 60 minutes; sunlight settings default to 15 minutes. Irradiation is capped at one minute, with selectable 15/30-second refinement. Refine near shadow boundaries. A local Web Worker performs double-sided triangle occlusion with a bounding-volume hierarchy; cancellation terminates it. Geometry/settings changes clear stale results.
-
-Results are geometric direct-sun hours, not weather-adjusted sunshine, irradiance, electricity or indoor daylight. All surfaces are opaque, with no clouds, diffuse sky, reflections, terrain or glazing transmission. Roof sampling removes horizontal patches inside the procedural mass while retaining exterior shaded terraces and balconies; eligible inclined envelope faces are also included; façade means near-vertical surfaces, including internal opening faces. The point map is a sampled study, not a continuous façade solution. Refine the time step and compare runs; mesh approximations and surface sampling limit accuracy. Visual shadows use shadow maps and can differ from analysis rays. Nearby context is for solar analysis only and is not added to building GLB/IFC exports. Project JSON/browser saves include solar settings/context. Solar CSV contains coordinates, normals, exposure, inputs, context and project JSON; results can be saved separately in browser history. No paid API or remote simulation server is called. Selected local Chromium checks are recorded in the verification reports.
-
-### Reading solar results
-For sunlight hours, the default colour scale spans the actual sample minimum/maximum. Irradiation starts with a fixed 0–10 kWh/m² scale, adjustable for comparable runs. Auto-range tick precision prevents narrow ranges from displaying identical labels. Switch to 0–daylight hours to compare runs using the daylight reference. Min/max/mean/spread are displayed; uniform results stay one colour and are labelled explicitly. A narrow range can look high-contrast without representing a large absolute difference. Click/tap points in the 3D viewer to see hours and coordinates. Camera drags do not select points. Show building, opacity and neutral-grey analysis controls affect presentation only; they do not alter occlusion calculations or exported building geometry. GLB export builds a fresh model so hiding/fading the viewer does not hide/fade the exported building.
-
-
-### Daily weather-based irradiation (research preview)
-Solar → Analysis → Solar irradiation fetches Open-Meteo hourly GHI, DNI and DHI. This free endpoint is for personal/academic non-commercial use; no OpenWeather key is needed. Requests disclose latitude, longitude and dates, not building geometry. Attribution: Open-Meteo, CC BY 4.0; historical model ERA5 (ECMWF/Copernicus).
-
-The selected local date is a fixed 24-hour period at the explicitly entered UTC offset (including applicable daylight saving); transition days are not automatic civil 23/25-hour days. API timestamps denote the preceding hourly mean. GMT intervals are clipped to the selected day, including fractional UTC offsets; incomplete, null or negative data aborts the run. Dates older than five days request ERA5 via the archive endpoint; newer dates use best-match forecast data. Availability depends on the provider. Eight datasets are cached in memory for repeated form studies; reload to refresh.
-
-At each surface sample, direct irradiation integrates DNI × max(0, normal·sun direction) × visibility × duration / 1000. Hourly radiation is held constant over the selected geometric substeps. Sky diffuse uses isotropic radiance and 8192 spherical-Fibonacci hemisphere directions by default (512/2048 selectable for coarse previews), normalizing the cosine-weighted visible fraction to the unobstructed analytic sky factor (1+normal_up)/2. Total = direct + diffuse. GHI is shown as a weather reference, not added again. No ground reflection, interreflection, glazing transmission, anisotropic sky or PV conversion is included. Input is gridded modelled weather, not an on-site measurement. Selected analytical and pvlib numerical benchmarks now pass. These assumptions still limit use to qualified early-design/method-development estimates pending independent field validation and project-specific convergence checks.
-
-Use fixed kWh/m² colour bounds and unchanged weather/date/location for form comparisons. Statistics are surface-sample means, not whole-building energy totals. CSV includes individual direct/diffuse/total values, sky factor, full settings, source URL, retrieval time, grid location, hourly input intervals, method version, ray offset, colour bounds and the actual analysis triangle mesh. Exports are consequently larger; keep the matching source revision for reproduction. Use `node validation/replay_csv.mjs export.csv` to rerun without weather requests or geometry reconstruction. Results are not saved in project JSON.
-
-References: https://open-meteo.com/en/docs ; https://open-meteo.com/en/docs/historical-weather-api ; https://open-meteo.com/en/pricing ; https://pvlib-python.readthedocs.io/en/stable/reference/generated/pvlib.irradiance.isotropic.html . Numerical checks cover unobstructed tilt factors, incidence, beam blockage, diffuse obstruction, unit conversion, time offsets and missing data. These checks do not establish field accuracy.
-
-### Independent numerical benchmark (12 October 2026)
-See `dist/validation.html` and `dist/radiation-validation.json`. Run `npm run validate:radiation` to regenerate the report from the checked-in independent fixture. `scripts/generate-radiation-reference.py` regenerates that fixture with pvlib 0.13.1 (NREL SPA geometric sun position and isotropic transposition), and imports no FORM functions. Weather is synthetic; this is not a field validation.
-
-The 144 comparisons cover four cities, three seasonal dates, six surface orientations and 1/5-minute integration. All meet the project-specific regression gate max(0.02 kWh/m², 2% reference). After audit integration, maximum absolute difference: 0.00038809 kWh/m²; maximum relative difference: 0.011056%. The earlier main implementation had 0.04806 kWh/m² and 1.7472%, respectively. A separate Python ray-box reference checks four obstructed-sky probes at 131,072 directions; the current error distribution is in `dist/radiation-validation.json`.
-
-**Correction:** production radiation geometry now uses a maximum one-minute step, with selectable 15/30-second convergence checks. CSV records the effective step. The earlier 30-minute Berlin equinox/east synthetic case differed by 10.93% from same-step pvlib near sunrise. Coarse geometric quadrature amplifies horizon/visibility differences; reducing the step improves stability without inventing subhourly weather data. On the benchmark scenarios the largest 5-versus-1-minute daily difference is 0.021591 kWh/m² (unobstructed), and 0.011748 kWh/m² (six box-shaded scenarios). These are observed differences, not universal error bounds. The hourly radiation values are still held constant and the diffuse sky remains isotropic.
-
-Remaining: realistic building/field validation, anisotropic sky comparison, hourly weather-component consistency, spatial/time convergence for complex geometry, and browser interaction QA. Daylight, indoor comfort, annual yield and compliance are not validated by this benchmark.
-
-
-### Daylight potential and sky exposure
-Solar → Analysis offers **Daylight potential — façade VSC** and **Sky exposure — horizontal sky-view factor**. Both are geometry-only, run in a cancellable worker, use the actual opaque mass model plus context blocks, and make no weather/API request. Location, date and north rotation do not affect these azimuth-symmetric sky metrics; those controls are disabled. VSC restricts sampling to façades. Sky exposure supports ground, roofs and façades. The ground grid may include points beneath building footprints; such points are covered and can show zero sky exposure.
-
-VSC is the direct illuminance on a **virtual vertical plane facing the horizontal projection of the façade normal**, divided by unobstructed horizontal illuminance under the CIE standard overcast sky. Relative luminance L=1+2u, where u=sin(altitude). The exact denominator is 7π/3. Equal-solid-angle midpoint quadrature integrates L × positive vertical incidence × visibility. Thus inclined façade samples are evaluated on a virtual vertical receiver, not the actual inclined receiver. Horizontal sky-view factor is (1/π)∫visibility×u dΩ; unweighted visible-sky solid-angle percentage is reported separately. These metrics are not interchangeable.
-
-Sampling choices: 512, 2,048 (default) and 8,192 rays per point. Origin is displaced 0.0001 m along the actual surface normal to avoid self-intersection. The unobstructed vertical analytic VSC is 39.61770778%; computed values are 39.79890696%, 39.67449296% and 39.63595467% respectively. Resolution-dependent regression tolerances are 0.2, 0.07 and 0.025 percentage points. Unobstructed horizontal sky-view factor is 100%. Tests also cover azimuth symmetry, a fully covering plate, a half-sky wall, invalid normals, and settings persistence. These analytic checks do not validate realistic-building accuracy. Compare resolutions around small openings and overhangs.
-
-Fixed scales default to 0–40% VSC and 0–100% horizontal sky-view factor. Point readouts and CSV preserve metric names, coordinates, receiver definitions, ray count, origin offset and project geometry. No universal pass/fail threshold is imposed. No interior geometry, window transmission, reflected light, lux, daylight factor, sDA, ASE or compliance result is computed.
-
-Method source: Darula & Kittler (2002), CIE general sky standard defining luminance distributions: https://publications.ibpsa.org/proceedings/esim/2002/papers/esim2002_o2.pdf . CIE overview: https://www.cie.co.at/publications/cie-standard-overcast-sky-and-clear-sky .
-
-### Saved analysis comparisons
-Solar → Saved results / compare saves up to 12 complete runs in this browser. Name each run and select a baseline to compare min/mean/max and mean deltas. Snapshots preserve project geometry, point coordinates, settings, component results and weather. JSON exports all snapshots; CSV exports the comparison and conditions. JSON backup import and reloading saved overlays are not implemented in this release.
-
-Comparisons suppress deltas when metric, target, sample count, engine, context, applicable ground extent, sky resolution or solar date/location/orientation/time step/weather differ. Weather retrieval timestamps are ignored; actual hourly inputs are compared. Sky metrics ignore unused date/location/sun parameters. Design geometry can differ intentionally. These are sample-summary comparisons, not paired point differences or whole-building energy. Percentage-metric absolute deltas are percentage points. Zero baselines have no relative delta. Storage errors are surfaced without silently discarding prior records. Browser interaction QA remains outstanding; numerical, storage and compatibility regression tests run with `npm test`.
-
-### Regular façade analysis grid
-Façade analysis now samples a regular grid, default 5 m horizontal × 3 m elevation spacing; Solar exposes both spacings (1–30 m). Grid lines and colour-coded cell-centre results appear after calculation. Rows are anchored to world elevation zero; horizontal coordinates are anchored to the world origin along each triangle's horizontal tangent. Centres and grid lines are clipped to façade triangles; duplicate coplanar centres at triangulation seams are removed. Ground sampling remains unchanged; roofs now exclude enclosed floor plates before sampling. The projected grid follows inclined surfaces, so vertical spacing is an elevation difference, not slope length. Columns may change direction across noncoplanar/twisted faces. This is an analysis grid, not structural or curtain-wall geometry.
-
-Partial cells with no centre are unsampled; increase resolution for small features. Up to 6,000 façade points are allowed; denser requests give an explicit instruction to increase spacing, without silently changing it. Counts vary with geometry. Grids include eligible near-vertical model surfaces, including slab edges. Point readouts/CSV/JSON preserve row, column and triangle identifiers; identifiers are local to the current mesh and do not establish correspondence between designs. Comparison compatibility checks sampling method and grid spacing. Means remain unweighted sample means (not façade-area integrals, especially for inclined surfaces). Browser interaction checks remain outstanding.
-
-### Cell heatmap and grid refinement
-Façade results default to a coloured cell heatmap with grid outlines. Separate switches control cells, centre points and outlines. Cell triangles are clipped against the actual façade triangles; coplanar pieces across mesh seams share the centre's result. A cell without a sampled centre is left uncoloured. The colour is a centre-point estimate, not a spatially integrated cell average. Clicking a cell resolves its sample index and uses the same legend/readout as point selection. Analysis geometry is display-only and does not change the BIM or model exports.
-
-After a façade run, **Check finer façade grid** halves each grid spacing (minimum 0.25 m), recalculates the current design, and reports coarse/fine sample counts and means plus absolute/relative mean changes. Radiation reuses the exact coarse-run weather. The settings remain at the finer spacing. The 6,000-point cap still applies. Saving the fine result includes the resolution-study summary in full-results JSON. This is one sensitivity comparison, not proof of convergence, paired-point equivalence, or physical accuracy. Automated checks cover clipped cell area, triangle seams, uncoloured unsampled fragments, result-index mapping and resolution summaries. Desktop and mobile-viewport Chromium interaction checks are recorded in [the release report](validation/release/REPORT.md); this is not physical iPhone/Safari coverage.
-
-References: https://open-meteo.com/en/docs ; https://open-meteo.com/en/docs/historical-weather-api ; https://open-meteo.com/en/pricing ; https://pvlib-python.readthedocs.io/en/stable/reference/generated/pvlib.irradiance.isotropic.html . Independent fixtures cover 60 roof/façade/tilt cases, three finite-obstacle view factors, nine shaded date/geometry combinations at five temporal resolutions, and exterior-roof/worker/CSV regressions. These checks do not establish field accuracy.
-
-### Scientific verification status
-Read the [irradiation audit](validation/IRRADIATION_AUDIT.md) for methods, measured errors, acceptance budgets, unresolved mesh/weather/physics limitations and reproducible commands. `npm test` runs offline regression checks; `npm run validate:radiation` emits full comparisons. The independent Python fixture generator and pinned dependencies are in `validation/`. Fixtures use **synthetic weather**, not observations. The original numerical results are retained alongside corrected results. Four-decimal readouts are for inspecting differences and do not imply four-decimal physical accuracy. Use time/sky/spatial convergence and case-specific independent validation before making quantitative academic performance claims.
-
-### PR #1 integration (17 October 2026)
-The reconciliation of main `6c4a533` with audit `ebfec7f` is documented in [the integration report](validation/INTEGRATION_REVIEW.md). Production irradiation now has a **one-minute cap**, with selectable 15/30-second convergence checks. Stored coarser settings calculate at one minute for irradiation; sunlight retains the selected step. Only benchmark scripts explicitly override this cap to match frozen coarse-step references. `skyFactor` accepts a **direction count** (512/2048/8192), while daylight's `skyExposure` retains its separate row-count API (16/32/64).
-
-CSV replay now supports sunlight, irradiation, VSC and horizontal sky view, retaining grid identifiers, settings, the actual ray mesh and optional refinement summary. Kernel/CSV version is `FORM-irradiation-4`; older exports require their matching source revision. New saved snapshots use a new environment engine identifier, and irradiation comparisons also check sky-ray count. Existing history remains readable; deltas across engine versions are suppressed. The two independent Python fixture datasets are preserved unchanged; `npm run validate:radiation` regenerates both current reports. The original audit narrative and baseline report remain historical evidence, with its original coarse-step calculations explicitly distinguished from production.
-
-## Release convergence follow-up
-
-[Release protocol and results](validation/release/REPORT.md) extend the independent Radiance study to sub-minute shadow integration and sub-metre façade sampling. Defaults trade additional calculation time for finer sampling; grids still have a 6,000-point limit. Saved sky choices remain explicit. These checks support conceptual modelling under the documented assumptions, not measured accuracy or a whole-building energy claim.
+Copyright © 2026 Mostafa A. Gabr. FORM rights are described in `COPYRIGHT`. Bundled third-party licences remain beside their assets in `public/vendor/` and `vendor/`.

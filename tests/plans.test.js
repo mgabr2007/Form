@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {defaults,modelData} from '../dist/geometry.js';
-import {floorPlans,planSVG,planDXF} from '../dist/plans.js';
+import {defaults,modelData} from '../public/geometry.js';
+import {floorPlans,planSVG,planDXF} from '../public/plans.js';
 test('plan selector includes podium and tower floors but excludes roof',()=>{
  const s=defaults(),plans=floorPlans(s);assert.equal(plans.length,51);assert.equal(plans[0].id,'podium-1');assert.equal(plans[3].id,'tower-1');assert.equal(plans[3].elevation,3*s.storey);assert.equal(plans.at(-1).id,'tower-48');
  assert.deepEqual(plans[3].points,modelData(s).rings[0].points);

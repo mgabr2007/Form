@@ -2,13 +2,13 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import vm from 'node:vm';
-import * as THREE from '../dist/vendor/three.module.js';
-import {defaults,normalize,modelData,footprint} from '../dist/geometry.js';
-import {envelopeMesh} from '../dist/envelope.js';
-import {roofSurfaceTriangles} from '../dist/solar-surfaces.js';
-import {sampleSurfaces,buildBVH,cross} from '../dist/solar.js';
-import {irradiation,skyFactor} from '../dist/radiation.js';
-const source=readFileSync(new URL('../dist/app.js',import.meta.url),'utf8');
+import * as THREE from '../public/vendor/three.module.js';
+import {defaults,normalize,modelData,footprint} from '../public/geometry.js';
+import {envelopeMesh} from '../public/envelope.js';
+import {roofSurfaceTriangles} from '../public/solar-surfaces.js';
+import {sampleSurfaces,buildBVH,cross} from '../public/solar.js';
+import {irradiation,skyFactor} from '../public/radiation.js';
+const source=readFileSync(new URL('../public/app.js',import.meta.url),'utf8');
 function mesh(s){const ctx=vm.createContext({THREE,modelData,footprint,envelopeMesh,mode:'mass',s});vm.runInContext(source.slice(source.indexOf('function geometry('),source.indexOf('function dispose('))+';var root=building(s,false,"mass");',ctx);const out=[];ctx.root.updateMatrixWorld(true);ctx.root.traverse(o=>{if(o.isMesh)out.push(...o.geometry.attributes.position.array);});return out;}
 const state=overrides=>normalize({...defaults(),shape:'rectangle',width:20,depth:16,floors:10,storey:3,podium:false,modifiers:[],...overrides});
 function area(tris){let sum=0;for(let i=0;i<tris.length;i+=9){const a=tris.slice(i,i+3),b=tris.slice(i+3,i+6),c=tris.slice(i+6,i+9);sum+=Math.hypot(...cross(b.map((v,j)=>v-a[j]),c.map((v,j)=>v-a[j])))/2;}return sum;}

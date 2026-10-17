@@ -1,13 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {solarSettings,buildBVH,sunSteps,sunlightHours} from '../dist/solar.js';
-import {irradiation,radiationSteps,IRRADIATION_METHOD_VERSION} from '../dist/radiation.js';
-import {skyExposure} from '../dist/daylight.js';
-import {facadeGrid} from '../dist/facade-grid.js';
-import {analysisCSV} from '../dist/solar-export.js';
+import {solarSettings,buildBVH,sunSteps,sunlightHours} from '../public/solar.js';
+import {irradiation,radiationSteps,IRRADIATION_METHOD_VERSION} from '../public/radiation.js';
+import {skyExposure} from '../public/daylight.js';
+import {facadeGrid} from '../public/facade-grid.js';
+import {analysisCSV} from '../public/solar-export.js';
 import {parseCSV,replayAnalysisCSV} from '../validation/replay_csv.mjs';
-import {snapshot,compare,readHistory,writeHistory} from '../dist/analysis-history.js';
+import {snapshot,compare,readHistory,writeHistory} from '../public/analysis-history.js';
 const fixture=JSON.parse(readFileSync(new URL('./fixtures/pvlib-radiation.json',import.meta.url)));
 const wall=[0,0,0,0,6,0,0,6,10,0,0,0,0,6,10,0,0,10];
 const grid=facadeGrid(wall,5,3),tree=buildBVH(wall);
@@ -56,7 +56,7 @@ test('comparison retains old history but blocks cross-engine and sky-ray deltas'
 test('worker preserves daylight, sky and sunlight on the clipped facade grid',async()=>{
  const messages=[];globalThis.self={postMessage:m=>messages.push(m)};
  try{
-  await import('../dist/solar-worker.js');
+  await import('../public/solar-worker.js');
   for(const mode of ['daylight','sky','sunlight','radiation']){
    const r=run(mode);self.onmessage({data:{settings:r.settings,weather:r.weather,samples:r.samples,triangles:wall}});
    const actual=messages.at(-1);assert.equal(actual.error,undefined);assert.deepEqual(actual.values,r.values);
@@ -67,7 +67,7 @@ test('worker preserves daylight, sky and sunlight on the clipped facade grid',as
 test('production worker matches independent one-minute shade reference for every coarser requested step',async()=>{
  const messages=[];globalThis.self={postMessage:m=>messages.push(m)};
  try{
-  await import('../dist/solar-worker.js?cap-integration');
+  await import('../public/solar-worker.js?cap-integration');
   for(const ref of fixture.shaded.filter(r=>r.step===1)){
    const c=fixture.cases.find(c=>c.name===ref.case),o=fixture.obstructions.find(o=>o.name===ref.obstruction);
    for(const step of [5,15,30,60]){

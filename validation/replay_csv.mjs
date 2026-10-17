@@ -1,8 +1,8 @@
 import {readFileSync} from 'node:fs';
 import {pathToFileURL} from 'node:url';
-import {skyExposure} from '../dist/daylight.js';
-import {buildBVH,sunSteps,sunlightHours,RAY_OFFSET_METRES} from '../dist/solar.js';
-import {irradiation,radiationSteps,IRRADIATION_METHOD_VERSION} from '../dist/radiation.js';
+import {skyExposure} from '../public/daylight.js';
+import {buildBVH,sunSteps,sunlightHours,RAY_OFFSET_METRES} from '../public/solar.js';
+import {irradiation,radiationSteps,IRRADIATION_METHOD_VERSION} from '../public/radiation.js';
 
 export function parseCSV(csv){
  const rows=[];let row=[],field='',quoted=false;

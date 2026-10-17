@@ -1,6 +1,6 @@
 import test from 'node:test';import assert from 'node:assert/strict';
-import {solarPosition,solarSettings,sunSteps,buildBVH,blocked,sunlightHours,sampleSurfaces} from '../dist/solar.js';
-import {normalize,defaults} from '../dist/geometry.js';
+import {solarPosition,solarSettings,sunSteps,buildBVH,blocked,sunlightHours,sampleSurfaces} from '../public/solar.js';
+import {normalize,defaults} from '../public/geometry.js';
 test('equatorial equinox sun rises east, peaks near zenith and sets west',()=>{
  const a=solarPosition('2026-03-20',9,0,0),b=solarPosition('2026-03-20',12,0,0),c=solarPosition('2026-03-20',15,0,0);assert.ok(a.azimuth>85&&a.azimuth<95);assert.ok(b.altitude>87);assert.ok(c.azimuth>265&&c.azimuth<275);assert.ok(solarPosition('2026-03-20',0,0,0).altitude<0);
 });

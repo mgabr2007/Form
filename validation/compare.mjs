@@ -1,7 +1,7 @@
 // Characterize errors; fixtures come from a Python process with no FORM imports.
 import {readFileSync} from 'node:fs';
-import {solarPosition,buildBVH} from '../dist/solar.js';
-import {radiationSteps as productionRadiationSteps,irradiation,skyFactor,IRRADIATION_METHOD_VERSION} from '../dist/radiation.js';
+import {solarPosition,buildBVH} from '../public/solar.js';
+import {radiationSteps as productionRadiationSteps,irradiation,skyFactor,IRRADIATION_METHOD_VERSION} from '../public/radiation.js';
 const radiationSteps=(records,settings)=>productionRadiationSteps(records,settings,60);
 const f=JSON.parse(readFileSync(new URL('../tests/fixtures/pvlib-radiation.json',import.meta.url))),empty=[],bvh=buildBVH(empty),rad=Math.PI/180;
 const out={method:IRRADIATION_METHOD_VERSION,integration:'Matched reference steps; explicit cap override for characterization, not production settings.',provenance:f.provenance,cases:[],obstructions:[],shaded:[]};

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f3f4ed">
+  <title>FORM · Validation &amp; limitations</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;background:#f3f4ed;color:#23372d;font:16px/1.65 system-ui,sans-serif}
+    main{max-width:850px;margin:auto;padding:32px 22px 64px}
+    a{color:#265f47;text-underline-offset:3px}
+    a:focus-visible{outline:3px solid #536c40;outline-offset:4px;border-radius:2px}
+    nav{display:flex;flex-wrap:wrap;gap:12px 24px;font-size:14px}
+    h1{font-size:clamp(30px,6vw,46px);line-height:1.15;letter-spacing:-1.3px;margin:16px 0}
+    h2{font-size:21px;line-height:1.35;margin:0 0 12px}
+    p{margin:12px 0}
+    .tag{font-size:12px;letter-spacing:1.4px;text-transform:uppercase;margin-top:28px;color:#58695e}
+    .notice,section{padding:22px;background:#fff;border:1px solid #d5ddce;border-radius:12px;margin:22px 0}
+    .notice{background:#fff5d9;border-color:#ddc881}
+    .notice strong{font-size:21px;line-height:1.4;display:block}
+    .notice p:last-child,section p:last-child{margin-bottom:0}
+    ul{padding-left:22px;margin-bottom:0}
+    li{margin:10px 0}
+    footer{font-size:14px;color:#58695e}
+    @media(max-width:480px){main{padding:24px 16px 44px}.notice,section{padding:18px}}
+  </style>
+</head>
+<body>
+<main>
+  <nav aria-label="Page navigation"><a href="./">← Back to FORM</a><a href="./validation.html">Numerical checks &amp; evidence</a></nav>
+  <header>
+    <p class="tag">Verification status · reviewed 17 October 2026</p>
+    <h1>Validation &amp; limitations</h1>
+    <p>FORM supports conceptual architectural modelling and early environmental studies. Read these limits alongside any result, comparison or export.</p>
+  </header>
+
+  <div class="notice" aria-label="Verification disclaimer">
+    <strong>Field accuracy and live-site deployment remain unverified.</strong>
+    <p>Numerical comparisons and local browser checks do not establish accuracy at a real site or confirm that a public website serves the tested version.</p>
+  </div>
+
+  <section aria-labelledby="validation-scope">
+    <h2 id="validation-scope">What the checks establish</h2>
+    <p>Selected calculations were compared with independent pvlib and Radiance references using synthetic weather and defined scenes. Regression, sampling-refinement and local browser checks are documented in the <a href="https://github.com/mgabr2007/Form/blob/7682549571cc647c59cb034a76910796ba0c308f/validation/release/REPORT.md" target="_blank" rel="noopener">17 October release report</a>.</p>
+    <p>Passing those cases is not a universal error bound, certification, external peer review or measured field validation. No field measurements were supplied for that review. Other geometries and conditions need their own checks.</p>
+  </section>
+
+  <section aria-labelledby="weather-physics">
+    <h2 id="weather-physics">Weather and irradiation assumptions</h2>
+    <ul>
+      <li>Weather inputs are hourly, gridded model estimates, not on-site measurements. Finer calculation steps track shadows more closely but do not create finer weather data. Live provider availability and accuracy were not verified by the synthetic browser checks.</li>
+      <li>Check location, model north, date and the entered UTC offset, including daylight saving. A selected day is a fixed 24-hour period; clock-change days are not handled automatically.</li>
+      <li>Irradiation uses opaque geometry, direct sunlight and an isotropic diffuse sky. It omits anisotropic sky brightness, ground and building reflections, glazing transmission and PV conversion.</li>
+      <li>Direct sunlight hours are a geometric exposure measure, not weather-adjusted sunshine. Irradiation is incident energy per unit area, not electricity production or whole-building energy use.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="sampling">
+    <h2 id="sampling">Reading grids, colours and comparisons</h2>
+    <ul>
+      <li>A façade heatmap cell shows its centre-point estimate, not an area-averaged result. Partial cells without a sample centre remain uncoloured. Reported means are unweighted sample means, not façade-area energy totals.</li>
+      <li>Small openings, thin obstructions and moving shadow boundaries can need finer geometry, grids, time steps or sky sampling. One refinement comparison does not prove convergence for every design.</li>
+      <li>Colour contrast depends on the chosen scale; a narrow range can exaggerate small differences visually. Use consistent scales and compatible settings for comparisons. Displayed decimal precision is not physical accuracy.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="design-scope">
+    <h2 id="design-scope">Daylight, design and BIM scope</h2>
+    <p>Façade vertical sky component (VSC) and sky-view metrics describe exterior sky access under their stated assumptions. They do not calculate indoor illuminance, glare, thermal comfort, annual yield or daylight-code compliance.</p>
+    <p>Geometry, floor areas and IFC/CAD exports are conceptual. They do not establish structural adequacy, regulatory compliance or construction readiness. Check units, geometry and interpretation in the receiving application; modelled floor area is not automatically a code-defined area.</p>
+  </section>
+
+  <section aria-labelledby="import-limitations">
+    <h2 id="import-limitations">Imported GLB and IFC models</h2>
+    <p>Check units, source origin, placement, north and dimensions before analysis. Only the selected analysis building supplies receiver surfaces; context supplies obstructions and references are visual only. Hiding a context model does not remove it from calculations.</p>
+    <p>Choose and review exterior meshes explicitly. Orientation suggestions cannot identify interiors, validate openings or prove that normals point outwards. A combined mesh containing interior floors may need splitting in the authoring tool. All imported surfaces are opaque, including glass; textures and material transmission are omitted.</p>
+    <p>IFC tessellation and schema support are limited. The coverage diagnostic identifies represented products with no imported triangles but cannot certify the complete building. Source properties are descriptive data, not verified quantities. IFC4 metre/millimetre fixtures and one IFC2X3 Revit sample were checked; arbitrary authoring exports and IFC4X3 remain unverified.</p>
+    <p>Parametric floor areas, plans and building exports still refer to the FORM-generated building. Imported models do not become parametric modifiers. Keep a downloaded FORM package containing original files; local browser storage can be cleared or fail. File and triangle limits are budgets, not guarantees of speed on physical mobile devices.</p>
+    <p><a href="https://github.com/mgabr2007/Form/blob/feature/model-import-20261017/validation/imports/REPORT.md" target="_blank" rel="noopener">Imported geometry verification report</a> · <a href="./vendor/imports/README.md" target="_blank" rel="noopener">Import dependencies and licences</a></p>
+  </section>
+
+  <section aria-labelledby="browser-deployment">
+    <h2 id="browser-deployment">Browser and deployment scope</h2>
+    <p>Recorded interaction checks used local Chromium with software WebGL at desktop and mobile viewport sizes. A mobile viewport is not a physical-device test. Safari, real mobile GPUs and the deployed public site remain outside that verification.</p>
+    <p>Local checks do not confirm hosting configuration, cache freshness, public-site availability or the deployed version. Browser storage can be unavailable or cleared; export project and result backups that you need to retain.</p>
+  </section>
+
+  <section aria-labelledby="before-reliance">
+    <h2 id="before-reliance">Before relying on a result</h2>
+    <p>Verify site inputs and geometry, check sampling sensitivity, retain the source version and calculation inputs, and compare against an appropriate independent method. Claims about real-world accuracy require suitable measured data and a documented validation study. Obtain project-specific professional review before using results for design approval or construction decisions.</p>
+    <p><a href="./validation.html">Read the numerical checks</a> for methods, results and remaining validation work.</p>
+  </section>
+
+  <footer><p>This status records the scope reviewed on 17 October 2026; it does not certify subsequent changes or deployments.</p><a href="./">Return to FORM</a></footer>
+<section><h2>Integrated release</h2><p>GLB and IFC models use the Models tab. Structural calculations, generated floor plans and parametric exports apply to the FORM building only. Project and cloud snapshots include original imported files within the existing 8 MB limit; larger projects use a local FORM package. PVGIS TMY retains provider-timestamp hourly quadrature; date-specific hourly means use one-minute or finer geometry. These different weather interpretations must not be treated as interchangeable measurements.</p><p>Selected numerical tests and a production build do not verify field accuracy or every live browser/device, model or account workflow. Earlier benchmark reports describe their recorded source revisions.</p></section></main>
+</body>
+</html>

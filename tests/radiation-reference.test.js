@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {buildBVH} from '../dist/solar.js';
-import {radiationSteps,irradiation,skyFactor} from '../dist/radiation.js';
+import {buildBVH} from '../public/solar.js';
+import {radiationSteps,irradiation,skyFactor} from '../public/radiation.js';
 const fixture=JSON.parse(fs.readFileSync(new URL('./fixtures/radiation-reference.json',import.meta.url))),empty=new Float64Array(),bvh=buildBVH(empty);
 test('independent pvlib SPA and isotropic integration: 144 seasonal surface cases',()=>{for(const c of fixture.cases)for(const r of c.reference.filter(r=>r.step===1||r.step===5))for(const s of r.surfaces){const actual=irradiation({position:[0,0,0],normal:s.normal},radiationSteps(c.records,{...c.settings,step:r.step},60),empty,bvh),reference=s.direct+s.diffuse;assert.ok(Math.abs(actual.total-reference)<=Math.max(.02,.02*reference),`${c.city} ${c.settings.date} ${s.name} ${r.step}`);assert.ok(Math.abs(actual.diffuse-s.diffuse)<1e-10);}});
 test('production radiation caps coarse geometry requests at one minute',()=>{const c=fixture.cases[0];for(const step of [15,30,60]){const steps=radiationSteps(c.records,{...c.settings,step});assert.equal(steps.length,1440);assert.ok(steps.every(s=>s.hours<=1/60+1e-12));}assert.throws(()=>radiationSteps(c.records,{...c.settings,step:0}),/time step/);});
