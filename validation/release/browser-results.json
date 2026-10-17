@@ -1,0 +1,114 @@
+{
+  "browser": "153.0.8010.0",
+  "renderer": "SwiftShader software WebGL2",
+  "weather": "intercepted synthetic pvlib fixture; not live provider validation",
+  "checks": [
+    {
+      "name": "WebGL2 viewer starts",
+      "pass": true
+    },
+    {
+      "name": "Default irradiation controls show 8192 rays and one minute",
+      "pass": true
+    },
+    {
+      "name": "Daily irradiation runs",
+      "pass": true,
+      "status": "80 samples · 1.0064–3.5828 kWh/m²"
+    },
+    {
+      "name": "radiation downloaded CSV replays",
+      "pass": true,
+      "method": "FORM-irradiation-4",
+      "samples": 80,
+      "maxAbsoluteError": 0,
+      "passed": true
+    },
+    {
+      "name": "Heatmap, point, grid, model and scale controls remain usable",
+      "pass": true
+    },
+    {
+      "name": "Rendered cell selection shows coordinates, grid identity and direct/diffuse values",
+      "pass": true
+    },
+    {
+      "name": "Finer grid recalculates with identical cached weather",
+      "pass": true,
+      "summary": "Resolution check: 3 × 3 m (80 points) → 1.5 × 1.5 m (320 points). Sample mean 2.518 → 2.518 kWh/m²; change -0.000 kWh/m² (-0.00% relative). Different point locations; one refinement does not establish convergence or accuracy. Save this result to include the check in the full-results JSON."
+    },
+    {
+      "name": "Saved comparison blocks different grid resolutions",
+      "pass": true
+    },
+    {
+      "name": "radiation-15seconds downloaded CSV replays",
+      "pass": true,
+      "method": "FORM-irradiation-4",
+      "samples": 320,
+      "maxAbsoluteError": 5.551115123125783e-17,
+      "passed": true
+    },
+    {
+      "name": "sunlight runs",
+      "pass": true,
+      "status": "320 samples · 5.50–8.50 h"
+    },
+    {
+      "name": "sunlight downloaded CSV replays",
+      "pass": true,
+      "method": "FORM-irradiation-4",
+      "samples": 320,
+      "maxAbsoluteError": 0,
+      "passed": true
+    },
+    {
+      "name": "daylight runs",
+      "pass": true,
+      "status": "320 samples · 39.67–39.67 %"
+    },
+    {
+      "name": "daylight downloaded CSV replays",
+      "pass": true,
+      "method": "FORM-irradiation-4",
+      "samples": 320,
+      "maxAbsoluteError": 0,
+      "passed": true
+    },
+    {
+      "name": "sky runs",
+      "pass": true,
+      "status": "320 samples · 50.00–50.00 %"
+    },
+    {
+      "name": "sky downloaded CSV replays",
+      "pass": true,
+      "method": "FORM-irradiation-4",
+      "samples": 320,
+      "maxAbsoluteError": 0,
+      "passed": true
+    },
+    {
+      "name": "Cancellation restores usable controls",
+      "pass": true
+    },
+    {
+      "name": "Dense grids fail clearly without freezing UI",
+      "pass": true
+    },
+    {
+      "name": "3D and plan view switches remain usable",
+      "pass": true
+    },
+    {
+      "name": "Mobile solar controls fit the viewport",
+      "pass": true
+    },
+    {
+      "name": "No browser page errors or console errors",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "consoleErrors": []
+}

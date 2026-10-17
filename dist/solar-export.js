@@ -25,14 +25,15 @@ export function analysisCSV(r,scale={}){
    ['sky rays',2*settings.skyResolution*settings.skyResolution],
    ['VSC receiver','Virtual vertical plane facing facade azimuth'],
    ['sky-view receiver','Horizontal plane at sample position'],['date and location','Not used']
-  ]:[['time step minutes',radiation?Math.min(5,settings.step):settings.step]]),
+  ]:[['time step minutes',radiation?Math.min(1,settings.step):settings.step]]),
   ...(radiation?[
    ['weather source',r.weather.source],['weather URL',r.weather.url],['retrieved UTC',r.weather.retrieved],
    ['weather grid lat lon',r.weather.gridLatitude,r.weather.gridLongitude],
-   ['method','DNI cosine projection + ray visibility; isotropic DHI; no reflections; NOAA/Meeus geometric sun; maximum five-minute geometry step'],
+   ['method','DNI cosine projection + ray visibility; isotropic DHI; no reflections; NOAA/Meeus geometric sun; maximum one-minute geometry step'],
    ['sky directions',settings.skyPatches??DEFAULT_SKY_PATCHES],
+   ['sky sampling','Spherical Fibonacci hemisphere; normalized cosine weights'],
    ['weather hourly intervals JSON',JSON.stringify(r.weather.records)],
-   ['validation status','Selected analytical/pvlib benchmarks only; no field validation; hourly inputs held constant']
+   ['validation status','Selected analytical/pvlib/Radiance benchmarks; no field validation; hourly inputs held constant']
   ]:[]),
   ['x_m','height_m','plan_y_m','normal_x','normal_up','normal_plan_y',
    ...(sky?['vsc_percent','horizontal_sky_view_percent','visible_sky_solid_angle_percent']:radiation?['total_kWh_m2','direct_kWh_m2','diffuse_kWh_m2','sky_factor']:['direct_sun_hours']),

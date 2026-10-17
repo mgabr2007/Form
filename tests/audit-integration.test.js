@@ -29,7 +29,7 @@ test('all four analysis modes retain grid identities and exactly replay the save
   assert.equal(meta.sampling,'facade-grid-v1');
   assert.deepEqual(rows.slice(head+1).map(x=>x.slice(-3).map(Number)),grid.samples.map(s=>[s.gridRow+0,s.gridColumn+0,s.faceTriangle]));
   assert.equal(replayAnalysisCSV(csv).maxAbsoluteError,0);
-  if(mode==='radiation'){assert.equal(meta['time step minutes'],'5');assert.equal(meta['sky directions'],'2048');}
+  if(mode==='radiation'){assert.equal(meta['time step minutes'],'1');assert.equal(meta['sky directions'],'2048');}
  }
 });
 
@@ -50,7 +50,7 @@ test('comparison retains old history but blocks cross-engine and sky-ray deltas'
  const saved=readHistory(storage);assert.equal(saved.length,2);assert.ok(compare(saved[0],saved[1]).reasons.includes('engine'));
  b.engine=a.engine;b.result.settings.skyPatches=8192;assert.deepEqual(compare(a,b).reasons,['irradiation sky rays']);
  b.result.settings.skyPatches=2048;b.result.settings.step=60;assert.equal(compare(a,b).delta,0);
- b.result.settings.step=1;assert.ok(compare(a,b).reasons.includes('time step'));
+ b.result.settings.step=.5;assert.ok(compare(a,b).reasons.includes('time step'));
 });
 
 test('worker preserves daylight, sky and sunlight on the clipped facade grid',async()=>{
@@ -64,11 +64,11 @@ test('worker preserves daylight, sky and sunlight on the clipped facade grid',as
  }finally{delete globalThis.self;}
 });
 
-test('production worker matches independent five-minute shade reference for every coarser requested step',async()=>{
+test('production worker matches independent one-minute shade reference for every coarser requested step',async()=>{
  const messages=[];globalThis.self={postMessage:m=>messages.push(m)};
  try{
   await import('../dist/solar-worker.js?cap-integration');
-  for(const ref of fixture.shaded.filter(r=>r.step===5)){
+  for(const ref of fixture.shaded.filter(r=>r.step===1)){
    const c=fixture.cases.find(c=>c.name===ref.case),o=fixture.obstructions.find(o=>o.name===ref.obstruction);
    for(const step of [5,15,30,60]){
     self.onmessage({data:{settings:{...c.settings,analysis:'radiation',step,skyPatches:2048},weather:{records:c.records},samples:[{position:[0,0,0],normal:o.normal}],triangles:o.triangles}});
@@ -82,4 +82,11 @@ test('daylight shared offset does not skip a wall one centimetre from a receivin
  const t=[.01,-1,-1e5,.01,1e5,-1e5,.01,1e5,1e5,.01,-1,-1e5,.01,1e5,1e5,.01,-1,1e5];
  const c=skyExposure({position:[0,0,0],normal:[1,0,0]},t,buildBVH(t),32);
  assert.ok(c.vsc<.001);assert.ok(Math.abs(c.skyView-50)<.001);
+});
+
+test('legacy history retains the original effective step when comparing old saved runs',()=>{
+ const a=snapshot(run('radiation',5),'Old five','old5'),b=structuredClone(a);
+ a.engine=b.engine='FORM-environment-2026-10-17-audit-integration';b.result.settings.step=1;
+ assert.ok(compare(a,b).reasons.includes('time step'));
+ assert.equal(solarSettings().skyPatches,8192);assert.equal(solarSettings({skyPatches:2048}).skyPatches,2048);
 });

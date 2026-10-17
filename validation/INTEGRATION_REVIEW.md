@@ -1,5 +1,7 @@
 # FORM PR #1 conflict resolution — 17 October 2026
 
+> Historical results for the stated baseline. The current follow-up and release decision are in [the release report](release/REPORT.md).
+
 **Disposition: integrated patch ready for review; keep PR #1 in draft pending rendered browser acceptance. No merge or production deployment is authorized by this report.**
 
 This review integrates the exact main tip `6c4a5334fe408ab6f7165a57081b7dea8b2908dd` with audit tip `ebfec7f2311b4ec1613a18b9970a8f673ca1d360`. Their common ancestor is `68062a48e92dea49d3a4c9d120ba99825bb358b6`. The audit is one commit ahead and five behind. GitHub reported PR #1 open, draft, unmerged and not mergeable when inspected. There were no PR comments, status checks or check runs on its audit head.

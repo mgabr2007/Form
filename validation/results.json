@@ -1,5 +1,5 @@
 {
-  "method": "FORM-irradiation-3",
+  "method": "FORM-irradiation-4",
   "integration": "Matched reference steps; explicit cap override for characterization, not production settings.",
   "provenance": {
     "pvlib": "0.13.1",
@@ -617,64 +617,64 @@
       "case": "roof_square",
       "patches": 512,
       "reference": 0.445873576020428,
-      "form": 0.4521484375,
-      "error": 0.006274861479572014
+      "form": 0.4480438232421875,
+      "error": 0.0021702472217595137
     },
     {
       "case": "roof_square",
       "patches": 2048,
       "reference": 0.445873576020428,
-      "form": 0.4478759765625,
-      "error": 0.0020024005420720137
+      "form": 0.44432854652404785,
+      "error": -0.0015450294963801348
     },
     {
       "case": "roof_square",
       "patches": 8192,
       "reference": 0.445873576020428,
-      "form": 0.447418212890625,
-      "error": 0.0015446368701970137
+      "form": 0.4460046589374542,
+      "error": 0.0001310829170262373
     },
     {
       "case": "roof_wide",
       "patches": 512,
       "reference": 0.22349231150187887,
-      "form": 0.22509765625,
-      "error": 0.0016053447481211292
+      "form": 0.22474288940429688,
+      "error": 0.0012505779024180042
     },
     {
       "case": "roof_wide",
       "patches": 2048,
       "reference": 0.22349231150187887,
-      "form": 0.2232666015625,
-      "error": -0.00022570993937887085
+      "form": 0.22279620170593262,
+      "error": -0.0006961097959462537
     },
     {
       "case": "roof_wide",
       "patches": 8192,
       "reference": 0.22349231150187887,
-      "form": 0.22223663330078125,
-      "error": -0.0012556782010976208
+      "form": 0.22418801486492157,
+      "error": 0.000695703363042699
     },
     {
       "case": "facade_overhang",
       "patches": 512,
       "reference": 0.23484322202191377,
-      "form": 0.23562239156532622,
-      "error": 0.0007791695434124501
+      "form": 0.2283649019509727,
+      "error": -0.006478320070941068
     },
     {
       "case": "facade_overhang",
       "patches": 2048,
       "reference": 0.23484322202191377,
-      "form": 0.23480041657365536,
-      "error": -0.000042805448258409484
+      "form": 0.23467394033471106,
+      "error": -0.00016928168720270476
     },
     {
       "case": "facade_overhang",
       "patches": 8192,
       "reference": 0.23484322202191377,
-      "form": 0.2351745054804795,
-      "error": 0.0003312834585657287
+      "form": 0.2352779337673314,
+      "error": 0.0004347117454176208
     }
   ],
   "shaded": [
@@ -687,9 +687,9 @@
       "total": 3.5224405906946488,
       "referenceAtSameStep": 3.5224405906946488,
       "referenceAtOneMinute": 3.5223831049165173,
-      "form": 3.5252235931504745,
-      "errorAtSameStep": 0.002783002455825745,
-      "errorAtOneMinute": 0.002840488233957217,
+      "form": 3.5230796889187164,
+      "errorAtSameStep": 0.0006390982240676024,
+      "errorAtOneMinute": 0.0006965840021990743,
       "directErrorAtSameStep": 0.000488921035137313
     },
     {
@@ -701,9 +701,9 @@
       "total": 3.5229196983077955,
       "referenceAtSameStep": 3.5229196983077955,
       "referenceAtOneMinute": 3.5223831049165173,
-      "form": 3.525702700776361,
-      "errorAtSameStep": 0.002783002468565332,
-      "errorAtOneMinute": 0.0033195958598435382,
+      "form": 3.5235587965446022,
+      "errorAtSameStep": 0.0006390982368067455,
+      "errorAtOneMinute": 0.0011756916280849516,
       "directErrorAtSameStep": 0.0004889210478769002
     },
     {
@@ -715,9 +715,9 @@
       "total": 3.521410727659641,
       "referenceAtSameStep": 3.521410727659641,
       "referenceAtOneMinute": 3.5223831049165173,
-      "form": 3.524206821816768,
-      "errorAtSameStep": 0.002796094157127005,
-      "errorAtOneMinute": 0.001823716900250627,
+      "form": 3.522062917585009,
+      "errorAtSameStep": 0.0006521899253679742,
+      "errorAtOneMinute": -0.0003201873315084036,
       "directErrorAtSameStep": 0.0005020127364385729
     },
     {
@@ -729,9 +729,9 @@
       "total": 3.5278880364660448,
       "referenceAtSameStep": 3.5278880364660448,
       "referenceAtOneMinute": 3.5223831049165173,
-      "form": 3.5306841452494404,
-      "errorAtSameStep": 0.0027961087833956455,
-      "errorAtOneMinute": 0.008301040332923115,
+      "form": 3.528540241017682,
+      "errorAtSameStep": 0.0006522045516370589,
+      "errorAtOneMinute": 0.006157136101164529,
       "directErrorAtSameStep": 0.0005020273627072136
     },
     {
@@ -743,9 +743,9 @@
       "total": 0.7062172399218707,
       "referenceAtSameStep": 0.7062172399218707,
       "referenceAtOneMinute": 0.7026730874315261,
-      "form": 0.7061413672325302,
-      "errorAtSameStep": -0.00007587268934050595,
-      "errorAtOneMinute": 0.0034682798010040594,
+      "form": 0.7071969987575164,
+      "errorAtSameStep": 0.0009797588356457165,
+      "errorAtOneMinute": 0.004523911325990282,
       "directErrorAtSameStep": 0.00018271542403353047
     },
     {
@@ -757,9 +757,9 @@
       "total": 0.7073198046625643,
       "referenceAtSameStep": 0.7073198046625643,
       "referenceAtOneMinute": 0.7026730874315261,
-      "form": 0.7072430648173689,
-      "errorAtSameStep": -0.000076739845195406,
-      "errorAtOneMinute": 0.0045699773858427495,
+      "form": 0.7082986963423552,
+      "errorAtSameStep": 0.0009788916797909275,
+      "errorAtOneMinute": 0.005625608910829083,
       "directErrorAtSameStep": 0.0001818482681789635
     },
     {
@@ -771,9 +771,9 @@
       "total": 0.7568111049691494,
       "referenceAtSameStep": 0.7568111049691494,
       "referenceAtOneMinute": 0.7026730874315261,
-      "form": 0.7567597022252149,
-      "errorAtSameStep": -0.00005140274393444777,
-      "errorAtOneMinute": 0.054086614793688814,
+      "form": 0.7578153337502012,
+      "errorAtSameStep": 0.0010042287810517747,
+      "errorAtOneMinute": 0.05514224631867504,
       "directErrorAtSameStep": 0.00020718536943975518
     },
     {
@@ -785,9 +785,9 @@
       "total": 0.658529162681408,
       "referenceAtSameStep": 0.658529162681408,
       "referenceAtOneMinute": 0.7026730874315261,
-      "form": 0.6584532964643541,
-      "errorAtSameStep": -0.00007586621705391039,
-      "errorAtOneMinute": -0.04421979096717199,
+      "form": 0.6595089279893402,
+      "errorAtSameStep": 0.000979765307932201,
+      "errorAtOneMinute": -0.04316415944218588,
       "directErrorAtSameStep": 0.00018272189632034808
     },
     {
@@ -799,9 +799,9 @@
       "total": 0.26905180112347343,
       "referenceAtSameStep": 0.26905180112347343,
       "referenceAtOneMinute": 0.2690518011234735,
-      "form": 0.26900276039386406,
-      "errorAtSameStep": -0.00004904072960937311,
-      "errorAtOneMinute": -0.000049040729609428624,
+      "form": 0.26954983541659544,
+      "errorAtSameStep": 0.0004980342931220072,
+      "errorAtOneMinute": 0.0004980342931219517,
       "directErrorAtSameStep": 0
     },
     {
@@ -813,9 +813,9 @@
       "total": 0.2690518011234735,
       "referenceAtSameStep": 0.2690518011234735,
       "referenceAtOneMinute": 0.2690518011234735,
-      "form": 0.2690027603938638,
-      "errorAtSameStep": -0.00004904072960970618,
-      "errorAtOneMinute": -0.00004904072960970618,
+      "form": 0.2695498354165953,
+      "errorAtSameStep": 0.0004980342931217852,
+      "errorAtOneMinute": 0.0004980342931217852,
       "directErrorAtSameStep": 0
     },
     {
@@ -827,9 +827,9 @@
       "total": 0.26905180112347343,
       "referenceAtSameStep": 0.26905180112347343,
       "referenceAtOneMinute": 0.2690518011234735,
-      "form": 0.26900276039386395,
-      "errorAtSameStep": -0.000049040729609484135,
-      "errorAtOneMinute": -0.000049040729609539646,
+      "form": 0.26954983541659533,
+      "errorAtSameStep": 0.0004980342931218962,
+      "errorAtOneMinute": 0.0004980342931218407,
       "directErrorAtSameStep": 0
     },
     {
@@ -841,9 +841,9 @@
       "total": 0.26905180112347343,
       "referenceAtSameStep": 0.26905180112347343,
       "referenceAtOneMinute": 0.2690518011234735,
-      "form": 0.26900276039386384,
-      "errorAtSameStep": -0.00004904072960959516,
-      "errorAtOneMinute": -0.00004904072960965067,
+      "form": 0.2695498354165953,
+      "errorAtSameStep": 0.0004980342931218407,
+      "errorAtOneMinute": 0.0004980342931217852,
       "directErrorAtSameStep": 0
     },
     {
@@ -855,9 +855,9 @@
       "total": 3.0286176345993567,
       "referenceAtSameStep": 3.0286176345993567,
       "referenceAtOneMinute": 3.0137096598731308,
-      "form": 3.032104884876389,
-      "errorAtSameStep": 0.003487250277032228,
-      "errorAtOneMinute": 0.018395225003258187,
+      "form": 3.029054423131428,
+      "errorAtSameStep": 0.0004367885320712972,
+      "errorAtOneMinute": 0.015344763258297256,
       "directErrorAtSameStep": 0.00022310838581729442
     },
     {
@@ -869,9 +869,9 @@
       "total": 3.1037351085017084,
       "referenceAtSameStep": 3.1037351085017084,
       "referenceAtOneMinute": 3.0137096598731308,
-      "form": 3.1072248874641755,
-      "errorAtSameStep": 0.0034897789624670494,
-      "errorAtOneMinute": 0.09351522759104469,
+      "form": 3.104174425719215,
+      "errorAtSameStep": 0.00043931721750656294,
+      "errorAtOneMinute": 0.0904647658460842,
       "directErrorAtSameStep": 0.00022563707125256016
     },
     {
@@ -883,9 +883,9 @@
       "total": 2.992586502227451,
       "referenceAtSameStep": 2.992586502227451,
       "referenceAtOneMinute": 3.0137096598731308,
-      "form": 2.9960704016041557,
-      "errorAtSameStep": 0.003483899376704791,
-      "errorAtOneMinute": -0.017639258268975055,
+      "form": 2.993019939859195,
+      "errorAtSameStep": 0.0004334376317438604,
+      "errorAtOneMinute": -0.020689720013935986,
       "directErrorAtSameStep": 0.00021975748549030172
     },
     {
@@ -897,9 +897,9 @@
       "total": 3.220555734920925,
       "referenceAtSameStep": 3.220555734920925,
       "referenceAtOneMinute": 3.0137096598731308,
-      "form": 3.224051356176399,
-      "errorAtSameStep": 0.0034956212554737576,
-      "errorAtOneMinute": 0.21034169630326804,
+      "form": 3.2210008944314374,
+      "errorAtSameStep": 0.0004451595105123829,
+      "errorAtOneMinute": 0.20729123455830667,
       "directErrorAtSameStep": 0.0002314793642588242
     },
     {
@@ -911,9 +911,9 @@
       "total": 0.9019643717699224,
       "referenceAtSameStep": 0.9019643717699224,
       "referenceAtOneMinute": 0.8944875004113824,
-      "form": 0.9017140764736707,
-      "errorAtSameStep": -0.0002502952962516458,
-      "errorAtOneMinute": 0.007226576062288381,
+      "form": 0.9032160855354774,
+      "errorAtSameStep": 0.001251713765554996,
+      "errorAtOneMinute": 0.008728585124095023,
       "directErrorAtSameStep": 0.00011763771860284766
     },
     {
@@ -925,9 +925,9 @@
       "total": 0.8650628426606133,
       "referenceAtSameStep": 0.8650628426606133,
       "referenceAtOneMinute": 0.8944875004113824,
-      "form": 0.8648083708911818,
-      "errorAtSameStep": -0.00025447176943149685,
-      "errorAtOneMinute": -0.029679129520200576,
+      "form": 0.8663103799529871,
+      "errorAtSameStep": 0.0012475372923738126,
+      "errorAtOneMinute": -0.028177120458395266,
       "directErrorAtSameStep": 0.00011346124542244151
     },
     {
@@ -939,9 +939,9 @@
       "total": 0.9218351964988178,
       "referenceAtSameStep": 0.9218351964988178,
       "referenceAtOneMinute": 0.8944875004113824,
-      "form": 0.9215842052193699,
-      "errorAtSameStep": -0.00025099127944794297,
-      "errorAtOneMinute": 0.027096704807987537,
+      "form": 0.9230862142811757,
+      "errorAtSameStep": 0.0012510177823578106,
+      "errorAtOneMinute": 0.02859871386979329,
       "directErrorAtSameStep": 0.00011694173540621744
     },
     {
@@ -953,9 +953,9 @@
       "total": 0.8130332987372539,
       "referenceAtSameStep": 0.8130332987372539,
       "referenceAtOneMinute": 0.8944875004113824,
-      "form": 0.8127753946528469,
-      "errorAtSameStep": -0.0002579040844070679,
-      "errorAtOneMinute": -0.08171210575853549,
+      "form": 0.8142774037146525,
+      "errorAtSameStep": 0.0012441049773985746,
+      "errorAtOneMinute": -0.08021009669672985,
       "directErrorAtSameStep": 0.0001100289304470925
     },
     {
@@ -967,9 +967,9 @@
       "total": 1.4846463262841632,
       "referenceAtSameStep": 1.4846463262841632,
       "referenceAtOneMinute": 1.4764564176028876,
-      "form": 1.484578085313634,
-      "errorAtSameStep": -0.00006824097052904321,
-      "errorAtOneMinute": 0.008121667710746516,
+      "form": 1.4853564929513174,
+      "errorAtSameStep": 0.0007101666671542883,
+      "errorAtOneMinute": 0.008900075348429848,
       "directErrorAtSameStep": 0.0000015368056431874777
     },
     {
@@ -981,9 +981,9 @@
       "total": 1.4568016618377753,
       "referenceAtSameStep": 1.4568016618377753,
       "referenceAtOneMinute": 1.4764564176028876,
-      "form": 1.4567335224926519,
-      "errorAtSameStep": -0.00006813934512339692,
-      "errorAtOneMinute": -0.019722895110235728,
+      "form": 1.4575119301303365,
+      "errorAtSameStep": 0.0007102682925612669,
+      "errorAtOneMinute": -0.018944487472551064,
       "directErrorAtSameStep": 0.0000016384310490558107
     },
     {
@@ -995,9 +995,9 @@
       "total": 1.4960060763341354,
       "referenceAtSameStep": 1.4960060763341354,
       "referenceAtOneMinute": 1.4764564176028876,
-      "form": 1.4959341208053079,
-      "errorAtSameStep": -0.00007195552882754974,
-      "errorAtOneMinute": 0.01947770320242026,
+      "form": 1.4967125284429925,
+      "errorAtSameStep": 0.0007064521088571141,
+      "errorAtOneMinute": 0.020256110840104924,
       "directErrorAtSameStep": -0.0000021777526550970094
     },
     {
@@ -1009,9 +1009,9 @@
       "total": 1.4970442303711013,
       "referenceAtSameStep": 1.4970442303711013,
       "referenceAtOneMinute": 1.4764564176028876,
-      "form": 1.49697211457998,
-      "errorAtSameStep": -0.00007211579112142985,
-      "errorAtOneMinute": 0.020515696977092324,
+      "form": 1.4977505222176646,
+      "errorAtSameStep": 0.000706291846563234,
+      "errorAtOneMinute": 0.021294104614776987,
       "directErrorAtSameStep": -0.0000023380149489771185
     },
     {
@@ -1023,9 +1023,9 @@
       "total": 1.0728962860720672,
       "referenceAtSameStep": 1.0728962860720672,
       "referenceAtOneMinute": 1.0729330025367527,
-      "form": 1.0744431967415107,
-      "errorAtSameStep": 0.0015469106694434576,
-      "errorAtOneMinute": 0.001510194204757953,
+      "form": 1.0731573338402416,
+      "errorAtSameStep": 0.0002610477681743717,
+      "errorAtOneMinute": 0.0002243313034888672,
       "directErrorAtSameStep": 0.00017097505270491364
     },
     {
@@ -1037,9 +1037,9 @@
       "total": 1.0727606827907137,
       "referenceAtSameStep": 1.0727606827907137,
       "referenceAtOneMinute": 1.0729330025367527,
-      "form": 1.0743082416535914,
-      "errorAtSameStep": 0.0015475588628777182,
-      "errorAtOneMinute": 0.001375239116838678,
+      "form": 1.0730223787523228,
+      "errorAtSameStep": 0.0002616959616090764,
+      "errorAtOneMinute": 0.00008937621557003617,
       "directErrorAtSameStep": 0.0001716232461395073
     },
     {
@@ -1051,9 +1051,9 @@
       "total": 1.0719685374438754,
       "referenceAtSameStep": 1.0719685374438754,
       "referenceAtOneMinute": 1.0729330025367527,
-      "form": 1.0735243654300781,
-      "errorAtSameStep": 0.0015558279862026847,
-      "errorAtOneMinute": 0.0005913628933253978,
+      "form": 1.0722385025288093,
+      "errorAtSameStep": 0.0002699650849338209,
+      "errorAtOneMinute": -0.000694500007943466,
       "directErrorAtSameStep": 0.00017989236946436282
     },
     {
@@ -1065,9 +1065,9 @@
       "total": 1.0724534992552224,
       "referenceAtSameStep": 1.0724534992552224,
       "referenceAtOneMinute": 1.0729330025367527,
-      "form": 1.0740131621119509,
-      "errorAtSameStep": 0.0015596628567284831,
-      "errorAtOneMinute": 0.0010801595751981363,
+      "form": 1.0727272992106824,
+      "errorAtSameStep": 0.0002737999554600634,
+      "errorAtOneMinute": -0.0002057033260702834,
       "directErrorAtSameStep": 0.00018372723999038332
     },
     {
@@ -1079,9 +1079,9 @@
       "total": 0.9200885456038539,
       "referenceAtSameStep": 0.9200885456038539,
       "referenceAtOneMinute": 0.9201252620685394,
-      "form": 0.9201044256402932,
-      "errorAtSameStep": 0.000015880036439264167,
-      "errorAtOneMinute": -0.000020836428246240324,
+      "form": 0.920737568387661,
+      "errorAtSameStep": 0.0006490227838070739,
+      "errorAtOneMinute": 0.0006123063191215694,
       "directErrorAtSameStep": 0.00017097505270491364
     },
     {
@@ -1093,9 +1093,9 @@
       "total": 0.9199529423225004,
       "referenceAtSameStep": 0.9199529423225004,
       "referenceAtOneMinute": 0.9201252620685394,
-      "form": 0.9199694705523741,
-      "errorAtSameStep": 0.000016528229873746803,
-      "errorAtOneMinute": -0.0001557915161652934,
+      "form": 0.9206026132997419,
+      "errorAtSameStep": 0.0006496709772415565,
+      "errorAtOneMinute": 0.0004773512312025163,
       "directErrorAtSameStep": 0.0001716232461395073
     },
     {
@@ -1107,9 +1107,9 @@
       "total": 0.9191607969756621,
       "referenceAtSameStep": 0.9191607969756621,
       "referenceAtOneMinute": 0.9201252620685394,
-      "form": 0.9191855943288607,
-      "errorAtSameStep": 0.000024797353198602323,
-      "errorAtOneMinute": -0.0009396677396786846,
+      "form": 0.9198187370762285,
+      "errorAtSameStep": 0.0006579401005664121,
+      "errorAtOneMinute": -0.0003065249923108748,
       "directErrorAtSameStep": 0.00017989236946436282
     },
     {
@@ -1121,9 +1121,9 @@
       "total": 0.919645758787009,
       "referenceAtSameStep": 0.919645758787009,
       "referenceAtOneMinute": 0.9201252620685394,
-      "form": 0.9196743910107337,
-      "errorAtSameStep": 0.00002863222372462282,
-      "errorAtOneMinute": -0.000450871057805724,
+      "form": 0.9203075337581015,
+      "errorAtSameStep": 0.0006617749710924326,
+      "errorAtOneMinute": 0.00018227168956208573,
       "directErrorAtSameStep": 0.00018372723999038332
     },
     {
@@ -1135,9 +1135,9 @@
       "total": 0.1613708879618782,
       "referenceAtSameStep": 0.1613708879618782,
       "referenceAtOneMinute": 0.16137088796187826,
-      "form": 0.16134147449558514,
-      "errorAtSameStep": -0.000029413466293065627,
-      "errorAtOneMinute": -0.000029413466293121138,
+      "form": 0.16166959711669887,
+      "errorAtSameStep": 0.0002987091548206644,
+      "errorAtOneMinute": 0.0002987091548206089,
       "directErrorAtSameStep": 0
     },
     {
@@ -1149,9 +1149,9 @@
       "total": 0.16137088796187826,
       "referenceAtSameStep": 0.16137088796187826,
       "referenceAtOneMinute": 0.16137088796187826,
-      "form": 0.16134147449558525,
-      "errorAtSameStep": -0.000029413466293010115,
-      "errorAtOneMinute": -0.000029413466293010115,
+      "form": 0.1616695971166988,
+      "errorAtSameStep": 0.0002987091548205256,
+      "errorAtOneMinute": 0.0002987091548205256,
       "directErrorAtSameStep": 0
     },
     {
@@ -1163,9 +1163,9 @@
       "total": 0.16137088796187823,
       "referenceAtSameStep": 0.16137088796187823,
       "referenceAtOneMinute": 0.16137088796187826,
-      "form": 0.16134147449558534,
-      "errorAtSameStep": -0.000029413466292899093,
-      "errorAtOneMinute": -0.00002941346629292685,
+      "form": 0.16166959711669876,
+      "errorAtSameStep": 0.0002987091548205256,
+      "errorAtOneMinute": 0.00029870915482049787,
       "directErrorAtSameStep": 0
     },
     {
@@ -1177,9 +1177,9 @@
       "total": 0.16137088796187826,
       "referenceAtSameStep": 0.16137088796187826,
       "referenceAtOneMinute": 0.16137088796187826,
-      "form": 0.1613414744955853,
-      "errorAtSameStep": -0.000029413466292954604,
-      "errorAtOneMinute": -0.000029413466292954604,
+      "form": 0.1616695971166988,
+      "errorAtSameStep": 0.0002987091548205256,
+      "errorAtOneMinute": 0.0002987091548205256,
       "directErrorAtSameStep": 0
     }
   ]

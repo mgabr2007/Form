@@ -1,5 +1,7 @@
 # FORM scientific verification report — 17 October 2026
 
+> Historical results for the stated baseline. The current follow-up and release decision are in [the release report](../release/REPORT.md).
+
 ## Decision
 
 The integrated engine passed matched-model daily comparisons, but the broader accuracy/convergence gates are not all satisfied. Keep PR #1 draft and unmerged pending review. This is numerical verification and sensitivity characterization, not measured validation. No production physics was changed by this validation branch.
