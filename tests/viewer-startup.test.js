@@ -2,11 +2,11 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import vm from 'node:vm';
-import * as THREE from '../dist/vendor/three.module.js';
+import * as THREE from '../public/vendor/three.module.js';
 
 // Exercise the actual camera setup with real Three.js cameras and bounds.
 // Only the DOM and OrbitControls event bindings are substituted; no WebGL needed.
-const source=readFileSync(new URL('../dist/app.js',import.meta.url),'utf8');
+const source=readFileSync(new URL('../public/app.js',import.meta.url),'utf8');
 const fitSource=source.slice(source.indexOf('function fit('),source.indexOf('function init3D('));
 function fixture(){
  const instances=[];

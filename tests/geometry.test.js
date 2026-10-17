@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {defaults,normalize,modelData,ringAt,area} from '../dist/geometry.js';
+import {defaults,normalize,modelData,ringAt,area} from '../public/geometry.js';
 test('rectangular tower has analytically correct height and floor area',()=>{
  const s={...defaults(),shape:'rectangle',width:30,depth:20,floors:40,storey:3.5,podium:false,modifiers:[]},d=modelData(s);
  assert.equal(d.height,140);assert.equal(d.totalArea,24000);assert.equal(d.areas.length,40);assert.equal(d.areas[0],600);

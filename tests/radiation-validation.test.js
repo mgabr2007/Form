@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {buildBVH,solarPosition} from '../dist/solar.js';
-import {irradiation,radiationSteps as productionRadiationSteps,skyFactor} from '../dist/radiation.js';
+import {buildBVH,solarPosition} from '../public/solar.js';
+import {irradiation,radiationSteps as productionRadiationSteps,skyFactor} from '../public/radiation.js';
 const radiationSteps=(records,settings)=>productionRadiationSteps(records,settings,60);
 const fixture=JSON.parse(readFileSync(new URL('./fixtures/pvlib-radiation.json',import.meta.url))),empty=[],bvh=buildBVH(empty),rad=Math.PI/180;
 const vector=(alt,az)=>[Math.cos(alt*rad)*Math.sin(az*rad),Math.sin(alt*rad),Math.cos(alt*rad)*Math.cos(az*rad)];

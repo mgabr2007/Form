@@ -1,6 +1,6 @@
 // Import integration check against the actual browser UI. Weather is explicitly synthetic.
 import fs from 'node:fs';import path from 'node:path';import http from 'node:http';import assert from 'node:assert/strict';import {createRequire} from 'node:module';import {fileURLToPath} from 'node:url';
-import {defaults} from '../../dist/geometry.js';import {parseCSV,replayAnalysisCSV} from '../replay_csv.mjs';
+import {defaults} from '../../public/geometry.js';import {parseCSV,replayAnalysisCSV} from '../replay_csv.mjs';
 const require=createRequire(import.meta.url),{chromium}=require(process.env.FORM_PLAYWRIGHT_MODULE||'playwright'),root=fileURLToPath(new URL('../../',import.meta.url)),out=fileURLToPath(new URL('./',import.meta.url));
 fs.mkdirSync(path.join(out,'screenshots'),{recursive:true});fs.mkdirSync(path.join(out,'exports'),{recursive:true});
 const server=http.createServer((req,res)=>{const pathname=new URL(req.url,'http://localhost').pathname,file=path.resolve(root,(pathname.startsWith('/tests/')||pathname.startsWith('/validation/'))?'.'+pathname:'dist/'+(pathname==='/'?'index.html':pathname));if(!file.startsWith(root)||!fs.existsSync(file)){res.writeHead(404);res.end();return;}res.setHeader('Content-Type',({'.js':'text/javascript','.html':'text/html','.css':'text/css','.json':'application/json','.wasm':'application/wasm'})[path.extname(file)]||'application/octet-stream');res.end(fs.readFileSync(file));});

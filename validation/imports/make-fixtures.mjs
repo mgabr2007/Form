@@ -1,7 +1,7 @@
 import fs from 'node:fs';
-import * as THREE from '../../dist/vendor/three.module.js';
-import {defaults} from '../../dist/geometry.js';
-import {exportIFC} from '../../dist/ifc.js';
+import * as THREE from '../../public/vendor/three.module.js';
+import {defaults} from '../../public/geometry.js';
+import {exportIFC} from '../../public/ifc.js';
 const dir=new URL('../../tests/fixtures/imports/',import.meta.url);
 const RealDate=globalThis.Date;globalThis.Date=class extends RealDate{constructor(...args){super(...(args.length?args:['2026-10-17T00:00:00.000Z']));}static now(){return 1792195200000;}};
 export function glbFromMeshes(meshes,nodes){

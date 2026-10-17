@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {buildBVH} from '../dist/solar.js';
-import {skyFactor,irradiation,parseRadiation,dayWindow,radiationSteps} from '../dist/radiation.js';
+import {buildBVH} from '../public/solar.js';
+import {skyFactor,irradiation,parseRadiation,dayWindow,radiationSteps} from '../public/radiation.js';
 const empty=new Float64Array(),bvh=buildBVH(empty),sample=normal=>({position:[0,0,0],normal});
 test('unobstructed isotropic sky matches analytic tilt factors',()=>{for(const n of [[0,1,0],[1,0,0],[0,.5,Math.sqrt(.75)]])assert.ok(Math.abs(skyFactor(sample(n),empty,bvh)-(1+n[1])/2)<1e-12);});
 test('one hour beam normal and diffuse integrate W/m² to kWh/m²',()=>{const c=irradiation(sample([0,1,0]),[{direction:[0,1,0],altitude:90,hours:1,dni:800,dhi:100}],empty,bvh);assert.equal(c.direct,.8);assert.equal(c.diffuse,.1);assert.equal(c.total,.9);});

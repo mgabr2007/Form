@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {defaults,normalize,modelData,ringAt,area,footprint,specs} from '../dist/geometry.js';
-import {floorPlans,planDXF} from '../dist/plans.js';
-import {exportIFC} from '../dist/ifc.js';
+import {defaults,normalize,modelData,ringAt,area,footprint,specs} from '../public/geometry.js';
+import {floorPlans,planDXF} from '../public/plans.js';
+import {exportIFC} from '../public/ifc.js';
 const state=(type,extra={})=>normalize({...defaults(),shape:'rectangle',podium:false,modifiers:[{type,value:specs[type].value,start:1,end:48,...extra}]});
 const center=p=>p.reduce((a,p)=>[a[0]+p[0]/48,a[1]+p[1]/48],[0,0]);
 test('shape transition preserves base and reaches selected target at roof',()=>{

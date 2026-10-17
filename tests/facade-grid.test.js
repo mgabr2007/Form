@@ -1,5 +1,5 @@
 import test from 'node:test';import assert from 'node:assert/strict';
-import {facadeGrid} from '../dist/facade-grid.js';import {solarSettings} from '../dist/solar.js';
+import {facadeGrid} from '../public/facade-grid.js';import {solarSettings} from '../public/solar.js';
 const wall=[0,0,0,10,0,0,10,12,0,0,0,0,10,12,0,0,12,0];
 test('regular grid produces equal spacing and unique centres across triangle seams',()=>{const g=facadeGrid(wall,2,3);assert.equal(g.samples.length,20);assert.equal(new Set(g.samples.map(s=>s.position.join(','))).size,20);assert.deepEqual([...new Set(g.samples.map(s=>s.position[1]))],[1.5,4.5,7.5,10.5]);assert.ok(g.lines.length);for(const s of g.samples){assert.equal(s.position[2],0);assert.ok(s.position[0]>=0&&s.position[0]<=10);}});
 test('tilted facade points and lines lie on actual plane',()=>{const tris=wall.map((v,i)=>i%3===2?wall[i-1]*.3:v),g=facadeGrid(tris,2,3);assert.equal(g.samples.length,20);for(const s of g.samples)assert.ok(Math.abs(s.position[2]-.3*s.position[1])<1e-8);});

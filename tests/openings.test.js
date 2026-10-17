@@ -1,9 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {defaults,normalize,modelData,ringAt,area,sectionAt,regionArea,specs} from '../dist/geometry.js';
-import {floorPlans,planSVG,planDXF} from '../dist/plans.js';
-import {exportIFC} from '../dist/ifc.js';
-import {ShapeUtils,Vector2} from '../dist/vendor/three.core.js';
+import {defaults,normalize,modelData,ringAt,area,sectionAt,regionArea,specs} from '../public/geometry.js';
+import {floorPlans,planSVG,planDXF} from '../public/plans.js';
+import {exportIFC} from '../public/ifc.js';
+import {ShapeUtils,Vector2} from '../public/vendor/three.core.js';
 const state=(type,extra={})=>normalize({...defaults(),shape:'rectangle',width:30,depth:20,podium:false,modifiers:[{type,value:specs[type].value,start:1,end:48,...extra}]});
 test('atrium removes exact area and exports a genuine interior ring',()=>{
  const s=state('atrium',{value:8,depth:6}),r=sectionAt(s,0);assert.equal(r.area,552);assert.equal(r.regions.length,1);assert.equal(r.regions[0].length,2);

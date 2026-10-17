@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {defaults,normalize,modelData,ringAt,transition,moveModifier,duplicateModifier} from '../dist/geometry.js';
+import {defaults,normalize,modelData,ringAt,transition,moveModifier,duplicateModifier} from '../public/geometry.js';
 test('curves preserve endpoints and have distinct intermediate progress',()=>{
  for(const c of ['linear','easeIn','easeOut','smooth']){assert.equal(transition(0,c),0);assert.equal(transition(1,c),1);assert.equal(transition(-2,c),0);assert.equal(transition(3,c),1);}
  assert.equal(transition(.25,'easeIn'),.0625);assert.equal(transition(.25,'easeOut'),.4375);assert.equal(transition(.25,'smooth'),.15625);

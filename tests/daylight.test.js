@@ -1,5 +1,5 @@
 import test from 'node:test';import assert from 'node:assert/strict';
-import {skyExposure} from '../dist/daylight.js';import {buildBVH,solarSettings} from '../dist/solar.js';
+import {skyExposure} from '../public/daylight.js';import {buildBVH,solarSettings} from '../public/solar.js';
 const empty=new Float64Array(),tree=buildBVH(empty),sample=(normal=[1,0,0])=>({position:[0,0,0],normal});
 const expected=100*(Math.PI/2+4/3)/(7*Math.PI/3);
 test('unobstructed CIE vertical component agrees with analytic hemispheric integral',()=>{for(const res of [16,32,64]){const c=skyExposure(sample(),empty,tree,res);assert.ok(Math.abs(c.vsc-expected)<({16:.2,32:.07,64:.025}[res]));assert.equal(c.skyView,100);assert.equal(c.visibleSky,100);assert.equal(c.rays,2*res*res);}});

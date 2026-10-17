@@ -1,7 +1,7 @@
 import fs from 'node:fs';
-import {facadeGrid} from '../../dist/facade-grid.js';
-import {buildBVH,rayOrigin} from '../../dist/solar.js';
-import {radiationSteps,irradiation,skyFactor,DEFAULT_SKY_PATCHES,IRRADIATION_METHOD_VERSION} from '../../dist/radiation.js';
+import {facadeGrid} from '../../public/facade-grid.js';
+import {buildBVH,rayOrigin} from '../../public/solar.js';
+import {radiationSteps,irradiation,skyFactor,DEFAULT_SKY_PATCHES,IRRADIATION_METHOD_VERSION} from '../../public/radiation.js';
 const spec=JSON.parse(fs.readFileSync(new URL('../radiance/scenes.json',import.meta.url)));
 const fixture=JSON.parse(fs.readFileSync(new URL('../../tests/fixtures/pvlib-radiation.json',import.meta.url)));
 function boxTriangles(box){

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {defaults,normalize,modelData} from '../dist/geometry.js';
-import {envelopeMesh,loftLoops} from '../dist/envelope.js';
+import {defaults,normalize,modelData} from '../public/geometry.js';
+import {envelopeMesh,loftLoops} from '../public/envelope.js';
 const make=mods=>normalize({...defaults(),floors:12,podium:false,shape:'rectangle',modifiers:mods.map(m=>({start:1,end:12,...m}))});
 test('atrium with taper and twist has continuous inclined envelope triangles',()=>{
  const s=make([{type:'atrium',value:6,depth:6},{type:'taper',value:25},{type:'twist',value:45}]),d=modelData(s),e=envelopeMesh(s,d);assert.equal(e.fallbackFloors.length,0);assert.ok(e.positions.every(Number.isFinite));assert.ok(e.positions.length>0);

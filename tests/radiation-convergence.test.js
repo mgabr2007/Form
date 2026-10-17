@@ -1,5 +1,5 @@
 import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
-import {buildBVH} from '../dist/solar.js';import {skyFactor,DEFAULT_SKY_PATCHES} from '../dist/radiation.js';
+import {buildBVH} from '../public/solar.js';import {skyFactor,DEFAULT_SKY_PATCHES} from '../public/radiation.js';
 const read=name=>JSON.parse(fs.readFileSync(new URL('../validation/'+name,import.meta.url)));
 const scenes=read('radiance/scenes.json').scenes,initial=read('radiance/results.json').sky;
 const refined=[...read('radiance/refinement.json').sky,...read('release/sky-refinement.json')];
