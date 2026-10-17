@@ -1,0 +1,82 @@
+{
+  "sky": [
+    {
+      "scene": "courtyard",
+      "sensor": "court_floor",
+      "radiance65536": 0.2398376,
+      "changeFrom16384": 0.0008850000000000247,
+      "converged": true,
+      "form2048Error": -0.005950881250000012,
+      "form8192Error": 0.0008850562499999881,
+      "pass2048": false,
+      "pass8192": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_low",
+      "radiance65536": 0.1165161,
+      "changeFrom16384": -0.00024419999999999997,
+      "converged": true,
+      "form2048Error": -0.0012605450070637125,
+      "form8192Error": 0.0005029083027635606,
+      "pass2048": true,
+      "pass8192": true
+    }
+  ],
+  "physics": [
+    {
+      "scene": "courtyard",
+      "sensor": "inner_west",
+      "condition": "noon",
+      "W_m2": {
+        "isotropic_black": 22.81128,
+        "perez_black": 17.3615,
+        "isotropic_reflective": 86.97985999999999,
+        "perez_reflective": 81.53014
+      },
+      "changeFrom16384": {
+        "isotropic_black": -0.010989999999999611,
+        "perez_black": -0.25319999999999965,
+        "isotropic_reflective": 0.04980999999999369,
+        "perez_reflective": 0.031289999999998486
+      },
+      "converged": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_mid",
+      "condition": "overcast",
+      "W_m2": {
+        "isotropic_black": 24.42322,
+        "perez_black": 23.437660000000005,
+        "isotropic_reflective": 49.79818,
+        "perez_reflective": 45.576969999999996
+      },
+      "changeFrom16384": {
+        "isotropic_black": -0.06408000000000058,
+        "perez_black": -0.08177999999999486,
+        "isotropic_reflective": -0.21085000000000065,
+        "perez_reflective": -0.24137000000000342
+      },
+      "converged": true
+    },
+    {
+      "scene": "neighbours",
+      "sensor": "south_high",
+      "condition": "overcast",
+      "W_m2": {
+        "isotropic_black": 35.6781,
+        "perez_black": 35.43217,
+        "isotropic_reflective": 64.08211,
+        "perez_reflective": 59.62142
+      },
+      "changeFrom16384": {
+        "isotropic_black": 0.033569999999997435,
+        "perez_black": 0.03743000000000052,
+        "isotropic_reflective": -0.2943700000000007,
+        "perez_reflective": -0.3484100000000012
+      },
+      "converged": true
+    }
+  ]
+}

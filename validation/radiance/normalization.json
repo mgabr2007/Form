@@ -1,0 +1,98 @@
+[
+  {
+    "alt": 30,
+    "az": 135,
+    "dni": 800,
+    "dhi": 120,
+    "horizontal": 517.6807,
+    "expectedHorizontal": 520.0,
+    "horizontalPass": true,
+    "cardinalBeam": [
+      400.0003,
+      489.8983,
+      489.8983,
+      0.0,
+      0.0
+    ],
+    "analyticBeam": [
+      399.99999999999994,
+      489.89794855663564,
+      489.8979485566356,
+      0,
+      0
+    ],
+    "beamPass": true
+  },
+  {
+    "alt": 60,
+    "az": 180,
+    "dni": 800,
+    "dhi": 120,
+    "horizontal": 811.3221,
+    "expectedHorizontal": 812.8203230275509,
+    "horizontalPass": true,
+    "cardinalBeam": [
+      692.8209,
+      0.0,
+      400.0003,
+      0.0,
+      0.0
+    ],
+    "analyticBeam": [
+      692.8203230275509,
+      4.8985871965894135e-14,
+      400.0000000000001,
+      0,
+      0
+    ],
+    "beamPass": true
+  },
+  {
+    "alt": 30,
+    "az": 225,
+    "dni": 800,
+    "dhi": 120,
+    "horizontal": 517.6202,
+    "expectedHorizontal": 520.0,
+    "horizontalPass": true,
+    "cardinalBeam": [
+      400.0003,
+      0.0,
+      489.8983,
+      489.8983,
+      0.0
+    ],
+    "analyticBeam": [
+      399.99999999999994,
+      0,
+      489.89794855663575,
+      489.8979485566356,
+      0
+    ],
+    "beamPass": true
+  },
+  {
+    "alt": 45,
+    "az": 180,
+    "dni": 0,
+    "dhi": 200,
+    "horizontal": 198.6947,
+    "expectedHorizontal": 200.0,
+    "horizontalPass": true,
+    "cardinalBeam": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "analyticBeam": [
+      0.0,
+      0.0,
+      0.0,
+      0,
+      0
+    ],
+    "beamPass": true
+  }
+]

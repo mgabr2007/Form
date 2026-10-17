@@ -1,0 +1,10104 @@
+[
+  {
+    "program": "rtrace",
+    "args": [
+      "-version"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/empty.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/empty.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/unit_sky.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/unit_sky.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/unit_sky.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "wall",
+      "building",
+      "12",
+      "12",
+      "12"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "0",
+      "0",
+      "0"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "ground",
+      "ground",
+      "200",
+      "200",
+      "0.2"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "-100",
+      "-100",
+      "-0.2"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "wall",
+      "building",
+      "12",
+      "12",
+      "12"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "0",
+      "0",
+      "0"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "ground",
+      "ground",
+      "200",
+      "200",
+      "0.2"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "-100",
+      "-100",
+      "-0.2"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_isotropic.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_morning_beam.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "0",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_morning_beam.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "gendaylit",
+    "args": [
+      "-ang",
+      "30",
+      "-45",
+      "-W",
+      "800",
+      "120",
+      "-O",
+      "1",
+      "-g",
+      "0",
+      "-s"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_morning_isotropic_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_morning_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_morning_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_morning_perez_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_morning_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_morning_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_morning_isotropic_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_morning_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_morning_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_morning_perez_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_morning_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_morning_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_noon_beam.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "0",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_noon_beam.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "gendaylit",
+    "args": [
+      "-ang",
+      "60",
+      "0",
+      "-W",
+      "800",
+      "120",
+      "-O",
+      "1",
+      "-g",
+      "0",
+      "-s"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_noon_isotropic_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_noon_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_noon_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_noon_perez_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_noon_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_noon_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_noon_isotropic_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_noon_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_noon_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_noon_perez_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_noon_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_noon_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_afternoon_beam.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "0",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_afternoon_beam.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "gendaylit",
+    "args": [
+      "-ang",
+      "30",
+      "45",
+      "-W",
+      "800",
+      "120",
+      "-O",
+      "1",
+      "-g",
+      "0",
+      "-s"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_afternoon_isotropic_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_afternoon_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_afternoon_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_afternoon_perez_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_afternoon_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_afternoon_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_afternoon_isotropic_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_afternoon_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_afternoon_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_afternoon_perez_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_afternoon_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_afternoon_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "gendaylit",
+    "args": [
+      "-ang",
+      "45",
+      "0",
+      "-W",
+      "0",
+      "200",
+      "-O",
+      "1",
+      "-g",
+      "0",
+      "-s"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_overcast_isotropic_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_overcast_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_overcast_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_overcast_perez_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_overcast_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_overcast_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_overcast_isotropic_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_overcast_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_overcast_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_overcast_perez_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_overcast_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/box_overcast_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "wall",
+      "building",
+      "12",
+      "12",
+      "12"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "0",
+      "0",
+      "0"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "wall",
+      "overhang",
+      "16",
+      "3",
+      "0.3000000000000007"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "-2",
+      "-3",
+      "8"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "ground",
+      "ground",
+      "200",
+      "200",
+      "0.2"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "-100",
+      "-100",
+      "-0.2"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "wall",
+      "building",
+      "12",
+      "12",
+      "12"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "0",
+      "0",
+      "0"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "wall",
+      "overhang",
+      "16",
+      "3",
+      "0.3000000000000007"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "-2",
+      "-3",
+      "8"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "ground",
+      "ground",
+      "200",
+      "200",
+      "0.2"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "-100",
+      "-100",
+      "-0.2"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_isotropic.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_morning_beam.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "0",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_morning_beam.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "gendaylit",
+    "args": [
+      "-ang",
+      "30",
+      "-45",
+      "-W",
+      "800",
+      "120",
+      "-O",
+      "1",
+      "-g",
+      "0",
+      "-s"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_morning_isotropic_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_morning_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_morning_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_morning_perez_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_morning_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_morning_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_morning_isotropic_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_morning_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_morning_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_morning_perez_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_morning_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_morning_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_noon_beam.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "0",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_noon_beam.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "gendaylit",
+    "args": [
+      "-ang",
+      "60",
+      "0",
+      "-W",
+      "800",
+      "120",
+      "-O",
+      "1",
+      "-g",
+      "0",
+      "-s"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_noon_isotropic_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_noon_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_noon_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_noon_perez_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_noon_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_noon_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_noon_isotropic_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_noon_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_noon_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_noon_perez_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_noon_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_noon_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_afternoon_beam.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "0",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_afternoon_beam.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "gendaylit",
+    "args": [
+      "-ang",
+      "30",
+      "45",
+      "-W",
+      "800",
+      "120",
+      "-O",
+      "1",
+      "-g",
+      "0",
+      "-s"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_afternoon_isotropic_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_afternoon_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_afternoon_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_afternoon_perez_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_afternoon_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_afternoon_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_afternoon_isotropic_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_afternoon_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_afternoon_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_afternoon_perez_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_afternoon_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_afternoon_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "gendaylit",
+    "args": [
+      "-ang",
+      "45",
+      "0",
+      "-W",
+      "0",
+      "200",
+      "-O",
+      "1",
+      "-g",
+      "0",
+      "-s"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_overcast_isotropic_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_overcast_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_overcast_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_overcast_perez_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_overcast_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_overcast_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_overcast_isotropic_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_overcast_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_overcast_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_overcast_perez_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_overcast_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/overhang_overcast_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "wall",
+      "lower",
+      "12",
+      "12",
+      "6"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "0",
+      "0",
+      "0"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "wall",
+      "upper",
+      "6",
+      "6",
+      "6"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "3",
+      "3",
+      "6"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "ground",
+      "ground",
+      "200",
+      "200",
+      "0.2"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "-100",
+      "-100",
+      "-0.2"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "wall",
+      "lower",
+      "12",
+      "12",
+      "6"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "0",
+      "0",
+      "0"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "wall",
+      "upper",
+      "6",
+      "6",
+      "6"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "3",
+      "3",
+      "6"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "ground",
+      "ground",
+      "200",
+      "200",
+      "0.2"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "-100",
+      "-100",
+      "-0.2"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_isotropic.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_morning_beam.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "0",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_morning_beam.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "gendaylit",
+    "args": [
+      "-ang",
+      "30",
+      "-45",
+      "-W",
+      "800",
+      "120",
+      "-O",
+      "1",
+      "-g",
+      "0",
+      "-s"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_morning_isotropic_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_morning_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_morning_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_morning_perez_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_morning_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_morning_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_morning_isotropic_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_morning_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_morning_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_morning_perez_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_morning_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_morning_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_noon_beam.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "0",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_noon_beam.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "gendaylit",
+    "args": [
+      "-ang",
+      "60",
+      "0",
+      "-W",
+      "800",
+      "120",
+      "-O",
+      "1",
+      "-g",
+      "0",
+      "-s"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_noon_isotropic_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_noon_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_noon_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_noon_perez_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_noon_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_noon_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_noon_isotropic_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_noon_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_noon_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_noon_perez_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_noon_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_noon_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_afternoon_beam.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "0",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_afternoon_beam.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "gendaylit",
+    "args": [
+      "-ang",
+      "30",
+      "45",
+      "-W",
+      "800",
+      "120",
+      "-O",
+      "1",
+      "-g",
+      "0",
+      "-s"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_afternoon_isotropic_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_afternoon_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_afternoon_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_afternoon_perez_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_afternoon_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_afternoon_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_afternoon_isotropic_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_afternoon_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_afternoon_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_afternoon_perez_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_afternoon_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_afternoon_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "gendaylit",
+    "args": [
+      "-ang",
+      "45",
+      "0",
+      "-W",
+      "0",
+      "200",
+      "-O",
+      "1",
+      "-g",
+      "0",
+      "-s"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_overcast_isotropic_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_overcast_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_overcast_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_overcast_perez_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_overcast_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_overcast_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_overcast_isotropic_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_overcast_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_overcast_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_overcast_perez_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_overcast_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/setback_overcast_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "wall",
+      "west",
+      "5",
+      "20",
+      "10"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "0",
+      "0",
+      "0"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "wall",
+      "east",
+      "5",
+      "20",
+      "10"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "15",
+      "0",
+      "0"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "wall",
+      "south",
+      "10",
+      "5",
+      "10"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "5",
+      "0",
+      "0"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "wall",
+      "north",
+      "10",
+      "5",
+      "10"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "5",
+      "15",
+      "0"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "ground",
+      "ground",
+      "200",
+      "200",
+      "0.2"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "-100",
+      "-100",
+      "-0.2"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "wall",
+      "west",
+      "5",
+      "20",
+      "10"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "0",
+      "0",
+      "0"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "wall",
+      "east",
+      "5",
+      "20",
+      "10"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "15",
+      "0",
+      "0"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "wall",
+      "south",
+      "10",
+      "5",
+      "10"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "5",
+      "0",
+      "0"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "wall",
+      "north",
+      "10",
+      "5",
+      "10"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "5",
+      "15",
+      "0"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "ground",
+      "ground",
+      "200",
+      "200",
+      "0.2"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "-100",
+      "-100",
+      "-0.2"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_isotropic.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_morning_beam.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "0",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_morning_beam.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "gendaylit",
+    "args": [
+      "-ang",
+      "30",
+      "-45",
+      "-W",
+      "800",
+      "120",
+      "-O",
+      "1",
+      "-g",
+      "0",
+      "-s"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_morning_isotropic_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_morning_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_morning_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_morning_perez_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_morning_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_morning_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_morning_isotropic_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_morning_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_morning_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_morning_perez_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_morning_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_morning_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_noon_beam.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "0",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_noon_beam.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "gendaylit",
+    "args": [
+      "-ang",
+      "60",
+      "0",
+      "-W",
+      "800",
+      "120",
+      "-O",
+      "1",
+      "-g",
+      "0",
+      "-s"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_noon_isotropic_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_noon_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_noon_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_noon_perez_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_noon_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_noon_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_noon_isotropic_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_noon_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_noon_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_noon_perez_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_noon_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_noon_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_afternoon_beam.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "0",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_afternoon_beam.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "gendaylit",
+    "args": [
+      "-ang",
+      "30",
+      "45",
+      "-W",
+      "800",
+      "120",
+      "-O",
+      "1",
+      "-g",
+      "0",
+      "-s"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_afternoon_isotropic_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_afternoon_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_afternoon_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_afternoon_perez_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_afternoon_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_afternoon_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_afternoon_isotropic_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_afternoon_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_afternoon_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_afternoon_perez_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_afternoon_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_afternoon_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "gendaylit",
+    "args": [
+      "-ang",
+      "45",
+      "0",
+      "-W",
+      "0",
+      "200",
+      "-O",
+      "1",
+      "-g",
+      "0",
+      "-s"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_overcast_isotropic_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_overcast_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_overcast_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_overcast_perez_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_overcast_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_overcast_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_overcast_isotropic_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_overcast_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_overcast_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_overcast_perez_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_overcast_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/courtyard_overcast_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "wall",
+      "building",
+      "12",
+      "12",
+      "12"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "0",
+      "0",
+      "0"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "wall",
+      "neighbour_south",
+      "20",
+      "8",
+      "18"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "-4",
+      "-15",
+      "0"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "wall",
+      "neighbour_east",
+      "8",
+      "20",
+      "9"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "18",
+      "-4",
+      "0"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "ground",
+      "ground",
+      "200",
+      "200",
+      "0.2"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "-100",
+      "-100",
+      "-0.2"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "wall",
+      "building",
+      "12",
+      "12",
+      "12"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "0",
+      "0",
+      "0"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "wall",
+      "neighbour_south",
+      "20",
+      "8",
+      "18"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "-4",
+      "-15",
+      "0"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "wall",
+      "neighbour_east",
+      "8",
+      "20",
+      "9"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "18",
+      "-4",
+      "0"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "genbox",
+    "args": [
+      "ground",
+      "ground",
+      "200",
+      "200",
+      "0.2"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "xform",
+    "args": [
+      "-t",
+      "-100",
+      "-100",
+      "-0.2"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_isotropic.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_isotropic.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_morning_beam.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "0",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_morning_beam.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "gendaylit",
+    "args": [
+      "-ang",
+      "30",
+      "-45",
+      "-W",
+      "800",
+      "120",
+      "-O",
+      "1",
+      "-g",
+      "0",
+      "-s"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_morning_isotropic_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_morning_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_morning_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_morning_perez_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_morning_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_morning_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_morning_isotropic_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_morning_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_morning_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_morning_perez_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_morning_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_morning_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_noon_beam.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "0",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_noon_beam.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "gendaylit",
+    "args": [
+      "-ang",
+      "60",
+      "0",
+      "-W",
+      "800",
+      "120",
+      "-O",
+      "1",
+      "-g",
+      "0",
+      "-s"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_noon_isotropic_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_noon_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_noon_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_noon_perez_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_noon_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_noon_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_noon_isotropic_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_noon_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_noon_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_noon_perez_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_noon_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_noon_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_afternoon_beam.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "0",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_afternoon_beam.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "gendaylit",
+    "args": [
+      "-ang",
+      "30",
+      "45",
+      "-W",
+      "800",
+      "120",
+      "-O",
+      "1",
+      "-g",
+      "0",
+      "-s"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_afternoon_isotropic_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_afternoon_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_afternoon_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_afternoon_perez_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_afternoon_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_afternoon_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_afternoon_isotropic_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_afternoon_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_afternoon_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_afternoon_perez_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_afternoon_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_afternoon_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-oL",
+      "-ab",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_geometry.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "gendaylit",
+    "args": [
+      "-ang",
+      "45",
+      "0",
+      "-W",
+      "0",
+      "200",
+      "-O",
+      "1",
+      "-g",
+      "0",
+      "-s"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_overcast_isotropic_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_overcast_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_overcast_isotropic_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_overcast_perez_black.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_overcast_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "1",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_overcast_perez_black.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_overcast_isotropic_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_overcast_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_overcast_isotropic_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "oconv",
+    "args": [
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_overcast_perez_reflective.rad"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "3",
+      "-aa",
+      "0",
+      "-ad",
+      "4096",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_overcast_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "program": "rtrace",
+    "args": [
+      "-h",
+      "-I+",
+      "-ov",
+      "-ab",
+      "6",
+      "-aa",
+      "0",
+      "-ad",
+      "16384",
+      "-as",
+      "0",
+      "-av",
+      "0",
+      "0",
+      "0",
+      "-lw",
+      "1e-07",
+      "-u-",
+      "-dt",
+      "0",
+      "-dc",
+      "1",
+      "-dj",
+      "0",
+      "/workspace/scratch/2cff3cdb5778/Form/validation/radiance/generated/neighbours_overcast_perez_reflective.oct"
+    ],
+    "stderr": "",
+    "returncode": 0
+  }
+]
