@@ -2,6 +2,12 @@
 
 A static, browser-based architectural massing tool. All geometry and project storage run on the visitor's device. No backend, API keys, paid computation, or package installation is needed to serve it.
 
+## Validation & limitations
+
+**Field accuracy and live-site deployment remain unverified.**
+
+The app links to a dedicated [Validation & limitations page](dist/limitations.html) covering numerical verification, weather and physics assumptions, sampling, daylight, BIM exports, browser coverage and deployment status. The status was reviewed on 17 October 2026. See the [release evidence](validation/release/REPORT.md) for the selected numerical and local browser checks; these do not establish field accuracy or verify a public deployment.
+
 ## Run or host
 
 Serve the `dist/` folder with a static web server. The entry point is `dist/index.html`. ES modules require HTTP(S), so opening the file directly with `file://` is not supported.
